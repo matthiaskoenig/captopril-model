@@ -1,0 +1,17 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit
+Ohman1985		acute_fasting	9.0	CAP25_acute_fasting	MAP			sphygmomanometer	CAP25_acute_fasting_MAP	0.0	hr		126.946552405346							mmHg	mmHg
+Ohman1985		acute_fasting	9.0	CAP25_acute_fasting	MAP			sphygmomanometer	CAP25_acute_fasting_MAP	0.25	hr		120.867722993501							mmHg	mmHg
+Ohman1985		acute_fasting	9.0	CAP25_acute_fasting	MAP			sphygmomanometer	CAP25_acute_fasting_MAP	0.5	hr		117.860052589272							mmHg	mmHg
+Ohman1985		acute_fasting	9.0	CAP25_acute_fasting	MAP			sphygmomanometer	CAP25_acute_fasting_MAP	0.75	hr		111.777408411559							mmHg	mmHg
+Ohman1985		acute_fasting	9.0	CAP25_acute_fasting	MAP			sphygmomanometer	CAP25_acute_fasting_MAP	1.0	hr		106.755541628633							mmHg	mmHg
+Ohman1985		acute_fasting	9.0	CAP25_acute_fasting	MAP			sphygmomanometer	CAP25_acute_fasting_MAP	1.25	hr		104.703197591248							mmHg	mmHg
+Ohman1985		acute_fasting	9.0	CAP25_acute_fasting	MAP			sphygmomanometer	CAP25_acute_fasting_MAP	1.5	hr		105.816019291816							mmHg	mmHg
+Ohman1985		acute_fasting	9.0	CAP25_acute_fasting	MAP			sphygmomanometer	CAP25_acute_fasting_MAP	2.0	hr		106.700772490088							mmHg	mmHg
+Ohman1985		acute_fasting	9.0	CAP25_acute_fasting	MAP			sphygmomanometer	CAP25_acute_fasting_MAP	2.5	hr		106.720391285985							mmHg	mmHg
+Ohman1985		acute_fasting	9.0	CAP25_acute_fasting	MAP			sphygmomanometer	CAP25_acute_fasting_MAP	3.0	hr		108.566192999905							mmHg	mmHg
+Ohman1985		acute_fasting	9.0	CAP25_acute_fasting	MAP			sphygmomanometer	CAP25_acute_fasting_MAP	4.0	hr		104.674859330509							mmHg	mmHg
+Ohman1985		acute_fasting	9.0	CAP25_acute_fasting	MAP			sphygmomanometer	CAP25_acute_fasting_MAP	6.0	hr		107.599149852178							mmHg	mmHg
+Ohman1985		acute_fasting	9.0	CAP25_acute_fasting	MAP			sphygmomanometer	CAP25_acute_fasting_MAP	8.0	hr		110.613632338315							mmHg	mmHg
+Ohman1985		acute_fasting	9.0	CAP25_acute_fasting	MAP			sphygmomanometer	CAP25_acute_fasting_MAP	10.0	hr		113.532200711181							mmHg	mmHg
+Ohman1985		acute_fasting	9.0	CAP25_acute_fasting	MAP			sphygmomanometer	CAP25_acute_fasting_MAP	12.0	hr		117.411817599695							mmHg	mmHg
+Ohman1985		acute_fasting	9.0	CAP25_acute_fasting	MAP			sphygmomanometer	CAP25_acute_fasting_MAP	24.0	hr		120.042643632747							mmHg	mmHg

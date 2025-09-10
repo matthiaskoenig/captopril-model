@@ -1,0 +1,11 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Drummer1987		SRI	6.0	CAP50	concentration	total captopril	plasma	GC/MS	CAP50_total captopril_SRI	0.25	hr		0.0005063899718537257	0.257604741007464	0.0007016349224873051	0.0002864412576351873	SD>mean	mole/meter^3	microg/ml
+Drummer1987		SRI	6.0	CAP50	concentration	total captopril	plasma	GC/MS	CAP50_total captopril_SRI	0.5	hr		0.00216408601953293	0.932748208994411	0.0017309005530033589	0.0007066371917265765		mole/meter^3	microg/ml
+Drummer1987		SRI	6.0	CAP50	concentration	total captopril	plasma	GC/MS	CAP50_total captopril_SRI	0.75	hr		0.0032678314566645683	1.40294812647688	0.0025720330151576807	0.0010500280814547383		mole/meter^3	microg/ml
+Drummer1987		SRI	6.0	CAP50	concentration	total captopril	plasma	GC/MS	CAP50_total captopril_SRI	1.0	hr		0.003837635613443412	1.66245327132016	0.0031326623164681486	0.0012789040352986832		mole/meter^3	microg/ml
+Drummer1987		SRI	6.0	CAP50	concentration	total captopril	plasma	GC/MS	CAP50_total captopril_SRI	1.5	hr		0.005759608737618933	2.37375442281485	0.003787169691770618	0.001546105552361907		mole/meter^3	microg/ml
+Drummer1987		SRI	6.0	CAP50	concentration	total captopril	plasma	GC/MS	CAP50_total captopril_SRI	2.0	hr		0.007948167707159384	3.29580035757599	0.005377441643974546	0.0021953313582217943		mole/meter^3	microg/ml
+Drummer1987		SRI	6.0	CAP50	concentration	total captopril	plasma	GC/MS	CAP50_total captopril_SRI	3.0	hr		0.010112715480466055	4.16003400722654	0.006590693218700008	0.0026906392395060585		mole/meter^3	microg/ml
+Drummer1987		SRI	6.0	CAP50	concentration	total captopril	plasma	GC/MS	CAP50_total captopril_SRI	4.0	hr		0.009928321806824467	4.08796869334734	0.006499077266972814	0.0026532371838342036		mole/meter^3	microg/ml
+Drummer1987		SRI	6.0	CAP50	concentration	total captopril	plasma	GC/MS	CAP50_total captopril_SRI	6.0	hr		0.010954030856196263	4.70024880287061	0.008602473952924817	0.0035119452850414633		mole/meter^3	microg/ml
+Drummer1987		SRI	6.0	CAP50	concentration	total captopril	plasma	GC/MS	CAP50_total captopril_SRI	8.0	hr		0.011006516868476549	4.63038395659078	0.007947212536867356	0.0032444359321290783		mole/meter^3	microg/ml

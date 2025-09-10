@@ -1,0 +1,5 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit
+Cody1982		all	12.0	CAP25	concentration	renin	plasma	RIA	CAP25_concentration_renin_all	0.0	hr		9.108462614022238e-10		9.348930385972234e-10	2.6988037374880704e-10			1 ng/mL/h of PRA ≈ 7.6 pg/mL of DRC (range: 5.5–9.7 pg/mL)	mole/meter^3	pg/ml
+Cody1982		all	12.0	CAP25	concentration	renin	plasma	RIA	CAP25_concentration_renin_all	1.0	hr		4.048205606232106e-09		4.616034378073795e-09	1.3325343453847347e-09				mole/meter^3	pg/ml
+Cody1982		all	12.0	CAP25	concentration	renin	plasma	RIA	CAP25_concentration_renin_all	4.0	hr		2.8337439243624743e-09		3.6227105245642404e-09	1.0457864482766274e-09				mole/meter^3	pg/ml
+Cody1982		all	12.0	CAP25	concentration	renin	plasma	RIA	CAP25_concentration_renin_all	8.0	hr		2.766273830925272e-09		2.6878174859670194e-09	7.759060745278202e-10				mole/meter^3	pg/ml

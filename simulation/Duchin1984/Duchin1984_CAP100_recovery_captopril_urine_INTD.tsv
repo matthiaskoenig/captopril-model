@@ -1,0 +1,2 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit
+Duchin1984		INTD	3.0	CAP100	recovery	captopril	urine	scintillation counting	CAP100_recovery_captopril_urine_INTD	48.0	hr		4.602250500494742e-07		7.9713316960162e-07	4.602250500494742e-07				mole	percent

@@ -1,0 +1,5 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time_start	time_end	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Singhvi1982		fasting	12.0	CAP100	recovery	captopril	urine	scintillation counting	CAP100_recovery_captopril_urine_fasting			4.0	hr		0.0001445106657155349		2.8059087569976986e-05	8.099960880870746e-06		mole	percent
+Singhvi1982		fasting	12.0	CAP100	recovery	captopril	urine	scintillation counting	CAP100_recovery_captopril_urine_fasting			8.0	hr		0.0001649906804427365		2.944519726351248e-05	8.500096283215269e-06		mole	percent
+Singhvi1982		fasting	12.0	CAP100	recovery	captopril	urine	scintillation counting	CAP100_recovery_captopril_urine_fasting			12.0	hr		0.00017147985364843407		9.651567806610443e-06	2.786167635624235e-06		mole	percent
+Singhvi1982		fasting	12.0	CAP100	recovery	captopril	urine	scintillation counting	CAP100_recovery_captopril_urine_fasting			24.0	hr		0.00017470142899878038		3.0291060444861493e-05	8.744275950940009e-06		mole	percent

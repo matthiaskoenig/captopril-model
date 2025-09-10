@@ -1,0 +1,6 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit
+Kripalani1980		all	10.0	CAP1.37	recovery	captopril	urine	scintillation counting	CAP1.37_recovery_captopril_urine_all	2.0	hr		0.0001053730722323216		3.858324247725658e-05	1.2201092574268818e-05				mole	percent
+Kripalani1980		all	10.0	CAP1.37	recovery	captopril	urine	scintillation counting	CAP1.37_recovery_captopril_urine_all	4.0	hr		0.00015075743930782152		4.7113617747768826e-05	1.4898634089348227e-05				mole	percent
+Kripalani1980		all	10.0	CAP1.37	recovery	captopril	urine	scintillation counting	CAP1.37_recovery_captopril_urine_all	8.0	hr		0.00017039934970200426		2.7725519036463545e-05	8.76757894655818e-06				mole	percent
+Kripalani1980		all	10.0	CAP1.37	recovery	captopril	urine	scintillation counting	CAP1.37_recovery_captopril_urine_all	12.0	hr		0.0001747436781186		6.517967445015413e-06	2.061162284107699e-06				mole	percent
+Kripalani1980		all	10.0	CAP1.37	recovery	captopril	urine	scintillation counting	CAP1.37_recovery_captopril_urine_all	24.0	hr		0.00017747043744391005		2.90835805036896e-06	9.197035690452631e-06				mole	percent

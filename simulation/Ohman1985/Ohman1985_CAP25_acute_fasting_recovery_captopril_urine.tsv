@@ -1,0 +1,5 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time_start	time_end	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit
+Ohman1985		acute_fasting	8.0	CAP25_acute_fasting	recovery	captopril	urine	NR	CAP25_acute_fasting_recovery_captopril_urine			4.0	hr		6.903375750742112e-05							mole	percent
+Ohman1985		acute_fasting	8.0	CAP25_acute_fasting	recovery	captopril	urine	NR	CAP25_acute_fasting_recovery_captopril_urine			8.0	hr		9.54966978852659e-05							mole	percent
+Ohman1985		acute_fasting	8.0	CAP25_acute_fasting	recovery	captopril	urine	NR	CAP25_acute_fasting_recovery_captopril_urine			12.0	hr		0.00010700232413650274							mole	percent
+Ohman1985		acute_fasting	8.0	CAP25_acute_fasting	recovery	captopril	urine	NR	CAP25_acute_fasting_recovery_captopril_urine			24.0	hr		0.00011505626251236855							mole	percent

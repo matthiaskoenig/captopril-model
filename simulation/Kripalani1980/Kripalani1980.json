@@ -1,0 +1,1219 @@
+{
+  "experiment_id": "Kripalani1980",
+  "base_path": "/home/mkoenig/git/pkdb_models/pkdb_models/models/captopril",
+  "data_path": "[PosixPath('/home/mkoenig/git/pkdb_data/studies/captopril'), PosixPath('/home/mkoenig/git/pkdb_data/studies/hydrochlorothiazide')]",
+  "models": {
+    "model": {
+      "sid": null,
+      "name": null,
+      "language": "SBML",
+      "language_type": "SBML",
+      "source": {
+        "source": "/home/mkoenig/git/pkdb_models/pkdb_models/models/captopril/models/results/models/captopril_body_flat.xml",
+        "path": "/home/mkoenig/git/pkdb_models/pkdb_models/models/captopril/models/results/models/captopril_body_flat.xml",
+        "content": "None"
+      },
+      "changes": {}
+    }
+  },
+  "tasks": {
+    "task_cap_PO_1.37": {
+      "model": "model",
+      "simulation": "cap_PO_1.37"
+    }
+  },
+  "simulations": {
+    "cap_PO_1.37": {
+      "type": "TimecourseSim",
+      "selections": null,
+      "reset": true,
+      "time_offset": 0.0,
+      "timecourses": [
+        {
+          "start": 0,
+          "end": 7260,
+          "steps": 400,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "BW": {
+              "_magnitude": 73.3,
+              "_units": "kilogram"
+            },
+            "HEIGHT": {
+              "_magnitude": 178.3,
+              "_units": "centimeter"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 100.421,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        }
+      ]
+    }
+  },
+  "data": {
+    "task_cap_PO_1.37__time": {
+      "type": "TASK",
+      "index": "time",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__Cve_cap": {
+      "type": "TASK",
+      "index": "Cve_cap",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__Aurine_cap": {
+      "type": "TASK",
+      "index": "Aurine_cap",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__Afeces_cap": {
+      "type": "TASK",
+      "index": "Afeces_cap",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__Cve_capss": {
+      "type": "TASK",
+      "index": "Cve_capss",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__Aurine_capss": {
+      "type": "TASK",
+      "index": "Aurine_capss",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__Afeces_capss": {
+      "type": "TASK",
+      "index": "Afeces_capss",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__Cve_captot": {
+      "type": "TASK",
+      "index": "Cve_captot",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__Aurine_captot": {
+      "type": "TASK",
+      "index": "Aurine_captot",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__Cve_capme": {
+      "type": "TASK",
+      "index": "Cve_capme",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__Aurine_capme": {
+      "type": "TASK",
+      "index": "Aurine_capme",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__Cve_capall": {
+      "type": "TASK",
+      "index": "Cve_capall",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__Aurine_capall": {
+      "type": "TASK",
+      "index": "Aurine_capall",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__Afeces_captot": {
+      "type": "TASK",
+      "index": "Afeces_captot",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__Afeces_capall": {
+      "type": "TASK",
+      "index": "Afeces_capall",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__KI__f_renal_function": {
+      "type": "TASK",
+      "index": "KI__f_renal_function",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__f_cardiac_function": {
+      "type": "TASK",
+      "index": "f_cardiac_function",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__GU__F_cap_abs": {
+      "type": "TASK",
+      "index": "GU__F_cap_abs",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__PODOSE_cap": {
+      "type": "TASK",
+      "index": "PODOSE_cap",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__anggen": {
+      "type": "TASK",
+      "index": "anggen",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__ang1": {
+      "type": "TASK",
+      "index": "ang1",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__ang1_change": {
+      "type": "TASK",
+      "index": "ang1_change",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__ang1_ratio": {
+      "type": "TASK",
+      "index": "ang1_ratio",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__ang2": {
+      "type": "TASK",
+      "index": "ang2",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__ang2_change": {
+      "type": "TASK",
+      "index": "ang2_change",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__ang2_ratio": {
+      "type": "TASK",
+      "index": "ang2_ratio",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__ren": {
+      "type": "TASK",
+      "index": "ren",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__ren_change": {
+      "type": "TASK",
+      "index": "ren_change",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__ren_ratio": {
+      "type": "TASK",
+      "index": "ren_ratio",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__ace": {
+      "type": "TASK",
+      "index": "ace",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__ace_activity": {
+      "type": "TASK",
+      "index": "ace_activity",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__ace_inhibition": {
+      "type": "TASK",
+      "index": "ace_inhibition",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__ald": {
+      "type": "TASK",
+      "index": "ald",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__ald_change": {
+      "type": "TASK",
+      "index": "ald_change",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__ald_ratio": {
+      "type": "TASK",
+      "index": "ald_ratio",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__ANGGEN2ANG1": {
+      "type": "TASK",
+      "index": "ANGGEN2ANG1",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__ANG1ANG2": {
+      "type": "TASK",
+      "index": "ANG1ANG2",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__ANG2DEG": {
+      "type": "TASK",
+      "index": "ANG2DEG",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__RENSEC": {
+      "type": "TASK",
+      "index": "RENSEC",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__RENDEG": {
+      "type": "TASK",
+      "index": "RENDEG",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__ALDSEC": {
+      "type": "TASK",
+      "index": "ALDSEC",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__ALDDEG": {
+      "type": "TASK",
+      "index": "ALDDEG",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__SBP": {
+      "type": "TASK",
+      "index": "SBP",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__SBP_change": {
+      "type": "TASK",
+      "index": "SBP_change",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__SBP_ratio": {
+      "type": "TASK",
+      "index": "SBP_ratio",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__SBP_change_relative": {
+      "type": "TASK",
+      "index": "SBP_change_relative",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__DBP": {
+      "type": "TASK",
+      "index": "DBP",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__DBP_change": {
+      "type": "TASK",
+      "index": "DBP_change",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__DBP_ratio": {
+      "type": "TASK",
+      "index": "DBP_ratio",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__DBP_change_relative": {
+      "type": "TASK",
+      "index": "DBP_change_relative",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__MAP": {
+      "type": "TASK",
+      "index": "MAP",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_1.37__MAP_change": {
+      "type": "TASK",
+      "index": "MAP_change",
+      "unit": null,
+      "task": "task_cap_PO_1.37",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    }
+  },
+  "figures": {
+    "Figure 2": {
+      "sid": "Figure 2",
+      "name": "Kripalani1980",
+      "num_rows": 1,
+      "num_cols": 2,
+      "width": 15.4,
+      "height": 5.7,
+      "subplots": [
+        {
+          "sid": null,
+          "name": null,
+          "plot": {
+            "sid": "Figure 2__plot0",
+            "name": null,
+            "xaxis": {
+              "sid": "Figure 2__plot0_xaxis",
+              "name": "time [hr]",
+              "label": "time",
+              "unit": "hr",
+              "scale": "LINEAR",
+              "min": -0.01,
+              "max": 15,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis": {
+              "sid": "Figure 2__plot0_yaxis",
+              "name": "captopril [\u00b5M]",
+              "label": "captopril",
+              "unit": "\u00b5M",
+              "scale": "LINEAR",
+              "min": null,
+              "max": 11,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis_right": null,
+            "legend": true,
+            "facecolor": "#ffffffff",
+            "title_visible": true,
+            "curves": [
+              {
+                "sid": "Figure 2__plot0_curve0",
+                "name": "exp: 1.37mg/kg PO\u00b1SD (n=10)",
+                "x": "CAP1.37_concentration_captopril_blood_all__time",
+                "y": "CAP1.37_concentration_captopril_blood_all__mean",
+                "xerr": null,
+                "yerr": "CAP1.37_concentration_captopril_blood_all__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#000000ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 0
+              },
+              {
+                "sid": "Figure 2__plot0_curve1",
+                "name": "sim: 1.37mg/kg PO",
+                "x": "task_cap_PO_1.37__time",
+                "y": "task_cap_PO_1.37__Cve_cap",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#000000ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 1
+              }
+            ],
+            "areas": []
+          },
+          "row": 1,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1
+        },
+        {
+          "sid": null,
+          "name": null,
+          "plot": {
+            "sid": "Figure 2__plot1",
+            "name": null,
+            "xaxis": {
+              "sid": "Figure 2__plot1_xaxis",
+              "name": "time [hr]",
+              "label": "time",
+              "unit": "hr",
+              "scale": "LINEAR",
+              "min": -0.01,
+              "max": 15,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis": {
+              "sid": "Figure 2__plot1_yaxis",
+              "name": "cap + capss + capme [\u00b5M]",
+              "label": "cap + capss + capme",
+              "unit": "\u00b5M",
+              "scale": "LINEAR",
+              "min": null,
+              "max": 11,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis_right": null,
+            "legend": true,
+            "facecolor": "#ffffffff",
+            "title_visible": true,
+            "curves": [
+              {
+                "sid": "Figure 2__plot1_curve0",
+                "name": "exp: 1.37mg/kg PO\u00b1SD (n=10)",
+                "x": "CAP1.37_concentration_captopril+metabolites_blood_all__time",
+                "y": "CAP1.37_concentration_captopril+metabolites_blood_all__mean",
+                "xerr": null,
+                "yerr": "CAP1.37_concentration_captopril+metabolites_blood_all__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#000000ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 0
+              },
+              {
+                "sid": "Figure 2__plot1_curve1",
+                "name": "sim: 1.37mg/kg PO",
+                "x": "task_cap_PO_1.37__time",
+                "y": "task_cap_PO_1.37__Cve_capall",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#000000ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 1
+              }
+            ],
+            "areas": []
+          },
+          "row": 1,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1
+        }
+      ]
+    },
+    "Tabs 1,3": {
+      "sid": "Tabs 1,3",
+      "name": "Kripalani1980",
+      "num_rows": 1,
+      "num_cols": 4,
+      "width": 30.8,
+      "height": 5.7,
+      "subplots": [
+        {
+          "sid": null,
+          "name": null,
+          "plot": {
+            "sid": "Tabs 1,3__plot0",
+            "name": null,
+            "xaxis": {
+              "sid": "Tabs 1,3__plot0_xaxis",
+              "name": "time [hr]",
+              "label": "time",
+              "unit": "hr",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis": {
+              "sid": "Tabs 1,3__plot0_yaxis",
+              "name": "captopril urine [\u00b5mole]",
+              "label": "captopril urine",
+              "unit": "\u00b5mole",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis_right": null,
+            "legend": true,
+            "facecolor": "#ffffffff",
+            "title_visible": true,
+            "curves": [
+              {
+                "sid": "Tabs 1,3__plot0_curve0",
+                "name": "exp: 1.37mg/kg PO\u00b1SD (n=10)",
+                "x": "CAP1.37_recovery_captopril_urine_all__time",
+                "y": "CAP1.37_recovery_captopril_urine_all__mean",
+                "xerr": null,
+                "yerr": "CAP1.37_recovery_captopril_urine_all__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#000000ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 0
+              },
+              {
+                "sid": "Tabs 1,3__plot0_curve1",
+                "name": "sim: 1.37mg/kg PO",
+                "x": "task_cap_PO_1.37__time",
+                "y": "task_cap_PO_1.37__Aurine_cap",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#000000ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 1
+              }
+            ],
+            "areas": []
+          },
+          "row": 1,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1
+        },
+        {
+          "sid": null,
+          "name": null,
+          "plot": {
+            "sid": "Tabs 1,3__plot1",
+            "name": null,
+            "xaxis": {
+              "sid": "Tabs 1,3__plot1_xaxis",
+              "name": "time [hr]",
+              "label": "time",
+              "unit": "hr",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis": {
+              "sid": "Tabs 1,3__plot1_yaxis",
+              "name": "cap + capss + capme\nurine [\u00b5mole]",
+              "label": "cap + capss + capme\nurine",
+              "unit": "\u00b5mole",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis_right": null,
+            "legend": true,
+            "facecolor": "#ffffffff",
+            "title_visible": true,
+            "curves": [
+              {
+                "sid": "Tabs 1,3__plot1_curve0",
+                "name": "exp: 1.37mg/kg PO\u00b1SD (n=10)",
+                "x": "CAP1.37_recovery_captopril+metabolites_urine_all__time",
+                "y": "CAP1.37_recovery_captopril+metabolites_urine_all__mean",
+                "xerr": null,
+                "yerr": "CAP1.37_recovery_captopril+metabolites_urine_all__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#000000ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 0
+              },
+              {
+                "sid": "Tabs 1,3__plot1_curve1",
+                "name": "sim: 1.37mg/kg PO",
+                "x": "task_cap_PO_1.37__time",
+                "y": "task_cap_PO_1.37__Aurine_capall",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#000000ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 1
+              }
+            ],
+            "areas": []
+          },
+          "row": 1,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1
+        },
+        {
+          "sid": null,
+          "name": null,
+          "plot": {
+            "sid": "Tabs 1,3__plot2",
+            "name": null,
+            "xaxis": {
+              "sid": "Tabs 1,3__plot2_xaxis",
+              "name": "time [hr]",
+              "label": "time",
+              "unit": "hr",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis": {
+              "sid": "Tabs 1,3__plot2_yaxis",
+              "name": "captopril disulfide\nurine [\u00b5mole]",
+              "label": "captopril disulfide\nurine",
+              "unit": "\u00b5mole",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis_right": null,
+            "legend": true,
+            "facecolor": "#ffffffff",
+            "title_visible": true,
+            "curves": [
+              {
+                "sid": "Tabs 1,3__plot2_curve0",
+                "name": "exp: 1.37mg/kg PO\u00b1SD (n=10)",
+                "x": "CAP1.37_recovery_captopril disulfide metabolites_urine_all__time",
+                "y": "CAP1.37_recovery_captopril disulfide metabolites_urine_all__mean",
+                "xerr": null,
+                "yerr": "CAP1.37_recovery_captopril disulfide metabolites_urine_all__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#000000ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 0
+              },
+              {
+                "sid": "Tabs 1,3__plot2_curve1",
+                "name": "sim: 1.37mg/kg PO",
+                "x": "task_cap_PO_1.37__time",
+                "y": "task_cap_PO_1.37__Aurine_capss",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#000000ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 1
+              }
+            ],
+            "areas": []
+          },
+          "row": 1,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1
+        },
+        {
+          "sid": null,
+          "name": null,
+          "plot": {
+            "sid": "Tabs 1,3__plot3",
+            "name": null,
+            "xaxis": {
+              "sid": "Tabs 1,3__plot3_xaxis",
+              "name": "time [hr]",
+              "label": "time",
+              "unit": "hr",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis": {
+              "sid": "Tabs 1,3__plot3_yaxis",
+              "name": "cap + capss\nfeces [\u00b5mole]",
+              "label": "cap + capss\nfeces",
+              "unit": "\u00b5mole",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis_right": null,
+            "legend": true,
+            "facecolor": "#ffffffff",
+            "title_visible": true,
+            "curves": [
+              {
+                "sid": "Tabs 1,3__plot3_curve0",
+                "name": "exp: 1.37mg/kg PO\u00b1SD (n=10)",
+                "x": "CAP1.37_recovery_captopril+metabolites_feces_all__time",
+                "y": "CAP1.37_recovery_captopril+metabolites_feces_all__mean",
+                "xerr": null,
+                "yerr": "CAP1.37_recovery_captopril+metabolites_feces_all__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#000000ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 0
+              },
+              {
+                "sid": "Tabs 1,3__plot3_curve1",
+                "name": "sim: 1.37mg/kg PO",
+                "x": "task_cap_PO_1.37__time",
+                "y": "task_cap_PO_1.37__Afeces_captot",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#000000ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 1
+              }
+            ],
+            "areas": []
+          },
+          "row": 1,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1
+        }
+      ]
+    }
+  }
+}

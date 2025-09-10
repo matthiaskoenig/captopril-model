@@ -1,0 +1,10 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Li1996		all	10	CAP30	concentration	captopril	plasma	RP-HPLC	CAP30_captopril_plasma_all	0.25	hr		0.0004622810975738224	188.854312314565	0.0004068737557964747	0.00012866477884639944	SD>mean	mole/meter^3	ng/ml
+Li1996		all	10	CAP30	concentration	captopril	plasma	RP-HPLC	CAP30_captopril_plasma_all	0.5	hr		0.0011152802218050899	335.710875422024	0.00042974532262744775	0.00013589740333066295	not clear – sd or se, SD>mean	mole/meter^3	ng/ml
+Li1996		all	10	CAP30	concentration	captopril	plasma	RP-HPLC	CAP30_captopril_plasma_all	0.75	hr		0.0012979467035771038	326.77420454933	0.00020595004285882136	6.51271219643169e-05		mole/meter^3	ng/ml
+Li1996		all	10	CAP30	concentration	captopril	plasma	RP-HPLC	CAP30_captopril_plasma_all	1.0	hr		0.0009415010446946178	271.427718855506	0.0003076773102562809	9.7296108476413e-05	SD>mean	mole/meter^3	ng/ml
+Li1996		all	10	CAP30	concentration	captopril	plasma	RP-HPLC	CAP30_captopril_plasma_all	1.5	hr		0.000495605547238507	135.866043719947	0.00012968402047185953	4.100968808189801e-05		mole/meter^3	ng/ml
+Li1996		all	10	CAP30	concentration	captopril	plasma	RP-HPLC	CAP30_captopril_plasma_all	2.0	hr		0.00022518428897400785	63.3086655526379	6.617804875127412e-05	2.0927336515968792e-05		mole/meter^3	ng/ml
+Li1996		all	10	CAP30	concentration	captopril	plasma	RP-HPLC	CAP30_captopril_plasma_all	3.0	hr		0.00013952479755404698	37.4910479828122	3.3018396788922846e-05	1.0441333854018592e-05		mole/meter^3	ng/ml
+Li1996		all	10	CAP30	concentration	captopril	plasma	RP-HPLC	CAP30_captopril_plasma_all	4.0	hr		8.936743972246036e-05	24.9479930430038	2.5449473746043215e-05	8.047830229015395e-06		mole/meter^3	ng/ml
+Li1996		all	10	CAP30	concentration	captopril	plasma	RP-HPLC	CAP30_captopril_plasma_all	6.0	hr		3.487825657239887e-05	14.7631552024009	3.3065481846732215e-05	1.0456223456662448e-05	SD>mean	mole/meter^3	ng/ml

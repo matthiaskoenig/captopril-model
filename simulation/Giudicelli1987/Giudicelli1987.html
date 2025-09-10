@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <title>Giudicelli1987</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <!--<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+</head>
+
+<body>
+<div id="app">
+    <!-- Vue app-->
+    <v-app>
+        <v-content>
+
+            <a href="../index.html">Experiments</a>
+            <h1>Giudicelli1987</h1>
+
+            <h2>Models</h2>
+            <p>
+            <ul>
+                <li><strong>model</strong>: <a href="../../../../models/results/models/captopril_body_flat.xml">../../../../models/results/models/captopril_body_flat.xml</a></li>
+            </ul>
+            </p>
+
+            <h2>Datasets</h2>
+            <p>
+            <ul>
+                <li><strong>CAP50_acute_captopril_plasma_captopril_mono</strong>: <a href="Giudicelli1987_CAP50_acute_captopril_plasma_captopril_mono.tsv">Giudicelli1987_CAP50_acute_captopril_plasma_captopril_mono.tsv</a></li>
+                <li><strong>CAP50_chronic_captopril_plasma_captopril_mono</strong>: <a href="Giudicelli1987_CAP50_chronic_captopril_plasma_captopril_mono.tsv">Giudicelli1987_CAP50_chronic_captopril_plasma_captopril_mono.tsv</a></li>
+                <li><strong>CAP50_acute _total captopril_plasma_captopril_mono</strong>: <a href="Giudicelli1987_CAP50_acute _total captopril_plasma_captopril_mono.tsv">Giudicelli1987_CAP50_acute _total captopril_plasma_captopril_mono.tsv</a></li>
+                <li><strong>CAP50_chronic_total captopril_plasma_captopril_mono</strong>: <a href="Giudicelli1987_CAP50_chronic_total captopril_plasma_captopril_mono.tsv">Giudicelli1987_CAP50_chronic_total captopril_plasma_captopril_mono.tsv</a></li>
+                <li><strong>CAP50_acute_ACE inhibition_plasma_captopril_mono</strong>: <a href="Giudicelli1987_CAP50_acute_ACE inhibition_plasma_captopril_mono.tsv">Giudicelli1987_CAP50_acute_ACE inhibition_plasma_captopril_mono.tsv</a></li>
+                <li><strong>CAP50_chronic_ACE inhibition_plasma_captopril_mono</strong>: <a href="Giudicelli1987_CAP50_chronic_ACE inhibition_plasma_captopril_mono.tsv">Giudicelli1987_CAP50_chronic_ACE inhibition_plasma_captopril_mono.tsv</a></li>
+                <li><strong>renin_cap50_acute</strong>: <a href="Giudicelli1987_renin_cap50_acute.tsv">Giudicelli1987_renin_cap50_acute.tsv</a></li>
+                <li><strong>renin_cap50_chronic</strong>: <a href="Giudicelli1987_renin_cap50_chronic.tsv">Giudicelli1987_renin_cap50_chronic.tsv</a></li>
+            </ul>
+            </p>
+
+            <h2>Figures</h2>
+            <p>
+            <ul>
+                <li><strong>PK</strong>: <a href="Giudicelli1987_PK.svg">Giudicelli1987_PK.svg</a></li>
+                <li><strong>PD</strong>: <a href="Giudicelli1987_PD.svg">Giudicelli1987_PD.svg</a></li>
+            </ul>
+            </p>
+
+            <h3>PK</h3>
+            <p>
+            <table>
+                <tr>
+                    <td>
+                        <!--<v-img src="Giudicelli1987_PK.svg" max-width="600" width="600"></v-img>-->
+                        <img src="Giudicelli1987_PK.svg" width="600">
+                    </td>
+                    <!--
+                    <td>
+                    </td>
+                    -->
+                </tr>
+            </table>
+            </p>
+            <h3>PD</h3>
+            <p>
+            <table>
+                <tr>
+                    <td>
+                        <!--<v-img src="Giudicelli1987_PD.svg" max-width="600" width="600"></v-img>-->
+                        <img src="Giudicelli1987_PD.svg" width="600">
+                    </td>
+                    <!--
+                    <td>
+                    </td>
+                    -->
+                </tr>
+            </table>
+            </p>
+
+            <h2>Code</h2>
+            <p>
+                <a href="../../../../experiments/studies/giudicelli1987.py">../../../../experiments/studies/giudicelli1987.py</a>
+            <pre>
+<code class="python">"""Giudicelli1987 experiment"""
+
+from typing import Dict
+
+from sbmlsim.data import DataSet, load_pkdb_dataframe
+from sbmlsim.fit import FitMapping, FitData
+from sbmlutils.console import console
+
+from pkdb_models.models.captopril.experiments.base_experiment import (
+    CaptoprilSimulationExperiment,
+)
+from pkdb_models.models.captopril.experiments.metadata import Tissue, Route, Dosing, Health, Fasting, \
+    CaptoprilMappingMetaData, PKPDData
+from sbmlsim.plot import Axis, Figure
+from sbmlsim.simulation import Timecourse, TimecourseSim
+
+from pkdb_models.models.captopril.helpers import run_experiments
+
+
+class Giudicelli1987(CaptoprilSimulationExperiment):
+    """Simulation experiment for Giudicelli1987.
+
+     Studying pharmacokinetics and biological effects of captopril and hydrochlorothiazide
+     after acute and chronic administration either alone or in combination in hypertensive patients.
+    - fasting (8:30), light standart meal at 13:00 and 20:00 hr
+    """
+
+    route = "PO"
+    dose = 50  # mg
+    regimens = []
+    elements_unique = ["ACE inhibition", "renin", "total captopril", "captopril"]
+
+    def datasets(self) -> Dict[str, DataSet]:
+        dsets = {}
+        self.reset_state()
+        self.regimens = []
+        for fig_id in ["Fig1", "Fig2", "Fig4", "Fig5"]:
+            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
+            for label, df_label in df.groupby("label"):
+                dset = DataSet.from_df(df_label, self.ureg)
+                if ("mono" in label and "captopril" in label) or ("renin_cap50" in label):
+                    for element in self.elements_unique:
+                        if element in label:
+                            self.data_collection(element=element, label=label)
+                            dset.unit_conversion(
+                                self.data_type, self.conversion_factor
+                            )
+
+                            if "acute" in label:
+                                self.regimens.append("acute")
+                            else:
+                                self.regimens.append("chronic")
+                                # dset["time"] = dset["time"] + 45 * 24
+
+                            dsets[f"{label}"] = dset
+                            break
+
+        # console.print(dsets.keys())
+        # console.print(dsets)
+        return dsets
+
+    def simulations(self) -> Dict[str, TimecourseSim]:
+        Q_ = self.Q_
+        tcsims = {}
+        tc_start_single = Timecourse(
+            start=0,
+            end=24 * 60 * 3,  # [min]
+            steps=500,
+            changes={
+                **self.default_changes(),
+                f"{self.route}DOSE_cap": Q_(self.dose, "mg"),
+                f"ren_ref": Q_(2.76, "pg/ml") / self.Mr.ren,
+                f"[ren]": Q_(2.76, "pg/ml") / self.Mr.ren
+            },
+        )
+        tc_start = Timecourse(
+            start=0,
+            end=24 * 60,  # [min]
+            steps=500,
+            changes={
+                **self.default_changes(),
+                f"{self.route}DOSE_cap": Q_(self.dose, "mg"),
+                f"ren_ref": Q_(2.76, "pg/ml") / self.Mr.ren,
+                f"[ren]": Q_(2.76, "pg/ml") / self.Mr.ren
+            },
+        )
+        tc_multiple = Timecourse(
+            start=0,
+            end=24 * 60,  # [min]
+            steps=500,
+            changes={
+                **self.default_changes(),
+                f"{self.route}DOSE_cap": Q_(self.dose, "mg"),
+            },
+        )
+        tc_end = Timecourse(
+            start=0,
+            end=24 * 60 * 3,  # [min]
+            steps=500,
+            changes={
+                **self.default_changes(),
+                f"{self.route}DOSE_cap": Q_(self.dose, "mg"),
+            },
+        )
+        tcsims[f"cap_{self.route}_{self.dose}_acute"] = TimecourseSim(
+            timecourses=[tc_start_single]
+        )
+        tcsims[f"cap_{self.route}_{self.dose}_chronic"] = TimecourseSim(
+            timecourses=[tc_start if ki ==0 else tc_multiple for ki in range(45)] + [tc_end],
+            time_offset=-45 * 24 * 60
+        )
+        return tcsims
+
+    def fit_mappings(self) -> Dict[str, FitMapping]:
+        mappings = {}
+        for kl, label in enumerate(self.clabels):
+            regimen = self.regimens[kl]
+            mappings[
+                f"fm_cap{self.route}_{self.dose}_{self.element_ids[kl]}_plasma_{regimen}_fasting_{label.split("_")[-1]}"
+            ] = FitMapping(
+                self,
+                reference=FitData(
+                    self,
+                    dataset=label,
+                    xid="time",
+                    yid="mean",
+                    yid_sd="mean_sd",
+                    count="count",
+                ),
+                observable=FitData(
+                    self,
+                    task=f"task_cap_{self.route}_{self.dose}_{regimen}",
+                    xid="time",
+                    yid=self.yids[kl],
+                ),
+                metadata=CaptoprilMappingMetaData(
+                    tissue=Tissue.PLASMA,
+                    route=Route.PO,
+                    dosing=Dosing.MULTIPLE if regimen == "chronic" else Dosing.SINGLE,
+                    health=Health.HEALTHY,
+                    fasting=Fasting.FASTING,
+                    data=PKPDData.PK if "captopril_plasma" in label else PKPDData.PD
+                ),
+            )
+        # console.print(mappings)
+        return mappings
+
+    def figures(self) -> Dict[str, Figure]:
+        figures = {}
+        figures["PK"] = self.pk_figures()
+        figures["PD"] = self.pd_figures()
+        return figures
+
+    def pk_figures(self) -> Dict[str, Figure]:
+
+        fig = Figure(
+            experiment=self,
+            sid="Figure 1,2",
+            num_rows=1,
+            num_cols=2,
+            name=f"{self.__class__.__name__}",
+            height=self.panel_height * 1
+        )
+        plots = fig.create_plots(
+            xaxis=Axis(self.labels["time"], unit="day"), legend=True
+        )
+
+        for ky, pk_yid in enumerate(["[Cve_cap]", "[Cve_captot]"]):
+            plots[ky].set_yaxis(
+                self.labels[pk_yid], unit=self.units[pk_yid], max=5.1
+            )
+            plots[ky].xaxis.min = -1.1  # [d]
+            plots[ky].xaxis.max = 1.1  # [d]
+            # simulation
+            plots[ky].add_data(
+                task=f"task_cap_{self.route}_{self.dose}_acute",
+                xid="time",
+                yid=pk_yid,
+                label=f"sim: acute {self.dose}mg {self.route}",
+                color=self.regimen_colors["acute"],
+            )
+            # simulation
+            plots[ky].add_data(
+                task=f"task_cap_{self.route}_{self.dose}_chronic",
+                xid="time",
+                yid=pk_yid,
+                label=f"sim: chronic {self.dose}mg {self.route}",
+                color=self.regimen_colors["chronic"],
+            )
+
+        for kl, label in enumerate(self.clabels):
+            if "captopril_plasma" in label:
+                if "_total captopril_" in label:
+                    kp = 1
+                else:
+                    kp = 0
+                # dataset
+                plots[kp].add_data(
+                    dataset=label,
+                    xid="time",
+                    yid="mean",
+                    yid_sd="mean_sd",
+                    count="count",
+                    label=f"exp: {self.regimens[kl]} {self.dose}mg {self.route}",
+                    color=(
+                        self.regimen_colors["acute"]
+                        if self.regimens[kl] == "acute"
+                        else self.regimen_colors["chronic"]
+                    ),
+                )
+
+        return fig
+
+    def pd_figures(self) -> Dict[str, Figure]:
+
+        yaxis_max = {
+            "[ren]": 2,
+            "ace_inhibition": 1.3
+        }
+
+        fig = Figure(
+            experiment=self,
+            sid="PD",
+            num_rows=1,
+            num_cols=2,
+            name=f"{self.__class__.__name__}",
+            height=self.panel_height * 1
+        )
+        plots = fig.create_plots(
+            xaxis=Axis(self.labels["time"], unit="day"), legend=True
+        )
+
+        for ky, pk_yid in enumerate(["[ren]", "ace_inhibition"]):
+            plots[ky].set_yaxis(
+                self.labels[pk_yid], unit=self.units[pk_yid], max=5.1
+            )
+            plots[ky].xaxis.min = -1.1  # [d]
+            plots[ky].xaxis.max = 1.1  # [d]
+            plots[ky].yaxis.max = yaxis_max[pk_yid]
+            # simulation
+            plots[ky].add_data(
+                task=f"task_cap_{self.route}_{self.dose}_acute",
+                xid="time",
+                yid=pk_yid,
+                label=f"sim: acute {self.dose}mg {self.route}",
+                color=self.regimen_colors["acute"],
+            )
+            # simulation
+            plots[ky].add_data(
+                task=f"task_cap_{self.route}_{self.dose}_chronic",
+                xid="time",
+                yid=pk_yid,
+                label=f"sim: chronic {self.dose}mg {self.route}",
+                color=self.regimen_colors["chronic"],
+            )
+
+        for kl, label in enumerate(self.clabels):
+            if "_ACE inhibition_" in label or "renin_" in label:
+                if "_ACE inhibition_" in label:
+                    kp=1
+                else:
+                    kp = 0
+                # dataset
+                plots[kp].add_data(
+                    dataset=label,
+                    xid="time",
+                    yid="mean",
+                    yid_sd="mean_sd",
+                    count="count",
+                    label=f"exp: {self.regimens[kl]} {self.dose}mg {self.route}",
+                    color=(
+                        self.regimen_colors["acute"]
+                        if self.regimens[kl] == "acute"
+                        else self.regimen_colors["chronic"]
+                    ),
+                )
+
+        return fig
+
+
+if __name__ == "__main__":
+    run_experiments(Giudicelli1987, output_dir=Giudicelli1987.__name__)
+</code>
+        </pre>
+            </p>
+
+        </v-content>
+    </v-app>
+</div>
+
+
+<!-- loading dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.2.6/dist/vuetify.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+    const app = new Vue({
+        el: '#app',
+        vuetify: new Vuetify(),
+        delimiters: ['${', '}'],
+        data() {
+            return {}
+        }
+    })
+</script>
+
+
+</body>
+</html>

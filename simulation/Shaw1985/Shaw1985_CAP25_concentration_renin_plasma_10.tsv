@@ -1,0 +1,15 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Shaw1985		all	10.0	CAP25	concentration	renin	plasma	RIA	CAP25_concentration_renin_plasma_10	-30.0	min		7.373646368888851e-10				1 ng/mL/h of PRA ≈ 7.6 pg/mL of DRC (range: 5.5–9.7 pg/mL)	mole/meter^3	pg/ml
+Shaw1985		all	10.0	CAP25	concentration	renin	plasma	RIA	CAP25_concentration_renin_plasma_10	-15.0	min		6.386636748330248e-10					mole/meter^3	pg/ml
+Shaw1985		all	10.0	CAP25	concentration	renin	plasma	RIA	CAP25_concentration_renin_plasma_10	0.0	min		6.529940829704419e-10					mole/meter^3	pg/ml
+Shaw1985		all	10.0	CAP25	concentration	renin	plasma	RIA	CAP25_concentration_renin_plasma_10	15.0	min		1.587319028928284e-09					mole/meter^3	pg/ml
+Shaw1985		all	10.0	CAP25	concentration	renin	plasma	RIA	CAP25_concentration_renin_plasma_10	30.0	min		3.248122800971081e-09					mole/meter^3	pg/ml
+Shaw1985		all	10.0	CAP25	concentration	renin	plasma	RIA	CAP25_concentration_renin_plasma_10	45.0	min		3.940420622746765e-09					mole/meter^3	pg/ml
+Shaw1985		all	10.0	CAP25	concentration	renin	plasma	RIA	CAP25_concentration_renin_plasma_10	60.0	min		4.584251193580021e-09					mole/meter^3	pg/ml
+Shaw1985		all	10.0	CAP25	concentration	renin	plasma	RIA	CAP25_concentration_renin_plasma_10	75.0	min		4.356510316031005e-09					mole/meter^3	pg/ml
+Shaw1985		all	10.0	CAP25	concentration	renin	plasma	RIA	CAP25_concentration_renin_plasma_10	90.0	min		3.773578459593736e-09					mole/meter^3	pg/ml
+Shaw1985		all	10.0	CAP25	concentration	renin	plasma	RIA	CAP25_concentration_renin_plasma_10	120.0	min		3.608635241124553e-09					mole/meter^3	pg/ml
+Shaw1985		all	10.0	CAP25	concentration	renin	plasma	RIA	CAP25_concentration_renin_plasma_10	150.0	min		2.8140593754467e-09					mole/meter^3	pg/ml
+Shaw1985		all	10.0	CAP25	concentration	renin	plasma	RIA	CAP25_concentration_renin_plasma_10	180.0	min		2.9719367532317944e-09					mole/meter^3	pg/ml
+Shaw1985		all	10.0	CAP25	concentration	renin	plasma	RIA	CAP25_concentration_renin_plasma_10	210.0	min		2.8875661993133584e-09					mole/meter^3	pg/ml
+Shaw1985		all	10.0	CAP25	concentration	renin	plasma	RIA	CAP25_concentration_renin_plasma_10	240.0	min		3.222994905038284e-09					mole/meter^3	pg/ml

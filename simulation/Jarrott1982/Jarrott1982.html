@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <title>Jarrott1982</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <!--<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+</head>
+
+<body>
+<div id="app">
+    <!-- Vue app-->
+    <v-app>
+        <v-content>
+
+            <a href="../index.html">Experiments</a>
+            <h1>Jarrott1982</h1>
+
+            <h2>Models</h2>
+            <p>
+            <ul>
+                <li><strong>model</strong>: <a href="../../../../models/results/models/captopril_body_flat.xml">../../../../models/results/models/captopril_body_flat.xml</a></li>
+            </ul>
+            </p>
+
+            <h2>Datasets</h2>
+            <p>
+            <ul>
+                <li><strong>CAP100_acute_captopril</strong>: <a href="Jarrott1982_CAP100_acute_captopril.tsv">Jarrott1982_CAP100_acute_captopril.tsv</a></li>
+                <li><strong>CAP100_chronic_captopril</strong>: <a href="Jarrott1982_CAP100_chronic_captopril.tsv">Jarrott1982_CAP100_chronic_captopril.tsv</a></li>
+            </ul>
+            </p>
+
+            <h2>Figures</h2>
+            <p>
+            <ul>
+                <li><strong>PK</strong>: <a href="Jarrott1982_PK.svg">Jarrott1982_PK.svg</a></li>
+            </ul>
+            </p>
+
+            <h3>PK</h3>
+            <p>
+            <table>
+                <tr>
+                    <td>
+                        <!--<v-img src="Jarrott1982_PK.svg" max-width="600" width="600"></v-img>-->
+                        <img src="Jarrott1982_PK.svg" width="600">
+                    </td>
+                    <!--
+                    <td>
+                    </td>
+                    -->
+                </tr>
+            </table>
+            </p>
+
+            <h2>Code</h2>
+            <p>
+                <a href="../../../../experiments/studies/jarrott1982.py">../../../../experiments/studies/jarrott1982.py</a>
+            <pre>
+<code class="python">"""Jarrott1982"""
+from copy import deepcopy
+from typing import Dict
+
+from sbmlsim.data import DataSet, load_pkdb_dataframe
+from sbmlsim.fit import FitMapping, FitData
+from sbmlutils.console import console
+
+from pkdb_models.models.captopril.experiments.base_experiment import (
+    CaptoprilSimulationExperiment,
+)
+from pkdb_models.models.captopril.experiments.metadata import Tissue, Route, Dosing, Health, Fasting, \
+    CaptoprilMappingMetaData, PKPDData
+from sbmlsim.plot import Axis, Figure
+from sbmlsim.simulation import Timecourse, TimecourseSim
+
+from pkdb_models.models.captopril.helpers import run_experiments
+
+
+class Jarrott1982(CaptoprilSimulationExperiment):
+    """Simulation experiment for Jarrott1982.
+    Pharmacokinetic Properties of Captopril After Acute and Chronic Administration to Hypertensive Subjects.
+    """
+
+    # important parameters from study
+    route = "PO"
+    dose = 100  # mg
+    yids = []
+    clabels = []
+    regimens = []
+    states = []
+    element_ids = []
+
+    colors = {
+        "acute": CaptoprilSimulationExperiment.regimen_colors["acute"],
+        "chronic": CaptoprilSimulationExperiment.regimen_colors["chronic"],
+        "control": CaptoprilSimulationExperiment.renal_colors["Control"]
+    }
+
+    element_unique = ["captopril"]
+
+    # creating dataset from PK data
+    def datasets(self) -> Dict[str, DataSet]:
+        Q_ = self.Q_
+
+        dsets = {}
+        self.reset_state()
+        self.regimens = []
+        for fig_id in ["Fig1"]:
+            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
+            for label, df_label in df.groupby("label"):
+                dset = DataSet.from_df(df_label, self.ureg)
+                for element in self.element_unique:
+                    if element in label and "excretion" not in label:
+                        self.data_collection(element=element, label=label)
+                        dset.unit_conversion(
+                            self.data_type, self.conversion_factor
+                        )
+
+                        if "chronic" in label:
+                            self.regimens.append("chronic")
+                            #dset["time"] = dset["time"] + 30 * 6 * 24 + 26 #shift to the last day: 6 months + 1 day more + 14 hours before the last dose instead of 12
+                        else:
+                            self.regimens.append("acute")
+                        dsets[f"{label}"] = dset
+
+                        break
+        # console.print(dsets.keys())
+        # console.print(dsets)
+        return dsets
+
+    def simulations(self) -> Dict[str, TimecourseSim]:
+        Q_ = self.Q_
+        tcsims = {}
+
+        tc = Timecourse(
+            start=0,
+            end=6 * 60,  # minutes
+            steps=100,
+            changes={
+                **self.default_changes(),
+                f"{self.route}DOSE_cap": Q_(self.dose, "mg"),
+            },
+        )
+        tc_night = Timecourse(
+            start=0,
+            end=6 * 60,  # minutes
+            steps=5,
+            changes={
+                f"{self.route}DOSE_cap": Q_(0, "mg"),
+            },
+        )
+        tc_night_end = Timecourse(
+            start=0,
+            end=8 * 60,  # minutes
+            steps=100,
+            changes={
+                f"{self.route}DOSE_cap": Q_(0, "mg"),
+            },
+        )
+        tc_end = Timecourse(
+            start=0,
+            end=5 * 60,  # minutes
+            steps=100,
+            changes={
+                f"{self.route}DOSE_cap": Q_(self.dose, "mg"),
+            },
+        )
+        tcsims[f"cap_{self.route}_{self.dose}_acute"] = TimecourseSim(
+            timecourses=tc,
+        )
+        tcsims[f"cap_{self.route}_{self.dose}_chronic"] = TimecourseSim(
+            timecourses=([tc, tc, tc, tc_night]) * (30*6) + [tc, tc, tc, tc_night_end] + [tc_end],
+            time_offset=-(30 * 6 * 24 + 26) * 60
+        )
+
+        return tcsims
+
+    def fit_mappings(self) -> Dict[str, FitMapping]:
+        mappings = {}
+        for kr, label in enumerate(self.clabels):
+            element = self.element_ids[kr]
+            regimen = self.regimens[kr]
+            mappings[
+                f"fm_cap{self.route}{self.dose}_{element}_plasma_{regimen}"
+            ] = FitMapping(
+                self,
+                reference=FitData(
+                    self,
+                    dataset=label,
+                    xid="time",
+                    yid="mean",
+                    yid_sd="mean_sd",
+                    count="count",
+                ),
+                observable=FitData(
+                    self,
+                    task=f"task_cap_{self.route}_{self.dose}_{regimen}",
+                    xid="time",
+                    yid=self.yids[kr],
+                ),
+                metadata=CaptoprilMappingMetaData(
+                    tissue=Tissue.PLASMA,
+                    route=Route.PO,
+                    dosing=Dosing.SINGLE if regimen == "acute" else Dosing.MULTIPLE,
+                    health=Health.HEALTHY,
+                    fasting=Fasting.FASTING,
+                    data=PKPDData.PK,
+                ),
+            )
+        return mappings
+
+    def figures(self) -> Dict[str, Figure]:
+        fig = Figure(
+            experiment=self,
+            sid="PK",
+            num_rows=1,
+            num_cols=1,
+            name=f"{self.__class__.__name__}",
+            height=self.panel_height,
+            width=self.panel_width * 1,
+        )
+        plots = fig.create_plots(
+            xaxis=Axis(self.labels["time"], unit="hr"), legend=True
+        )
+        plots[0].set_yaxis(self.labels["[Cve_cap]"], unit=self.units["[Cve_cap]"])
+        plots[0].xaxis.min = -15  # [hr]
+        plots[0].xaxis.max = 5  # [hr]
+        plots[0].yaxis.max = 15
+        for (kp, regimen_unique), limits in zip(enumerate(["acute", "chronic"]), [(-0.01, 0.21), (-0.01, 0.21)]):
+            # simulation
+            plots[0].add_data(
+                task=f"task_cap_{self.route}_{self.dose}_{regimen_unique}",
+                xid="time",
+                yid="[Cve_cap]",
+                label=f"sim: {regimen_unique} {self.dose}mg PO",
+                color=self.regimen_colors[regimen_unique],
+            )
+            for kr, regimen in enumerate(self.regimens):
+                if regimen == regimen_unique:
+                    plots[0].add_data(
+                        dataset=self.clabels[kr],
+                        xid="time",
+                        yid="mean",
+                        yid_sd="mean_sd",
+                        count="count",
+                        label=f"exp: {regimen} {self.dose}mg PO",
+                        color=self.regimen_colors[f"{regimen}"],
+                    )
+
+        return {
+            fig.sid: fig,
+        }
+
+
+if __name__ == "__main__":
+    run_experiments(Jarrott1982, output_dir=Jarrott1982.__name__)
+</code>
+        </pre>
+            </p>
+
+        </v-content>
+    </v-app>
+</div>
+
+
+<!-- loading dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.2.6/dist/vuetify.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+    const app = new Vue({
+        el: '#app',
+        vuetify: new Vuetify(),
+        delimiters: ['${', '}'],
+        data() {
+            return {}
+        }
+    })
+</script>
+
+
+</body>
+</html>

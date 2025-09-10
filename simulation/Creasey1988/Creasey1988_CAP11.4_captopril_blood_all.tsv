@@ -1,0 +1,10 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Creasey1988		all	7.0	CAP11.4	concentration	captopril	blood	scintillation counting	CAP11.4_captopril_blood_all	0.08	hr		0.0036476493120643394	497.996668054977	0.0004555799770437068	0.00017219304593688012		mole/meter^3	ng/ml
+Creasey1988		all	7.0	CAP11.4	concentration	captopril	blood	scintillation counting	CAP11.4_captopril_blood_all	0.25	hr		0.002411756886254681	326.668054977093	0.0002484981692965706	9.392347960193601e-05		mole/meter^3	ng/ml
+Creasey1988		all	7.0	CAP11.4	concentration	captopril	blood	scintillation counting	CAP11.4_captopril_blood_all	0.5	hr		0.0011917100542826243	175.760099958351	0.0004139100459337821	0.00015644329238458706		mole/meter^3	ng/ml
+Creasey1988		all	7.0	CAP11.4	concentration	captopril	blood	scintillation counting	CAP11.4_captopril_blood_all	1.0	hr		0.0004112452756466185	59.6385542168675	0.0001222531154169846	4.620733434231685e-05		mole/meter^3	ng/ml
+Creasey1988		all	7.0	CAP11.4	concentration	captopril	blood	scintillation counting	CAP11.4_captopril_blood_all	2.0	hr		0.00015653913266988902	22.6530612244898	4.555799770437061e-05	1.7219304593688012e-05		mole/meter^3	ng/ml
+Creasey1988		all	7.0	CAP11.4	concentration	captopril	blood	scintillation counting	CAP11.4_captopril_blood_all	3.0	hr		6.903375750742113e-05	9.70588235294117	1.4325188582978271e-05	5.414412353523175e-06		mole/meter^3	ng/ml
+Creasey1988		all	7.0	CAP11.4	concentration	captopril	blood	scintillation counting	CAP11.4_captopril_blood_all	4.0	hr		3.874144879858097e-05	3.45177664974619	3.244982439164531e-05	1.2264880775430197e-05		mole/meter^3	ng/ml
+Creasey1988		all	7.0	CAP11.4	concentration	captopril	blood	scintillation counting	CAP11.4_captopril_blood_all	6.0	hr		4.107761656532957e-05	2.00507614213198	4.6871968565709704e-05	1.7715938897843538e-05		mole/meter^3	ng/ml
+Creasey1988		all	7.0	CAP11.4	concentration	captopril	blood	scintillation counting	CAP11.4_captopril_blood_all	8.0	hr		2.375103896194407e-05	2.56345177664974	2.62689054599032e-05	9.928713008681533e-06		mole/meter^3	ng/ml

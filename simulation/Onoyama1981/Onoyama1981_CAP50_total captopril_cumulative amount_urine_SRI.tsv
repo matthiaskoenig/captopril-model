@@ -1,0 +1,4 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Onoyama1981		SRI	7.0	CAP50	cumulative amount	total captopril	urine	HPLC	CAP50_total captopril_cumulative amount_urine_SRI	2.0	hr		1.1702297871986836e-05	3.30798479087453	1.3932616471774988e-05	5.266034042394146e-06		mole	mg
+Onoyama1981		SRI	7.0	CAP50	cumulative amount	total captopril	urine	HPLC	CAP50_total captopril_cumulative amount_urine_SRI	4.0	hr		3.042597446716587e-05	7.18631178707224	1.7028753465502576e-05	6.436263829592742e-06		mole	mg
+Onoyama1981		SRI	7.0	CAP50	cumulative amount	total captopril	urine	HPLC	CAP50_total captopril_cumulative amount_urine_SRI	6.0	hr		4.388361701995075e-05	10.4942965779468	2.6317164446685953e-05	9.94695319118884e-06		mole	mg

@@ -1,0 +1,6 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Giudicelli1984		NRF	10.0	CAP1	ACE inhibition		plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_NRF	0.987202498474351	hr		0.8719101123595501	90.1123595505618	0.0923811451285164	0.029213483146068		dimensionless	percent
+Giudicelli1984		NRF	10.0	CAP1	ACE inhibition		plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_NRF	2.9526510392361	hr		0.773033707865168	79.5505617977528	0.0710624193296283	0.022471910112360098		dimensionless	percent
+Giudicelli1984		NRF	10.0	CAP1	ACE inhibition		plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_NRF	5.92332268370607	hr		0.602247191011236	63.5955056179775	0.10659362899443901	0.033707865168539		dimensionless	percent
+Giudicelli1984		NRF	10.0	CAP1	ACE inhibition		plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_NRF	9.89013533402735	hr		0.40898876404494305	45.1685393258427	0.135018596726293	0.042696629213483994		dimensionless	percent
+Giudicelli1984		NRF	10.0	CAP1	ACE inhibition		plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_NRF	23.8629428868866	hr		0.148314606741573	18.4269662921348	0.113699870927402	0.035955056179775		dimensionless	percent

@@ -1,0 +1,10 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit
+Cohen1984		all	7.0	CAP100	concentration	captopril disulfide metabolites	plasma	calculated	CAP100_concentration_captopril disulfide metabolites_all	0.5	hr		0.0010507835359906367							mole/meter^3	ng/ml
+Cohen1984		all	7.0	CAP100	concentration	captopril disulfide metabolites	plasma	calculated	CAP100_concentration_captopril disulfide metabolites_all	1.0	hr		0.0038181936406788478							mole/meter^3	ng/ml
+Cohen1984		all	7.0	CAP100	concentration	captopril disulfide metabolites	plasma	calculated	CAP100_concentration_captopril disulfide metabolites_all	2.0	hr		0.004692112621106703							mole/meter^3	ng/ml
+Cohen1984		all	7.0	CAP100	concentration	captopril disulfide metabolites	plasma	calculated	CAP100_concentration_captopril disulfide metabolites_all	3.0	hr		0.003563300604720723							mole/meter^3	ng/ml
+Cohen1984		all	7.0	CAP100	concentration	captopril disulfide metabolites	plasma	calculated	CAP100_concentration_captopril disulfide metabolites_all	4.0	hr		0.002879250926588205							mole/meter^3	ng/ml
+Cohen1984		all	7.0	CAP100	concentration	captopril disulfide metabolites	plasma	calculated	CAP100_concentration_captopril disulfide metabolites_all	6.0	hr		0.00169061707523246							mole/meter^3	ng/ml
+Cohen1984		all	7.0	CAP100	concentration	captopril disulfide metabolites	plasma	calculated	CAP100_concentration_captopril disulfide metabolites_all	8.0	hr		0.0011626243578906302							mole/meter^3	ng/ml
+Cohen1984		all	7.0	CAP100	concentration	captopril disulfide metabolites	plasma	calculated	CAP100_concentration_captopril disulfide metabolites_all	12.0	hr		0.0007022563235580987							mole/meter^3	ng/ml
+Cohen1984		all	7.0	CAP100	concentration	captopril disulfide metabolites	plasma	calculated	CAP100_concentration_captopril disulfide metabolites_all	24.0	hr		0.00020807594772091816							mole/meter^3	ng/ml

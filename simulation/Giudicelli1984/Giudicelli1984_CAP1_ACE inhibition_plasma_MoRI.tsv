@@ -1,0 +1,6 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Giudicelli1984		MoRI	10.0	CAP1	ACE inhibition		plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_MoRI	0.860878773737301	hr		0.759550561797752	83.8202247191011	0.248718467653695	0.0786516853932591	not possible to identify an error at all	dimensionless	percent
+Giudicelli1984		MoRI	10.0	CAP1	ACE inhibition		plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_MoRI	2.98031015543669	hr		0.822471910112359	85.8426966292134	0.113699870927402	0.0359550561797751		dimensionless	percent
+Giudicelli1984		MoRI	10.0	CAP1	ACE inhibition		plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_MoRI	5.93694583049143	hr		0.728089887640449	78.2022471910112	0.170549806391104	0.053932584269663		dimensionless	percent
+Giudicelli1984		MoRI	10.0	CAP1	ACE inhibition		plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_MoRI	9.81376314750332	hr		0.6247191011235951	69.2134831460674	0.213187257988881	0.06741573033707901		dimensionless	percent
+Giudicelli1984		MoRI	10.0	CAP1	ACE inhibition		plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_MoRI	23.870373694224	hr		0.307865168539325	38.6516853932584	0.24871846765369401	0.07865168539325901		dimensionless	percent

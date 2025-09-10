@@ -1,0 +1,2 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit
+Duchin1984		MiRI	4.0	CAP100	recovery	captopril+metabolites	feces	scintillation counting	CAP100_recovery_captopril+metabolites_feces_MiRI	120.0	hr		5.324428508775305e-05		3.693245208399055e-05	1.8466226041995274e-05				mole	percent

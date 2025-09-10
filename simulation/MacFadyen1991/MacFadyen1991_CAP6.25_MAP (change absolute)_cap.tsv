@@ -1,0 +1,29 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	0.0	hr		0.0							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	0.113636363636363	hr		-38.821844611264694							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	0.181818181818181	hr		-431.1268006829878							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	0.272727272727272	hr		-643.6253185551722							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	0.363636363636363	hr		-856.1238364273567							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	0.545454545454545	hr		-905.1619559363218							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	0.681818181818181	hr		-1477.2733502075805							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	0.863636363636363	hr		-1804.194146934019							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	1.0	hr		-2163.807023333095	-30.4521072796934	1896.1406210133305	547.3686489817153				kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	1.25	hr		-2327.267421696321							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	1.5	hr		-2376.3055412052836							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	1.75	hr		-2000.3466249698824							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	2.0	hr		-2131.114943660458	-24.0766283524904	1078.8386291972406	311.4338864895968				kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	2.5	hr		-1706.1179079160809							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	3.0	hr		-1722.4639477524063	-21.9923371647509	1209.6069478878162	349.18344848833624				kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	3.5	hr		-1640.7337485707933							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	4.0	hr		-1804.194146934019							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	4.5	hr		-1787.8481070976939							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	5.0	hr		-1787.8481070976939							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	5.5	hr		-1281.1208721717242							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	6.0	hr		-970.5461152816096							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	6.5	hr		-1232.0827526627588							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	7.0	hr		-823.4317567547128							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	7.5	hr		-627.279278718851							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	8.0	hr		-414.7807608466665							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	9.0	hr		-349.3966015013788							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	10.0	hr		-823.4317567547128							kilogram/meter/second^2	mmHg
+MacFadyen1991		cap	12.0	CAP6.25	MAP (change absolute)			sphygmomanometer	CAP6.25_MAP (change absolute)_cap	24.0	hr		-1019.5842347905747							kilogram/meter/second^2	mmHg

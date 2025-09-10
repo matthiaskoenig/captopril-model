@@ -1,0 +1,8 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit
+Nishida1990		group1	7.0	CAP12_5	concentration	aldosterone	plasma	RIA	CAP12_5_aldosterone_plasma_group1	0.0	hr		4.466713275848676e-05		3.9118420614575356e-05	1.4785373232541254e-05				mole/meter^3	ng/ml
+Nishida1990		group1	7.0	CAP12_5	concentration	aldosterone	plasma	RIA	CAP12_5_aldosterone_plasma_group1	0.5	hr		3.7026905294346975e-05	11.0725865149209	3.337672249564676e-05	1.2615215328842373e-05				mole/meter^3	ng/ml
+Nishida1990		group1	7.0	CAP12_5	concentration	aldosterone	plasma	RIA	CAP12_5_aldosterone_plasma_group1	1.0	hr		2.529284586740265e-05	8.50989214583473	8.907582808063889e-06	3.3667498418359306e-06				mole/meter^3	ng/ml
+Nishida1990		group1	7.0	CAP12_5	concentration	aldosterone	plasma	RIA	CAP12_5_aldosterone_plasma_group1	1.5	hr		2.49110116432468e-05	7.31158605174355	2.447885351834407e-05	9.252136969930974e-06				mole/meter^3	ng/ml
+Nishida1990		group1	7.0	CAP12_5	concentration	aldosterone	plasma	RIA	CAP12_5_aldosterone_plasma_group1	2.0	hr		2.2421746220384388e-05	7.02044597366506	1.55809845410413e-05	5.8890586110195774e-06				mole/meter^3	ng/ml
+Nishida1990		group1	7.0	CAP12_5	concentration	aldosterone	plasma	RIA	CAP12_5_aldosterone_plasma_group1	4.0	hr		3.559869843668698e-05	14.951366373321	3.112311375903719e-05	1.1763431290340747e-05				mole/meter^3	ng/ml
+Nishida1990		group1	7.0	CAP12_5	concentration	aldosterone	plasma	RIA	CAP12_5_aldosterone_plasma_group1	6.0	hr		2.5230430657684912e-05	7.88129424998348	1.7805451785366882e-05	6.729828200747383e-06				mole/meter^3	ng/ml

@@ -1,0 +1,12 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Jankowski1995		50mg	6.0	CAP50	concentration	captopril	plasma	HPLC/UV	CAP50_captopril_plasma_50mg	0.25	hr		0.0005105621648986354	195.833333333333	0.0003907118914482514	0.0001595074617476512		mole/meter^3	ng/ml
+Jankowski1995		50mg	6.0	CAP50	concentration	captopril	plasma	HPLC/UV	CAP50_captopril_plasma_50mg	0.5	hr		0.0010594764173013922	390.104166666667	0.0007358806789853556	0.00030042202918115885		mole/meter^3	ng/ml
+Jankowski1995		50mg	6.0	CAP50	concentration	captopril	plasma	HPLC/UV	CAP50_captopril_plasma_50mg	0.75	hr		0.0009875662532311618	298.4375	0.00038591788051023585	0.00015755031497774122		mole/meter^3	ng/ml
+Jankowski1995		50mg	6.0	CAP50	concentration	captopril	plasma	HPLC/UV	CAP50_captopril_plasma_50mg	1.0	hr		0.0009252441110369653	301.5625	0.0004626220555184803	0.00018886466329629843		mole/meter^3	ng/ml
+Jankowski1995		50mg	6.0	CAP50	concentration	captopril	plasma	HPLC/UV	CAP50_captopril_plasma_50mg	1.5	hr		0.0005680902961548197	166.666666666667	0.00019895145392763742	8.122159095125803e-05		mole/meter^3	ng/ml
+Jankowski1995		50mg	6.0	CAP50	concentration	captopril	plasma	HPLC/UV	CAP50_captopril_plasma_50mg	2.0	hr		0.0003835208750412288	112.5	0.0001342323062644301	5.48001095574752e-05		mole/meter^3	ng/ml
+Jankowski1995		50mg	6.0	CAP50	concentration	captopril	plasma	HPLC/UV	CAP50_captopril_plasma_50mg	2.5	hr		0.00032838974925405203	91.6666666666667	9.348321329129944e-05	3.8164362013241726e-05		mole/meter^3	ng/ml
+Jankowski1995		50mg	6.0	CAP50	concentration	captopril	plasma	HPLC/UV	CAP50_captopril_plasma_50mg	3.0	hr		0.0002660676070598523	70.8333333333334	5.992513672519225e-05	2.4464334623872975e-05		mole/meter^3	ng/ml
+Jankowski1995		50mg	6.0	CAP50	concentration	captopril	plasma	HPLC/UV	CAP50_captopril_plasma_50mg	4.0	hr		0.00020374546486565294	48.4375	1.917604375206121e-05	7.82858707963923e-06		mole/meter^3	ng/ml
+Jankowski1995		50mg	6.0	CAP50	concentration	captopril	plasma	HPLC/UV	CAP50_captopril_plasma_50mg	5.0	hr		0.00015820236095450674	40.6250000000001	2.876406562809232e-05	1.1742880619459051e-05		mole/meter^3	ng/ml
+Jankowski1995		50mg	6.0	CAP50	concentration	captopril	plasma	HPLC/UV	CAP50_captopril_plasma_50mg	6.0	hr		0.00013902631720244562	40.6250000000001	4.794010938015371e-05	1.957146769909828e-05		mole/meter^3	ng/ml

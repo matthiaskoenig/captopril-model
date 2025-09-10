@@ -1,0 +1,14 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Foster2009		all	9.0	CAP25	concentration	total captopril	plasma	GC/MS	CAP25_total captopril_plasma_all	0.25	hr		0.0003322269545891434	144.688028731465	0.00011308001943184469	3.7693339810614997e-05		mole/meter^3	ng/ml
+Foster2009		all	9.0	CAP25	concentration	total captopril	plasma	GC/MS	CAP25_total captopril_plasma_all	0.5	hr		0.0011507730138883563	420.397207516037	0.00014308529634743063	4.769509878247678e-05		mole/meter^3	ng/ml
+Foster2009		all	9.0	CAP25	concentration	total captopril	plasma	GC/MS	CAP25_total captopril_plasma_all	0.75	hr		0.0016946114737805473	498.401881163066	0.00016067784089507367	5.355928029835789e-05		mole/meter^3	ng/ml
+Foster2009		all	9.0	CAP25	concentration	total captopril	plasma	GC/MS	CAP25_total captopril_plasma_all	1.0	hr		0.0015986021187955866	577.184094373247	0.00017779987362786368	5.926662454262113e-05		mole/meter^3	ng/ml
+Foster2009		all	9.0	CAP25	concentration	total captopril	plasma	GC/MS	CAP25_total captopril_plasma_all	1.25	hr		0.0014390036081107296	423.225096949688	0.00013644189029101016	4.5480630097003394e-05		mole/meter^3	ng/ml
+Foster2009		all	9.0	CAP25	concentration	total captopril	plasma	GC/MS	CAP25_total captopril_plasma_all	1.5	hr		0.0012802488554213823	369.979487626611	0.0001415613805189502	4.7187126839650064e-05		mole/meter^3	ng/ml
+Foster2009		all	9.0	CAP25	concentration	total captopril	plasma	GC/MS	CAP25_total captopril_plasma_all	2.0	hr		0.0011130310887528278	418.683181683936	0.00017555195674006017	5.851731891335338e-05		mole/meter^3	ng/ml
+Foster2009		all	9.0	CAP25	concentration	total captopril	plasma	GC/MS	CAP25_total captopril_plasma_all	2.5	hr		0.0009232690192114274	327.548755188719	8.482920630341455e-05	2.8276402101138195e-05		mole/meter^3	ng/ml
+Foster2009		all	9.0	CAP25	concentration	total captopril	plasma	GC/MS	CAP25_total captopril_plasma_all	3.0	hr		0.0007979356650365524	294.920812628195	0.00010974340004364369	3.658113334788123e-05		mole/meter^3	ng/ml
+Foster2009		all	9.0	CAP25	concentration	total captopril	plasma	GC/MS	CAP25_total captopril_plasma_all	4.0	hr		0.0005395169912341994	198.246430717873	7.062690904163241e-05	2.354230301387746e-05		mole/meter^3	ng/ml
+Foster2009		all	9.0	CAP25	concentration	total captopril	plasma	GC/MS	CAP25_total captopril_plasma_all	6.0	hr		0.00035675943190921386	128.812091560176	3.9686101372853104e-05	1.3228700457617672e-05		mole/meter^3	ng/ml
+Foster2009		all	9.0	CAP25	concentration	total captopril	plasma	GC/MS	CAP25_total captopril_plasma_all	8.0	hr		0.00020981394718115826	75.7519694657772	2.3328218032402684e-05	7.776072677467571e-06		mole/meter^3	ng/ml
+Foster2009		all	9.0	CAP25	concentration	total captopril	plasma	GC/MS	CAP25_total captopril_plasma_all	10.0	hr		0.00017131083498974045	62.2151420270627	2.0168977661356095e-05	6.722992553785376e-06		mole/meter^3	ng/ml

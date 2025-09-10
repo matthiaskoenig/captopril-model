@@ -1,0 +1,2 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Drummer1987		EH	8.0	CAP50	blood pressure diastolic (change)			NR	CAP50_blood pressure diastolic (change)_EH	0.5	hr		-1066.57909932		377.0926569005061	133.322387415	values must be negative	kilogram/meter/second^2	mmHg

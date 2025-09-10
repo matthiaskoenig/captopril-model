@@ -1,0 +1,9 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Bahmaei1997		all	3	CAP50	concentration	captopril	serum	HPLC/UV 	CAP50_captopril	0.0	hr		0.0		0.0	0.0		mole/meter^3	ng/ml
+Bahmaei1997		all	3	CAP50	concentration	captopril	serum	HPLC/UV 	CAP50_captopril	0.5	hr		0.0015027163632935453	142.961449009796	0.0014631879607893594	0.0008447719630367581		mole/meter^3	ng/ml
+Bahmaei1997		all	3	CAP50	concentration	captopril	serum	HPLC/UV 	CAP50_captopril	1.0	hr		0.003308145274835856	778.360701952217	0.00047469563957049956	0.00027406565528917046		mole/meter^3	ng/ml
+Bahmaei1997		all	3	CAP50	concentration	captopril	serum	HPLC/UV 	CAP50_captopril	1.5	hr		0.00138029241312745	338.35788286701	0.00030642632745613317	0.00017691532264358701		mole/meter^3	ng/ml
+Bahmaei1997		all	3	CAP50	concentration	captopril	serum	HPLC/UV 	CAP50_captopril	2.0	hr		0.000851051445007971	217.171047994926	0.00025707811573028505	0.00014842411931964192		mole/meter^3	ng/ml
+Bahmaei1997		all	3	CAP50	concentration	captopril	serum	HPLC/UV 	CAP50_captopril	4.0	hr		0.0006177764742590975	146.603707097047	9.86065359986437e-05	5.6930510102673445e-05		mole/meter^3	ng/ml
+Bahmaei1997		all	3	CAP50	concentration	captopril	serum	HPLC/UV 	CAP50_captopril	6.0	hr		0.00045850597698917316	125.618436817253	0.0002071905792861205	0.00011962153672439606		mole/meter^3	ng/ml
+Bahmaei1997		all	3	CAP50	concentration	captopril	serum	HPLC/UV 	CAP50_captopril	8.0	hr		0.00031630944309552937	97.2584396363382	0.00022741525622294544	0.00013129825939814529		mole/meter^3	ng/ml

@@ -1,0 +1,18 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Massana1997		males	12.0	CAP100	concentration	captopril	plasma	HPLC	CAP100_captopril_plasma_males	0.0	hr		0.0		0.0	0.0	unchanged captopril, not clear SD	mole/meter^3	ng/ml
+Massana1997		males	12.0	CAP100	concentration	captopril	plasma	HPLC	CAP100_captopril_plasma_males	0.166666666666667	hr		0.000367741730468105	59.9047619047622	0.0003188532678406475	9.204501000989484e-05	not clear SD	mole/meter^3	ng/ml
+Massana1997		males	12.0	CAP100	concentration	captopril	plasma	HPLC	CAP100_captopril_plasma_males	0.333333333333333	hr		0.0012185006087024185	219.761904761905	0.0007174198526414524	0.00020710127252226247	Based on text of the article: units are not ug/ml, but ng/ml	mole/meter^3	ng/ml
+Massana1997		males	12.0	CAP100	concentration	captopril	plasma	HPLC	CAP100_captopril_plasma_males	0.5	hr		0.0017473211066878385	294.619047619048	0.0013558855627699934	0.0003914104473277906		mole/meter^3	ng/ml
+Massana1997		males	12.0	CAP100	concentration	captopril	plasma	HPLC	CAP100_captopril_plasma_males	0.75	hr		0.0021604278778036773	419.476190476191	0.0007963739951543778	0.0002298933702389981		mole/meter^3	ng/ml
+Massana1997		males	12.0	CAP100	concentration	captopril	plasma	HPLC	CAP100_captopril_plasma_males	1.0	hr		0.0017451295588304622	344.190476190477	0.0005579932187211312	0.00016107876751731594		mole/meter^3	ng/ml
+Massana1997		males	12.0	CAP100	concentration	captopril	plasma	HPLC	CAP100_captopril_plasma_males	1.25	hr		0.0013532808019311965	224.0	0.001116745611889509	0.00032237668982037094		mole/meter^3	ng/ml
+Massana1997		males	12.0	CAP100	concentration	captopril	plasma	HPLC	CAP100_captopril_plasma_males	1.5	hr		0.000937763328172239	168.761904761905	0.0005579932187211358	0.00016107876751731686		mole/meter^3	ng/ml
+Massana1997		males	12.0	CAP100	concentration	captopril	plasma	HPLC	CAP100_captopril_plasma_males	2.0	hr		0.000567830049846759	103.380952380953	0.00031885326784065115	9.204501000989575e-05		mole/meter^3	ng/ml
+Massana1997		males	12.0	CAP100	concentration	captopril	plasma	HPLC	CAP100_captopril_plasma_males	2.5	hr		0.0004277901417602743	72.9523809523814	0.00031885326784064383	9.204501000989392e-05		mole/meter^3	ng/ml
+Massana1997		males	12.0	CAP100	concentration	captopril	plasma	HPLC	CAP100_captopril_plasma_males	3.0	hr		0.00028796938845953055	52.5714285714291	0.00015942663392032352	4.602250500494742e-05		mole/meter^3	ng/ml
+Massana1997		males	12.0	CAP100	concentration	captopril	plasma	HPLC	CAP100_captopril_plasma_males	4.0	hr		0.00014595708730140688	41.7619047619053	0.00016018580836756332	4.624165979068504e-05		mole/meter^3	ng/ml
+Massana1997		males	12.0	CAP100	concentration	captopril	plasma	HPLC	CAP100_captopril_plasma_males	5.0	hr		9.620895093891615e-05	30.9047619047624	0.00015942663392032352	4.602250500494742e-05		mole/meter^3	ng/ml
+Massana1997		males	12.0	CAP100	concentration	captopril	plasma	HPLC	CAP100_captopril_plasma_males	6.0	hr		4.602250500494742e-08		1.594266339203235e-07	4.602250500494742e-08		mole/meter^3	ng/ml
+Massana1997		males	12.0	CAP100	concentration	captopril	plasma	HPLC	CAP100_captopril_plasma_males	8.0	hr		4.602250500494742e-08		1.594266339203235e-07	4.602250500494742e-08		mole/meter^3	ng/ml
+Massana1997		males	12.0	CAP100	concentration	captopril	plasma	HPLC	CAP100_captopril_plasma_males	10.0	hr		4.602250500494742e-08		1.594266339203235e-07	4.602250500494742e-08		mole/meter^3	ng/ml
+Massana1997		males	12.0	CAP100	concentration	captopril	plasma	HPLC	CAP100_captopril_plasma_males	24.0	hr		4.602250500494742e-08		1.594266339203235e-07	4.602250500494742e-08		mole/meter^3	ng/ml

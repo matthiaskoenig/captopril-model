@@ -1,0 +1,12 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Jehanli1996		all	18	CAP50	concentration	captopril	plasma	ELISA	CAP50_captopril_plasma_all	0.5	hr		0.002354952598982442	586.02061886861	0.0014512422873326045	0.0003420610875058541		mole/meter^3	ng/ml
+Jehanli1996		all	18	CAP50	concentration	captopril	plasma	ELISA	CAP50_captopril_plasma_all	0.75	hr		0.0029337106020020983	718.855751121331	0.0015894783433595691	0.00037464363837956966		mole/meter^3	ng/ml
+Jehanli1996		all	18	CAP50	concentration	captopril	plasma	ELISA	CAP50_captopril_plasma_all	1.0	hr		0.0025187008033734216	610.993200160352	0.00124412450424264	0.00029324295786344105		mole/meter^3	ng/ml
+Jehanli1996		all	18	CAP50	concentration	captopril	plasma	ELISA	CAP50_captopril_plasma_all	1.5	hr		0.0017212916053238742	414.71306794545	0.0007947391716797846	0.00018732181918978483		mole/meter^3	ng/ml
+Jehanli1996		all	18	CAP50	concentration	captopril	plasma	ELISA	CAP50_captopril_plasma_all	2.0	hr		0.0009483193204296062	246.7577850222	0.0007947391716797891	0.00018732181918978575		mole/meter^3	ng/ml
+Jehanli1996		all	18	CAP50	concentration	captopril	plasma	ELISA	CAP50_captopril_plasma_all	2.5	hr		0.0005093460303250109	130.136374982036	0.0003800310035989046	8.957416656863842e-05		mole/meter^3	ng/ml
+Jehanli1996		all	18	CAP50	concentration	captopril	plasma	ELISA	CAP50_captopril_plasma_all	3.0	hr		0.00023325764625490853	59.5148590489301	0.00017244061860799043	4.0644643589904364e-05		mole/meter^3	ng/ml
+Jehanli1996		all	18	CAP50	concentration	captopril	plasma	ELISA	CAP50_captopril_plasma_all	4.0	hr		8.836276403615435e-05	13.8901285086492	0.00010367704202022137	2.443691315528702e-05	SD>mean	mole/meter^3	ng/ml
+Jehanli1996		all	18	CAP50	concentration	captopril	plasma	ELISA	CAP50_captopril_plasma_all	5.0	hr		9.00615124150406e-05	14.2592410501555	0.00010367704202022137	2.443691315528702e-05	SD>mean	mole/meter^3	ng/ml
+Jehanli1996		all	18	CAP50	concentration	captopril	plasma	ELISA	CAP50_captopril_plasma_all	6.0	hr		6.735119597271924e-05	19.9381282666083	0.00010355889154498424	2.4409064821206843e-05	SD>mean	mole/meter^3	ng/ml
+Jehanli1996		all	18	CAP50	concentration	captopril	plasma	ELISA	CAP50_captopril_plasma_all	8.0	hr		5.448526562771429e-05	20.6824043748915	0.0001726769195584642	4.070034025806471e-05	SD>mean	mole/meter^3	ng/ml

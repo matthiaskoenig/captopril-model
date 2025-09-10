@@ -1,0 +1,11 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	comments	value_unit
+Creasey1986	I1	all	1.0	CAP100	concentration	total captopril	plasma	GC/MS	CAP100_total captopril_plasma_I1	0.33	hr	0.0015357744658259403		mole/meter^3
+Creasey1986	I1	all	1.0	CAP100	concentration	total captopril	plasma	GC/MS	CAP100_total captopril_plasma_I1	0.67	hr	0.005570644856001907		mole/meter^3
+Creasey1986	I1	all	1.0	CAP100	concentration	total captopril	plasma	GC/MS	CAP100_total captopril_plasma_I1	1.0	hr	0.008217470588687898		mole/meter^3
+Creasey1986	I1	all	1.0	CAP100	concentration	total captopril	plasma	GC/MS	CAP100_total captopril_plasma_I1	2.0	hr	0.006186185724068417		mole/meter^3
+Creasey1986	I1	all	1.0	CAP100	concentration	total captopril	plasma	GC/MS	CAP100_total captopril_plasma_I1	3.0	hr	0.004339563119868889		mole/meter^3
+Creasey1986	I1	all	1.0	CAP100	concentration	total captopril	plasma	GC/MS	CAP100_total captopril_plasma_I1	4.0	hr	0.0031392584271391966		mole/meter^3
+Creasey1986	I1	all	1.0	CAP100	concentration	total captopril	plasma	GC/MS	CAP100_total captopril_plasma_I1	6.0	hr	0.0017450583609685535		mole/meter^3
+Creasey1986	I1	all	1.0	CAP100	concentration	total captopril	plasma	GC/MS	CAP100_total captopril_plasma_I1	8.0	hr	0.0011879938753683625		mole/meter^3
+Creasey1986	I1	all	1.0	CAP100	concentration	total captopril	plasma	GC/MS	CAP100_total captopril_plasma_I1	16.0	hr	0.0004124123816045611		mole/meter^3
+Creasey1986	I1	all	1.0	CAP100	concentration	total captopril	plasma	GC/MS	CAP100_total captopril_plasma_I1	24.0	hr	0.00015080751267629476		mole/meter^3

@@ -1,0 +1,12 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Creasey1986		all	12.0	CAP100	concentration	total captopril	plasma	GC/MS	CAP100_total captopril_plasma_all	0.33	hr		0.0032965291189301893		0.0005093600683250363	0.00014703958628095284	not clear whether it is sem or sd	mole/meter^3	ng/ml
+Creasey1986		all	12.0	CAP100	concentration	total captopril	plasma	GC/MS	CAP100_total captopril_plasma_all	0.67	hr		0.0071661267860303		0.0008512930205359822	0.00024574712728284934		mole/meter^3	ng/ml
+Creasey1986		all	12.0	CAP100	concentration	total captopril	plasma	GC/MS	CAP100_total captopril_plasma_all	1.0	hr		0.008817930705486777		0.000900536289981303	0.0002599624347178662		mole/meter^3	ng/ml
+Creasey1986		all	12.0	CAP100	concentration	total captopril	plasma	GC/MS	CAP100_total captopril_plasma_all	2.0	hr		0.009174021097663253		0.0006749405618349274	0.00019483855753119636		mole/meter^3	ng/ml
+Creasey1986		all	12.0	CAP100	concentration	total captopril	plasma	GC/MS	CAP100_total captopril_plasma_all	3.0	hr		0.006039994767902621		0.0003210045626966845	9.266603534201451e-05		mole/meter^3	ng/ml
+Creasey1986		all	12.0	CAP100	concentration	total captopril	plasma	GC/MS	CAP100_total captopril_plasma_all	4.0	hr		0.004871390429878353		0.0004330330006847891	0.0001250058597566773		mole/meter^3	ng/ml
+Creasey1986		all	12.0	CAP100	concentration	total captopril	plasma	GC/MS	CAP100_total captopril_plasma_all	6.0	hr		0.0031161756445867023		0.0002831487993105942	8.17380177513455e-05		mole/meter^3	ng/ml
+Creasey1986		all	12.0	CAP100	concentration	total captopril	plasma	GC/MS	CAP100_total captopril_plasma_all	8.0	hr		0.0019161787222910429		0.00022221025337200982	6.414657480051244e-05		mole/meter^3	ng/ml
+Creasey1986		all	12.0	CAP100	concentration	total captopril	plasma	GC/MS	CAP100_total captopril_plasma_all	12.0	hr		0.0011738364354028329		0.0001240314849154016	3.5804805601948186e-05		mole/meter^3	ng/ml
+Creasey1986		all	12.0	CAP100	concentration	total captopril	plasma	GC/MS	CAP100_total captopril_plasma_all	16.0	hr		0.0006463179114698347		7.478821547008087e-05	2.158949816693145e-05		mole/meter^3	ng/ml
+Creasey1986		all	12.0	CAP100	concentration	total captopril	plasma	GC/MS	CAP100_total captopril_plasma_all	24.0	hr		0.0002612970984942332		3.4470288611724506e-05	9.950715204511606e-06		mole/meter^3	ng/ml

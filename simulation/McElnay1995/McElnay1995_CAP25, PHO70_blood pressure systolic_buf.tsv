@@ -1,0 +1,2 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	median	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit	median_unit
+McElnay1995		buf	8	CAP25, PHO70	blood pressure systolic			NR	CAP25, PHO70_blood pressure systolic_buf	40	min			14305.4921696295		1653.197603946	584.4936181957852				kilogram/meter/second^2	mmHg	mmHg

@@ -1,0 +1,8 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit
+MacFadyen1991		cap	12.0	CAP6.25	concentration change absolute	renin	plasma	enzymatic assay	CAP6.25_concentration change absolute_renin_cap	0.0	hr		0.0							mole/meter^3	pg/ml
+MacFadyen1991		cap	12.0	CAP6.25	concentration change absolute	renin	plasma	enzymatic assay	CAP6.25_concentration change absolute_renin_cap	2.0	hr		6.738555509876677e-11							mole/meter^3	pg/ml
+MacFadyen1991		cap	12.0	CAP6.25	concentration change absolute	renin	plasma	enzymatic assay	CAP6.25_concentration change absolute_renin_cap	4.0	hr		9.319706771264382e-12							mole/meter^3	pg/ml
+MacFadyen1991		cap	12.0	CAP6.25	concentration change absolute	renin	plasma	enzymatic assay	CAP6.25_concentration change absolute_renin_cap	6.0	hr		-1.0313070191472667e-12							mole/meter^3	pg/ml
+MacFadyen1991		cap	12.0	CAP6.25	concentration change absolute	renin	plasma	enzymatic assay	CAP6.25_concentration change absolute_renin_cap	8.0	hr		-3.862886033528744e-11							mole/meter^3	pg/ml
+MacFadyen1991		cap	12.0	CAP6.25	concentration change absolute	renin	plasma	enzymatic assay	CAP6.25_concentration change absolute_renin_cap	10.0	hr		6.900422902948183e-12							mole/meter^3	pg/ml
+MacFadyen1991		cap	12.0	CAP6.25	concentration change absolute	renin	plasma	enzymatic assay	CAP6.25_concentration change absolute_renin_cap	24.0	hr		-8.902327182941342e-12							mole/meter^3	pg/ml

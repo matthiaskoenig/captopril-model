@@ -1,0 +1,8 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+McElnay1996		all	6.0	POCAP12.5	concentration	renin	plasma	RIA	POCAP12.5_concentration_renin_plasma_all	0.0	min		1.170547957261797e-09				1 ng/mL/h of PRA ≈ 7.6 pg/mL of DRC (range: 5.5–9.7 pg/mL)	mole/meter^3	pg/ml
+McElnay1996		all	6.0	POCAP12.5	concentration	renin	plasma	RIA	POCAP12.5_concentration_renin_plasma_all	10.0	min		1.3123223992904009e-09					mole/meter^3	pg/ml
+McElnay1996		all	6.0	POCAP12.5	concentration	renin	plasma	RIA	POCAP12.5_concentration_renin_plasma_all	20.0	min		1.1814536835716891e-09					mole/meter^3	pg/ml
+McElnay1996		all	6.0	POCAP12.5	concentration	renin	plasma	RIA	POCAP12.5_concentration_renin_plasma_all	30.0	min		1.6503999148970679e-09					mole/meter^3	pg/ml
+McElnay1996		all	6.0	POCAP12.5	concentration	renin	plasma	RIA	POCAP12.5_concentration_renin_plasma_all	60.0	min		3.1204918214705812e-09		2.2724254000119184e-09	9.277137847615241e-10		mole/meter^3	pg/ml
+McElnay1996		all	6.0	POCAP12.5	concentration	renin	plasma	RIA	POCAP12.5_concentration_renin_plasma_all	120.0	min		2.20659195670158e-09					mole/meter^3	pg/ml
+McElnay1996		all	6.0	POCAP12.5	concentration	renin	plasma	RIA	POCAP12.5_concentration_renin_plasma_all	180.0	min		1.923043072644379e-09					mole/meter^3	pg/ml

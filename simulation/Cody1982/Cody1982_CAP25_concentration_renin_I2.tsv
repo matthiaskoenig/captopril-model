@@ -1,0 +1,4 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit
+Cody1982	I2	all	1.0	CAP25	concentration	renin	plasma	RIA	CAP25_concentration_renin_I2	0.0	hr	3.542179905453092e-09								pg/ml	mole/meter^3
+Cody1982	I2	all	1.0	CAP25	concentration	renin	plasma	RIA	CAP25_concentration_renin_I2	1.0	hr	1.2987992986661338e-08								pg/ml	mole/meter^3
+Cody1982	I2	all	1.0	CAP25	concentration	renin	plasma	RIA	CAP25_concentration_renin_I2	4.0	hr	1.2819317753068336e-08								pg/ml	mole/meter^3

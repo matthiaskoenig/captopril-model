@@ -1,0 +1,11 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Richer1984		all	10.0	CAP1	concentration	renin	plasma	RIA	CAP1_concentration_renin_plasma_all	0.0	hr		1.804824999445147e-10		1.866892730551943e-10	5.903633175755154e-11	1 ng/mL/h of PRA ≈ 7.6 pg/mL of DRC (range: 5.5–9.7 pg/mL)	mole/meter^3	pg/ml
+Richer1984		all	10.0	CAP1	concentration	renin	plasma	RIA	CAP1_concentration_renin_plasma_all	0.33	hr		2.7831413542845723e-10		2.026912107456395e-10	6.409658876534167e-11		mole/meter^3	pg/ml
+Richer1984		all	10.0	CAP1	concentration	renin	plasma	RIA	CAP1_concentration_renin_plasma_all	0.5	hr		3.5084448587344914e-10		4.3205231764202004e-10	1.3662693921033357e-10		mole/meter^3	pg/ml
+Richer1984		all	10.0	CAP1	concentration	renin	plasma	RIA	CAP1_concentration_renin_plasma_all	0.66	hr		3.896397895998402e-10		4.800581307133564e-10	1.5180771023370396e-10		mole/meter^3	pg/ml
+Richer1984		all	10.0	CAP1	concentration	renin	plasma	RIA	CAP1_concentration_renin_plasma_all	1.0	hr		3.980735512794904e-10		4.800581307133564e-10	1.5180771023370396e-10		mole/meter^3	pg/ml
+Richer1984		all	10.0	CAP1	concentration	renin	plasma	RIA	CAP1_concentration_renin_plasma_all	1.5	hr		4.503628736933218e-10		5.120620060942473e-10	1.6192822424928423e-10		mole/meter^3	pg/ml
+Richer1984		all	10.0	CAP1	concentration	renin	plasma	RIA	CAP1_concentration_renin_plasma_all	2.0	hr		5.987970792551657e-10		6.987512791494417e-10	2.2096455600683577e-10		mole/meter^3	pg/ml
+Richer1984		all	10.0	CAP1	concentration	renin	plasma	RIA	CAP1_concentration_renin_plasma_all	3.0	hr		5.414474998335441e-10		5.227299645545442e-10	1.6530172892114433e-10		mole/meter^3	pg/ml
+Richer1984		all	10.0	CAP1	concentration	renin	plasma	RIA	CAP1_concentration_renin_plasma_all	6.0	hr		5.110859577868032e-10		4.3205231764202004e-10	1.3662693921033357e-10		mole/meter^3	pg/ml
+Richer1984		all	10.0	CAP1	concentration	renin	plasma	RIA	CAP1_concentration_renin_plasma_all	24.0	hr		2.665068690769469e-10		3.2537273303905273e-10	1.0289189249173269e-10		mole/meter^3	pg/ml

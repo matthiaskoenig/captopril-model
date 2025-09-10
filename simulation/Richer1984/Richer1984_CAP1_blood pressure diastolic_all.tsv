@@ -1,0 +1,11 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Richer1984		all	10.0	CAP1	blood pressure diastolic			NR	CAP1_blood pressure diastolic_all	0.0	hr		12265.65964218		1306.9674627005827	413.2994009865	value at t = 0 here differes from value at TabGroups	kilogram/meter/second^2	mmHg
+Richer1984		all	10.0	CAP1	blood pressure diastolic			NR	CAP1_blood pressure diastolic_all	0.33	hr		11919.021434901002		1475.6084256296858	466.62835595250004		kilogram/meter/second^2	mmHg
+Richer1984		all	10.0	CAP1	blood pressure diastolic			NR	CAP1_blood pressure diastolic_all	0.5	hr		11452.393078948502		1306.9674627005827	413.2994009865		kilogram/meter/second^2	mmHg
+Richer1984		all	10.0	CAP1	blood pressure diastolic			NR	CAP1_blood pressure diastolic_all	0.66	hr		11159.0838266355		1475.6084256296858	466.62835595250004		kilogram/meter/second^2	mmHg
+Richer1984		all	10.0	CAP1	blood pressure diastolic			NR	CAP1_blood pressure diastolic_all	1.0	hr		11252.409497826002		1770.7301107556282	559.9540271430001		kilogram/meter/second^2	mmHg
+Richer1984		all	10.0	CAP1	blood pressure diastolic			NR	CAP1_blood pressure diastolic_all	1.5	hr		10572.4653220095		1644.2493885587996	519.9573109185001		kilogram/meter/second^2	mmHg
+Richer1984		all	10.0	CAP1	blood pressure diastolic			NR	CAP1_blood pressure diastolic_all	2.0	hr		10439.1429345945		1475.6084256296858	466.62835595250004		kilogram/meter/second^2	mmHg
+Richer1984		all	10.0	CAP1	blood pressure diastolic			NR	CAP1_blood pressure diastolic_all	3.0	hr		10345.817263404		1559.9289070942425	493.29283343550003		kilogram/meter/second^2	mmHg
+Richer1984		all	10.0	CAP1	blood pressure diastolic			NR	CAP1_blood pressure diastolic_all	6.0	hr		10332.485024662501		1517.7686663619709	479.96059469400006		kilogram/meter/second^2	mmHg
+Richer1984		all	10.0	CAP1	blood pressure diastolic			NR	CAP1_blood pressure diastolic_all	24.0	hr		10772.448903132		1981.5313144170136	626.6152208505		kilogram/meter/second^2	mmHg

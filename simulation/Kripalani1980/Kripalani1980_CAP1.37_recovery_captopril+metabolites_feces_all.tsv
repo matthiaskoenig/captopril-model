@@ -1,0 +1,6 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time_start	time_end	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit
+Kripalani1980		all	10.0	CAP1.37	recovery	captopril+metabolites	feces	scintillation counting	CAP1.37_recovery_captopril+metabolites_feces_all			24.0	hr		9.148357967791823e-06		1.368294163522975e-05	4.326926065847484e-06				mole	percent
+Kripalani1980		all	10.0	CAP1.37	recovery	captopril+metabolites	feces	scintillation counting	CAP1.37_recovery_captopril+metabolites_feces_all			48.0	hr		4.530909723237437e-05		1.4628985882334625e-05	4.626091524662532e-06				mole	percent
+Kripalani1980		all	10.0	CAP1.37	recovery	captopril+metabolites	feces	scintillation counting	CAP1.37_recovery_captopril+metabolites_feces_all			72.0	hr		5.485924119199489e-05		2.5187089656003566e-05	7.96485709438382e-06				mole	percent
+Kripalani1980		all	10.0	CAP1.37	recovery	captopril+metabolites	feces	scintillation counting	CAP1.37_recovery_captopril+metabolites_feces_all			96.0	hr		5.603369255272491e-05		9.385133394788258e-06	2.967839767203916e-06				mole	percent
+Kripalani1980		all	10.0	CAP1.37	recovery	captopril+metabolites	feces	scintillation counting	CAP1.37_recovery_captopril+metabolites_feces_all			120.0	hr		5.655910500357783e-05		2.2312968395163947e-05	7.055980148807004e-06				mole	percent

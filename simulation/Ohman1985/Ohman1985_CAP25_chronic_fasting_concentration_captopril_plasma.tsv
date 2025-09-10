@@ -1,0 +1,17 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit
+Ohman1985		chronic_fasting	7.0	CAP25_chronic_fasting	concentration	captopril	plasma	NR	CAP25_chronic_fasting_concentration_captopril_plasma	0.0	hr		0.336870411928008							umol/l	umol/l
+Ohman1985		chronic_fasting	7.0	CAP25_chronic_fasting	concentration	captopril	plasma	NR	CAP25_chronic_fasting_concentration_captopril_plasma	0.25	hr		0.677705671624664							umol/l	umol/l
+Ohman1985		chronic_fasting	7.0	CAP25_chronic_fasting	concentration	captopril	plasma	NR	CAP25_chronic_fasting_concentration_captopril_plasma	0.5	hr		1.1968896875594							umol/l	umol/l
+Ohman1985		chronic_fasting	7.0	CAP25_chronic_fasting	concentration	captopril	plasma	NR	CAP25_chronic_fasting_concentration_captopril_plasma	0.75	hr		1.84471973351884							umol/l	umol/l
+Ohman1985		chronic_fasting	7.0	CAP25_chronic_fasting	concentration	captopril	plasma	NR	CAP25_chronic_fasting_concentration_captopril_plasma	1.0	hr		2.28370007428443							umol/l	umol/l
+Ohman1985		chronic_fasting	7.0	CAP25_chronic_fasting	concentration	captopril	plasma	NR	CAP25_chronic_fasting_concentration_captopril_plasma	1.25	hr		2.61778149688649							umol/l	umol/l
+Ohman1985		chronic_fasting	7.0	CAP25_chronic_fasting	concentration	captopril	plasma	NR	CAP25_chronic_fasting_concentration_captopril_plasma	1.5	hr		2.57249183912181							umol/l	umol/l
+Ohman1985		chronic_fasting	7.0	CAP25_chronic_fasting	concentration	captopril	plasma	NR	CAP25_chronic_fasting_concentration_captopril_plasma	2.0	hr		2.58951340687018							umol/l	umol/l
+Ohman1985		chronic_fasting	7.0	CAP25_chronic_fasting	concentration	captopril	plasma	NR	CAP25_chronic_fasting_concentration_captopril_plasma	2.5	hr		2.05687435841426							umol/l	umol/l
+Ohman1985		chronic_fasting	7.0	CAP25_chronic_fasting	concentration	captopril	plasma	NR	CAP25_chronic_fasting_concentration_captopril_plasma	3.0	hr		1.76458151995022							umol/l	umol/l
+Ohman1985		chronic_fasting	7.0	CAP25_chronic_fasting	concentration	captopril	plasma	NR	CAP25_chronic_fasting_concentration_captopril_plasma	4.0	hr		1.32975947495524							umol/l	umol/l
+Ohman1985		chronic_fasting	7.0	CAP25_chronic_fasting	concentration	captopril	plasma	NR	CAP25_chronic_fasting_concentration_captopril_plasma	6.0	hr		0.733087594775155							umol/l	umol/l
+Ohman1985		chronic_fasting	7.0	CAP25_chronic_fasting	concentration	captopril	plasma	NR	CAP25_chronic_fasting_concentration_captopril_plasma	8.0	hr		0.471400295142515							umol/l	umol/l
+Ohman1985		chronic_fasting	7.0	CAP25_chronic_fasting	concentration	captopril	plasma	NR	CAP25_chronic_fasting_concentration_captopril_plasma	10.0	hr		0.366331232669474							umol/l	umol/l
+Ohman1985		chronic_fasting	7.0	CAP25_chronic_fasting	concentration	captopril	plasma	NR	CAP25_chronic_fasting_concentration_captopril_plasma	12.0	hr		0.224649781086534							umol/l	umol/l
+Ohman1985		chronic_fasting	7.0	CAP25_chronic_fasting	concentration	captopril	plasma	NR	CAP25_chronic_fasting_concentration_captopril_plasma	24.0	hr		0.0689122426827941							umol/l	umol/l

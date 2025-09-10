@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <title>Singhvi1982</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <!--<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+</head>
+
+<body>
+<div id="app">
+    <!-- Vue app-->
+    <v-app>
+        <v-content>
+
+            <a href="../index.html">Experiments</a>
+            <h1>Singhvi1982</h1>
+
+            <h2>Models</h2>
+            <p>
+            <ul>
+                <li><strong>model</strong>: <a href="../../../../models/results/models/captopril_body_flat.xml">../../../../models/results/models/captopril_body_flat.xml</a></li>
+            </ul>
+            </p>
+
+            <h2>Datasets</h2>
+            <p>
+            <ul>
+                <li><strong>CAP100_captopril_blood_fasting</strong>: <a href="Singhvi1982_CAP100_captopril_blood_fasting.tsv">Singhvi1982_CAP100_captopril_blood_fasting.tsv</a></li>
+                <li><strong>CAP100_captopril_blood_nonfasting</strong>: <a href="Singhvi1982_CAP100_captopril_blood_nonfasting.tsv">Singhvi1982_CAP100_captopril_blood_nonfasting.tsv</a></li>
+                <li><strong>CAP100_recovery_captopril_urine_fasting</strong>: <a href="Singhvi1982_CAP100_recovery_captopril_urine_fasting.tsv">Singhvi1982_CAP100_recovery_captopril_urine_fasting.tsv</a></li>
+                <li><strong>CAP100_recovery_captopril_urine_nonfasting</strong>: <a href="Singhvi1982_CAP100_recovery_captopril_urine_nonfasting.tsv">Singhvi1982_CAP100_recovery_captopril_urine_nonfasting.tsv</a></li>
+                <li><strong>CAP100_recovery_captopril+metabolites_feces_fasting</strong>: <a href="Singhvi1982_CAP100_recovery_captopril+metabolites_feces_fasting.tsv">Singhvi1982_CAP100_recovery_captopril+metabolites_feces_fasting.tsv</a></li>
+                <li><strong>CAP100_recovery_captopril+metabolites_feces_nonfasting</strong>: <a href="Singhvi1982_CAP100_recovery_captopril+metabolites_feces_nonfasting.tsv">Singhvi1982_CAP100_recovery_captopril+metabolites_feces_nonfasting.tsv</a></li>
+                <li><strong>CAP100_recovery_captopril+metabolites_urine_fasting</strong>: <a href="Singhvi1982_CAP100_recovery_captopril+metabolites_urine_fasting.tsv">Singhvi1982_CAP100_recovery_captopril+metabolites_urine_fasting.tsv</a></li>
+                <li><strong>CAP100_recovery_captopril+metabolites_urine_nonfasting</strong>: <a href="Singhvi1982_CAP100_recovery_captopril+metabolites_urine_nonfasting.tsv">Singhvi1982_CAP100_recovery_captopril+metabolites_urine_nonfasting.tsv</a></li>
+            </ul>
+            </p>
+
+            <h2>Figures</h2>
+            <p>
+            <ul>
+                <li><strong>Figure 1</strong>: <a href="Singhvi1982_Figure 1.svg">Singhvi1982_Figure 1.svg</a></li>
+                <li><strong>Tabs 1,3</strong>: <a href="Singhvi1982_Tabs 1,3.svg">Singhvi1982_Tabs 1,3.svg</a></li>
+            </ul>
+            </p>
+
+            <h3>Figure 1</h3>
+            <p>
+            <table>
+                <tr>
+                    <td>
+                        <!--<v-img src="Singhvi1982_Figure 1.svg" max-width="600" width="600"></v-img>-->
+                        <img src="Singhvi1982_Figure 1.svg" width="600">
+                    </td>
+                    <!--
+                    <td>
+                    </td>
+                    -->
+                </tr>
+            </table>
+            </p>
+            <h3>Tabs 1,3</h3>
+            <p>
+            <table>
+                <tr>
+                    <td>
+                        <!--<v-img src="Singhvi1982_Tabs 1,3.svg" max-width="600" width="600"></v-img>-->
+                        <img src="Singhvi1982_Tabs 1,3.svg" width="600">
+                    </td>
+                    <!--
+                    <td>
+                    </td>
+                    -->
+                </tr>
+            </table>
+            </p>
+
+            <h2>Code</h2>
+            <p>
+                <a href="../../../../experiments/studies/singhvi1982.py">../../../../experiments/studies/singhvi1982.py</a>
+            <pre>
+<code class="python">"""Singhvi1982 experiment"""
+
+from typing import Dict
+
+from sbmlsim.data import DataSet, load_pkdb_dataframe
+from sbmlsim.fit import FitMapping, FitData
+from sbmlutils.console import console
+
+from pkdb_models.models.captopril.experiments.base_experiment import (
+    CaptoprilSimulationExperiment,
+)
+from pkdb_models.models.captopril.experiments.metadata import Tissue, Route, Dosing, Health, Fasting, \
+    CaptoprilMappingMetaData, PKPDData
+from sbmlsim.plot import Axis, Figure
+from sbmlsim.simulation import Timecourse, TimecourseSim
+
+from pkdb_models.models.captopril.helpers import run_experiments
+
+
+class Singhvi1982(CaptoprilSimulationExperiment):
+    """Simulation experiment for Singhvi1982.
+    Determination of an effect of food on the bioavailability of captopril in healthy subjects.
+    -8 hr fasting, light breakfast for the second gruop, no food for 4 hr
+    """
+
+    route = "PO"
+    dose = 100  # mg
+    yids = []
+    clabels = []
+    states = []
+    substances = []
+    tissues = []
+
+    states_unique = [
+        "nonfasting",
+        "fasted"
+    ]
+
+
+    colors = {
+        "nonfasting": CaptoprilSimulationExperiment.fasting_colors["nonfasting"],
+        "fasted": CaptoprilSimulationExperiment.fasting_colors["fasted"],
+        "control": CaptoprilSimulationExperiment.renal_colors["Control"]
+    }
+
+    def datasets(self) -> Dict[str, DataSet]:
+        dsets = {}
+        Q_ = self.Q_
+        self.clabels = []
+        self.tissues = []
+        self.yids = []
+        self.substances = []
+        self.states = []
+        recovery_to_cumamount = Q_(self.dose, "mg") / Q_(100, "percent")
+        for fig_id in ["Fig1", "Tab3", "Tab2"]:
+            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
+            for label, df_label in df.groupby("label"):
+                dset = DataSet.from_df(df_label, self.ureg)
+                if "_captopril_" in label:
+                    if "blood" in label:
+                        dset.unit_conversion(
+                            "mean", 1 / self.Mr.cap / self.BPRatios.cap
+                        )
+                        self.yids.append("[Cve_cap]")
+                        self.tissues.append("plasma")
+                    else:
+                        dset.unit_conversion(
+                            "mean", 1 / self.Mr.cap * recovery_to_cumamount
+                        )
+                        self.yids.append("Aurine_cap")
+                        self.tissues.append("urine")
+                    self.substances.append("cap")
+                elif "_captopril+" in label and fig_id == "Tab2":
+
+                    if "urine" in label:
+                        self.yids.append("Aurine_capall")
+                        self.tissues.append("urine")
+                        dset.unit_conversion(
+                            "mean", 1 / self.Mr.capall * recovery_to_cumamount
+                        )
+                        self.substances.append("capall")
+                    else:
+                        self.yids.append("Afeces_captot")
+                        self.tissues.append("feces")
+                        dset.unit_conversion(
+                            "mean", 1 / self.Mr.captot * recovery_to_cumamount
+                        )
+                        self.substances.append("captot")
+                else:
+                    continue
+                if "nonfasting" in label:
+                    self.states.append("nonfasting")
+                else:
+                    self.states.append("fasted")
+                self.clabels.append(label)
+                dsets[f"{label}"] = dset
+        # console.print(dsets.keys())
+        # console.print(dsets)
+        return dsets
+
+    def simulations(self) -> Dict[str, TimecourseSim]:
+        Q_ = self.Q_
+        tcsims = {}
+        for state_unique in self.states_unique:
+            tcsims[f"cap_{self.route}_{self.dose}_{state_unique}"] = TimecourseSim(
+                Timecourse(
+                    start=0,
+                    end=75 * 60,  # minutes
+                    steps=1000,
+                    changes={
+                        **self.default_changes(),
+                        "BW": Q_(78.2, "kg"),
+                        "HEIGHT": Q_(181.3, "cm"),
+                        f"{self.route}DOSE_cap": Q_(self.dose, "mg"),
+                        f"GU__F_cap_abs": Q_(self.fasting_map[state_unique], "dimensionless"),
+                    },
+                )
+            )
+
+        return tcsims
+
+    def fit_mappings(self) -> Dict[str, FitMapping]:
+        mappings = {}
+        for kr, dset_id in enumerate(self.clabels):
+            tissue = self.tissues[kr]
+            substance = self.substances[kr]
+            state = self.states[kr]
+            mappings[f"fm_cap{self.route}{self.dose}_{substance}_{tissue}_{state}"] = (
+                FitMapping(
+                    self,
+                    reference=FitData(
+                        self,
+                        dataset=dset_id,
+                        xid="time",
+                        yid="mean",
+                        yid_sd="mean_sd",
+                        count="count",
+                    ),
+                    observable=FitData(
+                        self,
+                        task=f"task_cap_{self.route}_{self.dose}_{state}",
+                        xid="time",
+                        yid=self.yids[kr],
+                    ),
+                    metadata=CaptoprilMappingMetaData(
+                        tissue=(
+                            Tissue.PLASMA
+                            if "plasma" in tissue
+                            else Tissue.URINE if "urine" in tissue else Tissue.FECES
+                        ),
+                        route=Route.PO,
+                        dosing=Dosing.SINGLE,
+                        health=Health.HEALTHY,
+                        fasting=(
+                            Fasting.NONFASTING if state == "nonfasting" else Fasting.FASTING
+                        ),
+                        data=PKPDData.PK
+                    ),
+                )
+            )
+        return mappings
+
+    def figures(self) -> Dict[str, Figure]:
+        fig1 = Figure(
+            experiment=self,
+            sid="Figure 1",
+            num_rows=1,
+            num_cols=1,
+            name=f"{self.__class__.__name__}",
+            height=self.panel_height,
+            width=self.panel_width,
+        )
+        plots1 = fig1.create_plots(
+            xaxis=Axis(self.labels["time"], unit=self.units["time"]), legend=True
+        )
+        fig2 = Figure(
+            experiment=self,
+            sid="Tabs 1,3",
+            num_rows=1,
+            num_cols=3,
+            name=f"{self.__class__.__name__}",
+            height=self.panel_height,
+            width=self.panel_width * 3,
+        )
+        plots2 = fig2.create_plots(
+            xaxis=Axis(self.labels["time"], unit=self.units["time"]), legend=True
+        )
+
+        for ky, yid in enumerate(["[Cve_cap]", "Aurine_cap", "Aurine_capall", "Afeces_captot"]):
+            if yid == "[Cve_cap]":
+                plots = plots1
+                plots[ky].set_yaxis(self.labels[yid], unit=self.units[yid])
+                plots[ky].xaxis.max = 9
+                plots[ky].xaxis.min = -0.1
+                plots[ky].yaxis.max = 8
+            else:
+                plots = plots2
+                ky -= 1
+                plots[ky].set_yaxis(self.labels[yid], unit=self.units[yid])
+                plots[ky].xaxis.max = 75
+                plots[ky].xaxis.min = 0
+                plots[ky].yaxis.max = 301
+
+            for state_unique in self.states_unique:
+                plots[ky].add_data(
+                    task=f"task_cap_{self.route}_{self.dose}_{state_unique}",
+                    xid="time",
+                    yid=yid,
+                    label=f"{state_unique} sim: {self.dose}mg {self.route}",
+                    color=self.colors[state_unique],
+                )
+
+            for kr, dset_id in enumerate(self.clabels):
+                if self.yids[kr] == yid:
+                    plots[ky].add_data(
+                        dataset=dset_id,
+                        xid="time",
+                        yid="mean",
+                        yid_sd="mean_sd",
+                        count="count",
+                        label=f"{self.states[kr]} exp: {self.dose}mg {self.route}",
+                        color=self.colors[f"{self.states[kr]}"],
+                    )
+
+        return {
+            fig1.sid: fig1,
+            fig2.sid: fig2,
+        }
+
+
+if __name__ == "__main__":
+    run_experiments(Singhvi1982, output_dir=Singhvi1982.__name__)
+</code>
+        </pre>
+            </p>
+
+        </v-content>
+    </v-app>
+</div>
+
+
+<!-- loading dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.2.6/dist/vuetify.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+    const app = new Vue({
+        el: '#app',
+        vuetify: new Vuetify(),
+        delimiters: ['${', '}'],
+        data() {
+            return {}
+        }
+    })
+</script>
+
+
+</body>
+</html>

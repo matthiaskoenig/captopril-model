@@ -1,0 +1,15 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Chik2014		all	24.0	CAP25	concentration	captopril	serum	LC MS/MS	CAP25_captopril	0.0	hr		0.0	0.0	0.0	0.0		mole/meter^3	ng/ml
+Chik2014		all	24.0	CAP25	concentration	captopril	serum	LC MS/MS	CAP25_captopril	0.333333333333333	hr		0.00021809080000509512	56.9563017862652	4.403636839707343e-05	8.988886058171065e-06		mole/meter^3	ng/ml
+Chik2014		all	24.0	CAP25	concentration	captopril	serum	LC MS/MS	CAP25_captopril	0.666666666666667	hr		0.00098562096455921	194.190726977912	9.190659413367697e-05	1.8760354968714866e-05		mole/meter^3	ng/ml
+Chik2014		all	24.0	CAP25	concentration	captopril	serum	LC MS/MS	CAP25_captopril	1.0	hr		0.0008208206133481923	187.498994796335	4.2096729295501395e-05	8.592958884504224e-06		mole/meter^3	ng/ml
+Chik2014		all	24.0	CAP25	concentration	captopril	serum	LC MS/MS	CAP25_captopril	1.5	hr		0.000516182881115406	122.559182736523	4.786517897398348e-05	9.77043874443781e-06		mole/meter^3	ng/ml
+Chik2014		all	24.0	CAP25	concentration	captopril	serum	LC MS/MS	CAP25_captopril	2.0	hr		0.000309189912119039	73.8345851469644	3.0615344327399496e-05	6.249330991811675e-06		mole/meter^3	ng/ml
+Chik2014		all	24.0	CAP25	concentration	captopril	serum	LC MS/MS	CAP25_captopril	3.0	hr		0.00010770296114473847	25.4809990920269	9.566979679648387e-06	1.9528515495594863e-06		mole/meter^3	ng/ml
+Chik2014		all	24.0	CAP25	concentration	captopril	serum	LC MS/MS	CAP25_captopril	4.0	hr		5.169062504247509e-05	7.906018209173	1.5305148782388106e-05	3.1241504128525118e-06		mole/meter^3	ng/ml
+Chik2014		all	24.0	CAP25	concentration	captopril	serum	LC MS/MS	CAP25_captopril	5.0	hr		2.2500150029065605e-05	7.80184255659481	1.3405883781804036e-05	2.736464568039363e-06		mole/meter^3	ng/ml
+Chik2014		all	24.0	CAP25	concentration	captopril	serum	LC MS/MS	CAP25_captopril	6.0	hr		1.8196943765563105e-05	6.03378069160939	9.572026442271716e-06	1.9538817156661617e-06		mole/meter^3	ng/ml
+Chik2014		all	24.0	CAP25	concentration	captopril	serum	LC MS/MS	CAP25_captopril	7.0	hr		8.150521636697194e-06	3.85194044515538	9.577073204895091e-06	1.9549118817728463e-06		mole/meter^3	ng/ml
+Chik2014		all	24.0	CAP25	concentration	captopril	serum	LC MS/MS	CAP25_captopril	8.0	hr		3.8321750853242515e-06	3.32850348202552	1.1486431730726188e-05	2.34465805879942e-06		mole/meter^3	ng/ml
+Chik2014		all	24.0	CAP25	concentration	captopril	serum	LC MS/MS	CAP25_captopril	9.0	hr		1.4433741102757803e-06	3.22323124363069	1.3390743493933864e-05	2.7333740697192947e-06		mole/meter^3	ng/ml
+Chik2014		all	24.0	CAP25	concentration	captopril	serum	LC MS/MS	CAP25_captopril	10.0	hr		9.639316610583012e-07	3.12344193431892	1.3410930544427228e-05	2.7374947341460062e-06		mole/meter^3	ng/ml

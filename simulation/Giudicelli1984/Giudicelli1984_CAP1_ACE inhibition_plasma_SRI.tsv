@@ -1,0 +1,6 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Giudicelli1984		SRI	10.0	CAP1	ACE inhibition		plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_SRI	0.975643464838281	hr		0.734831460674157	83.5955056179775	0.31978088698331897	0.101123595505618	not possible to identify an error at all	dimensionless	percent
+Giudicelli1984		SRI	10.0	CAP1	ACE inhibition		plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_SRI	2.97040241232006	hr		0.876404494382022	90.3370786516854	0.08527490319555371	0.0269662921348321		dimensionless	percent
+Giudicelli1984		SRI	10.0	CAP1	ACE inhibition		plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_SRI	5.91547905373873	hr		0.844943820224719	86.5168539325842	0.063956177396662	0.020224719101123		dimensionless	percent
+Giudicelli1984		SRI	10.0	CAP1	ACE inhibition		plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_SRI	9.89385073769609	hr		0.78876404494382	82.4719101123595	0.113699870927401	0.035955056179774895		dimensionless	percent
+Giudicelli1984		SRI	10.0	CAP1	ACE inhibition		plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_SRI	23.7688193272786	hr		0.6606741573033701	71.9101123595505	0.184762290257029	0.0584269662921349		dimensionless	percent

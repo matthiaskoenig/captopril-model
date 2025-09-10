@@ -1,0 +1,11 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Jarrott1982		acute	6.0	CAP100_acute	concentration	captopril	plasma	HPLC	CAP100_acute_captopril	0.0	hr		0.0	0.0	0.0	0.0		mole/meter^3	ug/ml
+Jarrott1982		acute	6.0	CAP100_acute	concentration	captopril	plasma	HPLC	CAP100_acute_captopril	0.1666666666666666	hr		0.00033022190147054416	0.0887462235649545	0.00019157569590657887	7.821045034828541e-05		mole/meter^3	ug/ml
+Jarrott1982		acute	6.0	CAP100_acute	concentration	captopril	plasma	HPLC	CAP100_acute_captopril	0.3333333333333333	hr		0.0005387831023993049	0.147280966767371	0.00034057901494503613	0.00013904080061917753		mole/meter^3	ug/ml
+Jarrott1982		acute	6.0	CAP100_acute	concentration	captopril	plasma	HPLC	CAP100_acute_captopril	0.5	hr		0.0011644667051855992	0.294561933534743	0.0004682961455494281	0.0001911811008513703		mole/meter^3	ug/ml
+Jarrott1982		acute	6.0	CAP100_acute	concentration	captopril	plasma	HPLC	CAP100_acute_captopril	0.75	hr		0.001233987105495188	0.32477341389728	0.0006385856530219342	0.00026070150116095395		mole/meter^3	ug/ml
+Jarrott1982		acute	6.0	CAP100_acute	concentration	captopril	plasma	HPLC	CAP100_acute_captopril	1.0	hr		0.0013121975558434771	0.343655589123866	0.0006598718414559927	0.00026939155119965017		mole/meter^3	ug/ml
+Jarrott1982		acute	6.0	CAP100_acute	concentration	captopril	plasma	HPLC	CAP100_acute_captopril	1.5	hr		0.0009906657044116297	0.253021148036253	0.00042572376868128944	0.00017380100077396917		mole/meter^3	ug/ml
+Jarrott1982		acute	6.0	CAP100_acute	concentration	captopril	plasma	HPLC	CAP100_acute_captopril	2.0	hr		0.0007386542532893709	0.186933534743202	0.0002980066380769095	0.00012166070054178151		mole/meter^3	ug/ml
+Jarrott1982		acute	6.0	CAP100_acute	concentration	captopril	plasma	HPLC	CAP100_acute_captopril	3.0	hr		0.0005735433025541016	0.160498489425981	0.0004044375802472204	0.00016511095073526886		mole/meter^3	ug/ml
+Jarrott1982		acute	6.0	CAP100_acute	concentration	captopril	plasma	HPLC	CAP100_acute_captopril	4.0	hr		0.00043450250193492545	0.135951661631419	0.0004682961455494129	0.0001911811008513643		mole/meter^3	ug/ml

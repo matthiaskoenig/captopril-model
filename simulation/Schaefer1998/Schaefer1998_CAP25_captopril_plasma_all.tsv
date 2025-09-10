@@ -1,0 +1,8 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Schaefer1998		all	7.0	CAP25	concentration	captopril	plasma	HPLC	CAP25_captopril_plasma_all	0.236828267046377	hr		0.00010030184619705595	34.9291397879713	0.0001599377962502575	6.045080487398578e-05		mole/meter^3	ng/ml
+Schaefer1998		all	7.0	CAP25	concentration	captopril	plasma	HPLC	CAP25_captopril_plasma_all	0.488886772976821	hr		0.0007549508587608578	143.401420017442	0.0002512976972616416	9.498160171392871e-05		mole/meter^3	ng/ml
+Schaefer1998		all	7.0	CAP25	concentration	captopril	plasma	HPLC	CAP25_captopril_plasma_all	0.987446630325877	hr		0.0007742340062116805	208.003774017706	0.0004843086584532848	0.0001830514668661021		mole/meter^3	ng/ml
+Schaefer1998		all	7.0	CAP25	concentration	captopril	plasma	HPLC	CAP25_captopril_plasma_all	2.00414622587409	hr		0.00027401151350274293	67.0416159028104	9.135990101138275e-05	3.4530796839942476e-05		mole/meter^3	ng/ml
+Schaefer1998		all	7.0	CAP25	concentration	captopril	plasma	HPLC	CAP25_captopril_plasma_all	3.02588361569939	hr		0.00010881503411202567	27.3945211823236	4.566941060017438e-05	1.7261414710136914e-05		mole/meter^3	ng/ml
+Schaefer1998		all	7.0	CAP25	concentration	captopril	plasma	HPLC	CAP25_captopril_plasma_all	4.0217568658341	hr		6.448829479060865e-05	17.7647168296521	4.569049041120727e-05	1.7269382129805094e-05		mole/meter^3	ng/ml
+Schaefer1998		all	7.0	CAP25	concentration	captopril	plasma	HPLC	CAP25_captopril_plasma_all	6.0143862785026	hr		3.455071538911218e-05	10.886223320573	4.114252118111853e-05	1.5550411336492437e-05		mole/meter^3	ng/ml

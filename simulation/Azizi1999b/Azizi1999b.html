@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <title>Azizi1999b</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <!--<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+</head>
+
+<body>
+<div id="app">
+    <!-- Vue app-->
+    <v-app>
+        <v-content>
+
+            <a href="../index.html">Experiments</a>
+            <h1>Azizi1999b</h1>
+
+            <h2>Models</h2>
+            <p>
+            <ul>
+                <li><strong>model</strong>: <a href="../../../../models/results/models/captopril_body_flat.xml">../../../../models/results/models/captopril_body_flat.xml</a></li>
+            </ul>
+            </p>
+
+            <h2>Datasets</h2>
+            <p>
+            <ul>
+                <li><strong>CAP50s_relative ACE activity_plasma_calculated</strong>: <a href="Azizi1999b_CAP50s_relative ACE activity_plasma_calculated.tsv">Azizi1999b_CAP50s_relative ACE activity_plasma_calculated.tsv</a></li>
+                <li><strong>CAP50s_relative ACE activity_plasma_cushman</strong>: <a href="Azizi1999b_CAP50s_relative ACE activity_plasma_cushman.tsv">Azizi1999b_CAP50s_relative ACE activity_plasma_cushman.tsv</a></li>
+                <li><strong>CAP50m_relative ACE activity_plasma_AcS</strong>: <a href="Azizi1999b_CAP50m_relative ACE activity_plasma_AcS.tsv">Azizi1999b_CAP50m_relative ACE activity_plasma_AcS.tsv</a></li>
+                <li><strong>CAP50m_relative ACE activity_plasma_calculated</strong>: <a href="Azizi1999b_CAP50m_relative ACE activity_plasma_calculated.tsv">Azizi1999b_CAP50m_relative ACE activity_plasma_calculated.tsv</a></li>
+                <li><strong>CAP50m_relative ACE activity_plasma_cushman</strong>: <a href="Azizi1999b_CAP50m_relative ACE activity_plasma_cushman.tsv">Azizi1999b_CAP50m_relative ACE activity_plasma_cushman.tsv</a></li>
+                <li><strong>CAP50m_relative ACE activity_plasma_nussberger</strong>: <a href="Azizi1999b_CAP50m_relative ACE activity_plasma_nussberger.tsv">Azizi1999b_CAP50m_relative ACE activity_plasma_nussberger.tsv</a></li>
+                <li><strong>CAP50m_angiotensin II_plasma</strong>: <a href="Azizi1999b_CAP50m_angiotensin II_plasma.tsv">Azizi1999b_CAP50m_angiotensin II_plasma.tsv</a></li>
+                <li><strong>CAP50m_angiotensin I_plasma</strong>: <a href="Azizi1999b_CAP50m_angiotensin I_plasma.tsv">Azizi1999b_CAP50m_angiotensin I_plasma.tsv</a></li>
+            </ul>
+            </p>
+
+            <h2>Figures</h2>
+            <p>
+            <ul>
+                <li><strong>PD</strong>: <a href="Azizi1999b_PD.svg">Azizi1999b_PD.svg</a></li>
+            </ul>
+            </p>
+
+            <h3>PD</h3>
+            <p>
+            <table>
+                <tr>
+                    <td>
+                        <!--<v-img src="Azizi1999b_PD.svg" max-width="600" width="600"></v-img>-->
+                        <img src="Azizi1999b_PD.svg" width="600">
+                    </td>
+                    <!--
+                    <td>
+                    </td>
+                    -->
+                </tr>
+            </table>
+            </p>
+
+            <h2>Code</h2>
+            <p>
+                <a href="../../../../experiments/studies/azizi1999b.py">../../../../experiments/studies/azizi1999b.py</a>
+            <pre>
+<code class="python">"""Azizi1999b"""
+from copy import deepcopy
+from typing import Dict, Tuple, List, Hashable
+
+import numpy as np
+from sbmlsim.data import DataSet, load_pkdb_dataframe
+from sbmlsim.fit import FitMapping, FitData
+from sbmlutils.console import console
+
+from pkdb_models.models.captopril.experiments.base_experiment import (
+    CaptoprilSimulationExperiment,
+)
+from pkdb_models.models.captopril.experiments.metadata import Tissue, Route, Dosing, Health, Fasting, PKPDData,\
+    CaptoprilMappingMetaData
+from sbmlsim.plot import Axis, Figure
+from sbmlsim.simulation import Timecourse, TimecourseSim
+
+from pkdb_models.models.captopril.helpers import run_experiments
+
+
+class Azizi1999b(CaptoprilSimulationExperiment):
+    """Simulation experiment for Azizi1999b.
+    Investigation of the contribution of angiotensin-converting enzyme (ACE) and glomerular filtration to creating
+1	the new metabolic balance of the hemoregulatory peptide N-acetyl-seryl-aspartyl-lysyl-proline (AcSDKP) that
+    occurs during acute and chronic ACE inhibition.
+    """
+    dosing_regimen: list[str]
+    measurement_type: list[str]
+
+    dose = 50
+
+    ang = {
+        "ang1": 6.03,
+        "ang2": 3.38,
+    }
+
+    marker = {
+        "exp1": "s",
+        "exp2": "o",
+        "exp3": "x",
+        "exp4": "^",
+        "exp5": "*",
+        "exp6": "d"
+    }
+
+    routes = "PO"
+
+    elements_unique = ["relative ACE activity", "_angiotensin I_", "_angiotensin II_"]
+
+    def datasets(self) -> dict[str, DataSet]:
+        dsets = {}
+        self.reset_state()
+        self.dosing_regimen = []
+        self.measurement_type = []
+
+        for fig_id in ["Fig1", "Fig2", "Tab1"]:
+            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
+            for label, df_label in df.groupby("label"):
+                dset = DataSet.from_df(df_label, self.ureg)
+                for element in self.elements_unique:
+                    if element in label:
+                        self.data_collection(element=element, label=label)
+                        dset.unit_conversion(
+                            self.data_type, self.conversion_factor
+                        )
+                        dsets[f"{label}"] = dset
+                        if "CAP50m" in label:
+                            self.dosing_regimen.append("chronic")
+                        else:
+                            self.dosing_regimen.append("acute")
+
+                        if "ACE" in label:
+                            if "calculated" in label:
+                                self.measurement_type.append("2")
+                            elif "cushman" in label:
+                                self.measurement_type.append("3")
+                            elif "nussberger" in label:
+                                self.measurement_type.append("4")
+                            else:
+                                self.measurement_type.append("1")
+                        break
+        #console.print(dsets.keys())
+        #console.print(dsets)
+        return dsets
+
+    def simulations(self) -> Dict[str, TimecourseSim]:
+        # for what?
+        Q_ = self.Q_
+        tcsims = {}
+        # acute dose
+        tcsims[f"cap_{self.routes}_{self.dose}_acute"] = TimecourseSim(
+            Timecourse(
+                start=0,
+                end=24 * 60 * 8,  # minutes
+                steps=400,
+                changes={
+                    **self.default_changes(),
+                    f"{self.routes}DOSE_cap": Q_(self.dose, "mg"),
+                },
+            )
+        )
+        # chronic dosing
+        tc_start = Timecourse(
+                start=0,
+                end=12*60,  # minutes
+                steps=400,
+                changes={
+                    **self.default_changes(),
+                    f"{self.routes}DOSE_cap": Q_(self.dose, "mg"),
+                    f"[ang1]": Q_(self.ang["ang1"], "pg/ml") / self.Mr.ang1,
+                    f"[ang2]": Q_(self.ang["ang2"], "pg/ml")  / self.Mr.ang2,
+                    f"ang1_ref": Q_(self.ang["ang1"], "pg/ml") / self.Mr.ang1,
+                    f"ang2_ref": Q_(self.ang["ang2"], "pg/ml") / self.Mr.ang2
+                },
+            )
+        tc = Timecourse(
+            start=0,
+            end=12 * 60,  # minutes
+            steps=400,
+            changes={
+                **self.default_changes(),
+                f"{self.routes}DOSE_cap": Q_(self.dose, "mg"),
+            },
+        )
+        tc_end = Timecourse(
+            start=0,
+            end=24 * 60 * 4,  # minutes
+            steps=400,
+            changes={
+                **self.default_changes(),
+                f"{self.routes}DOSE_cap": Q_(0, "mg"),
+            },
+        )
+
+        tcsims[f"cap_{self.routes}_{self.dose}_chronic"] = TimecourseSim(
+            timecourses=[tc_start] + [deepcopy(tc) for _ in range(13)] + [tc_end], # 7 days two times per day
+        )
+        return tcsims
+
+    def fit_mappings(self) -> Dict[str, FitMapping]:
+        mappings = {}
+        for kr, dset_id in enumerate(self.clabels):
+            element = self.element_ids[kr]
+            dosing = self.dosing_regimen[kr]
+            mappings[f"fm_capPO_{self.dose}{element}_plasma_{dosing}_all"] = (
+                FitMapping(
+                    self,
+                    reference=FitData(
+                        self,
+                        dataset=dset_id,
+                        xid="time",
+                        yid="mean",
+                        yid_sd="mean_sd",
+                        count="count",
+                    ),
+                    observable=FitData(
+                        self,
+                        task=f"task_cap_{self.routes}_{self.dose}_{dosing}",
+                        xid="time",
+                        yid=self.yids[kr],
+                    ),
+                    metadata=CaptoprilMappingMetaData(
+                        tissue=Tissue.PLASMA,
+                        route=Route.PO,
+                        dosing=Dosing.SINGLE if dosing == "acute" else Dosing.MULTIPLE,
+                        health=Health.HEALTHY,
+                        fasting=Fasting.NR,
+                        data=PKPDData.PD
+                    ),
+                )
+            )
+        # console.print(mappings)
+        return mappings
+
+    def figures(self) -> Dict[str, Figure]:
+        return {
+            #**self.pk_figures(),
+            **self.pd_figures()
+        }
+
+    def pk_figures(self) -> Dict[str, Figure]:
+
+        yids_unique = ["[Cve_cap]", "[Cve_captot]"]
+
+        fig = Figure(
+            experiment=self,
+            sid="PK",
+            num_rows=2,
+            num_cols=2,
+            name=f"{self.__class__.__name__}",
+        )
+        plots = fig.create_plots(
+            xaxis=Axis(self.labels["time"], unit="day"), legend=True
+        )
+
+        for ky, yid_unique in enumerate(yids_unique):
+            plots[ky].set_yaxis(self.labels[yid_unique], unit=self.units[yid_unique])
+            plots[ky].xaxis.max = 1
+            plots[ky].xaxis.min = -0.1
+            plots[ky+2].set_yaxis(self.labels[yid_unique], unit=self.units[yid_unique])
+            for dosing, idx in zip(["acute", "chronic"], [0, 2]):
+                # simulation
+                plots[ky+idx].add_data(
+                    task=f"task_cap_{self.routes}_{self.dose}_{dosing}",
+                    xid="time",
+                    yid=yid_unique,
+                    label=f"sim: {dosing} {self.dose}mg PO",
+                    color=self.colors[dosing],
+                )
+
+        return {fig.sid: fig}
+
+
+    def pd_figures(self) -> Dict[str, Figure]:
+
+        yids_unique = ["ace_activity", "ace_activity", "[ang1]", "[ang2]"]
+
+        fig = Figure(
+            experiment=self,
+            sid="PD",
+            num_rows=2,
+            num_cols=2,
+            name=f"{self.__class__.__name__}",
+        )
+        plots = fig.create_plots(
+            xaxis=Axis(self.labels["time"], unit="day"), legend=True
+        )
+        for ky, yid_unique in enumerate(yids_unique):
+            plots[ky].set_yaxis(self.labels[yid_unique], unit=self.units[yid_unique])
+            if ky == 0:
+                plots[ky].xaxis.max = 1
+                plots[ky].xaxis.min = -0.1
+            kexp = 1
+            for k, yid in enumerate(self.yids):
+                if yid == yid_unique:
+                    if (yid == "ace_activity" and self.dosing_regimen[k] == "chronic" and ky != 1) or (
+                            yid == "ace_activity" and self.dosing_regimen[k] == "acute" and ky != 0):
+                        continue
+                    # dataset
+                    plots[ky].add_data(
+                        dataset=self.clabels[k],
+                        xid="time",
+                        yid="mean",
+                        yid_sd="mean_sd",
+                        count="count",
+                        label=f"exp{self.measurement_type[k]}: {self.dosing_regimen[k]} {self.dose}mg PO" if yid_unique=="ace_activity" else f"exp: {self.dosing_regimen[k]} {self.dose}mg PO",
+                        color=self.regimen_colors[self.dosing_regimen[k]],
+                        marker=self.marker[f"exp{kexp}"],
+                    )
+                    kexp += 1
+            # simulation
+            if ky == 0:
+                dosing = "acute"
+            else:
+                dosing = "chronic"
+            plots[ky].add_data(
+                task=f"task_cap_{self.routes}_{self.dose}_{dosing}",
+                xid="time",
+                yid=yid_unique,
+                label=f"sim: {dosing} {self.dose}mg PO",
+                color=self.regimen_colors[dosing],
+            )
+
+        return {fig.sid: fig}
+
+
+if __name__ == "__main__":
+    run_experiments(Azizi1999b, output_dir=Azizi1999b.__name__)
+</code>
+        </pre>
+            </p>
+
+        </v-content>
+    </v-app>
+</div>
+
+
+<!-- loading dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.2.6/dist/vuetify.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+    const app = new Vue({
+        el: '#app',
+        vuetify: new Vuetify(),
+        delimiters: ['${', '}'],
+        data() {
+            return {}
+        }
+    })
+</script>
+
+
+</body>
+</html>

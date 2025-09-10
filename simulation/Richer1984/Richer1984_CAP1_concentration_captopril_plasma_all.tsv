@@ -1,0 +1,8 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Richer1984		all	10.0	CAP1	concentration	captopril	plasma	HPLC	CAP1_concentration_captopril_plasma_all	0.33	hr		0.0017028326851830542		0.0027651828494005192	0.0008744275950940008	unchanged captopril	mole/meter^3	mg/l
+Richer1984		all	10.0	CAP1	concentration	captopril	plasma	HPLC	CAP1_concentration_captopril_plasma_all	0.5	hr		0.0029454403203166345		0.003929470364937583	0.00124260763513358		mole/meter^3	mg/l
+Richer1984		all	10.0	CAP1	concentration	captopril	plasma	HPLC	CAP1_concentration_captopril_plasma_all	0.66	hr		0.0036357778953908454		0.00320179066772692	0.001012495110108843		mole/meter^3	mg/l
+Richer1984		all	10.0	CAP1	concentration	captopril	plasma	HPLC	CAP1_concentration_captopril_plasma_all	1.0	hr		0.004326115470465056		0.002037503152189856	0.0006443150700692638		mole/meter^3	mg/l
+Richer1984		all	10.0	CAP1	concentration	captopril	plasma	HPLC	CAP1_concentration_captopril_plasma_all	1.5	hr		0.0037278229054007405		0.0017464312733055938	0.0005522700600593688		mole/meter^3	mg/l
+Richer1984		all	10.0	CAP1	concentration	captopril	plasma	HPLC	CAP1_concentration_captopril_plasma_all	2.0	hr		0.0012886301401385275		0.0007276796972106633	0.00023011252502473707		mole/meter^3	mg/l
+Richer1984		all	10.0	CAP1	concentration	captopril	plasma	HPLC	CAP1_concentration_captopril_plasma_all	3.0	hr		0.00046022505004947415		0.00043660781832639795	0.0001380675150148422		mole/meter^3	mg/l

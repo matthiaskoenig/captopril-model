@@ -1,0 +1,10 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Richer1984		all	6.0	CAP1	blood pressure diastolic (change)			RIA	CAP1_blood pressure diastolic (change)_6	0.329980162359131	hr		-91.64416016919644					kilogram/meter/second^2	mmHg
+Richer1984		all	6.0	CAP1	blood pressure diastolic (change)			RIA	CAP1_blood pressure diastolic (change)_6	0.561151990095248	hr		-625.365445279053					kilogram/meter/second^2	mmHg
+Richer1984		all	6.0	CAP1	blood pressure diastolic (change)			RIA	CAP1_blood pressure diastolic (change)_6	0.736525176920805	hr		-1077.0898302777798					kilogram/meter/second^2	mmHg
+Richer1984		all	6.0	CAP1	blood pressure diastolic (change)			RIA	CAP1_blood pressure diastolic (change)_6	1.08140467380447	hr		-907.2849532404973					kilogram/meter/second^2	mmHg
+Richer1984		all	6.0	CAP1	blood pressure diastolic (change)			RIA	CAP1_blood pressure diastolic (change)_6	1.62710862867032	hr		-1549.4270877683173					kilogram/meter/second^2	mmHg
+Richer1984		all	6.0	CAP1	blood pressure diastolic (change)			RIA	CAP1_blood pressure diastolic (change)_6	2.02217313617626	hr		-1550.3513591636336					kilogram/meter/second^2	mmHg
+Richer1984		all	6.0	CAP1	blood pressure diastolic (change)			RIA	CAP1_blood pressure diastolic (change)_6	3.10885377829678	hr		-1639.6185790355228					kilogram/meter/second^2	mmHg
+Richer1984		all	6.0	CAP1	blood pressure diastolic (change)			RIA	CAP1_blood pressure diastolic (change)_6	6.12206480296017	hr		-1974.176036540141					kilogram/meter/second^2	mmHg
+Richer1984		all	6.0	CAP1	blood pressure diastolic (change)			RIA	CAP1_blood pressure diastolic (change)_6	24.0	hr		-1819.774349623891					kilogram/meter/second^2	mmHg

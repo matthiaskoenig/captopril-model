@@ -1,0 +1,4 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit
+Singhvi1982		fasting	12.0	CAP100	recovery	captopril+metabolites	feces	scintillation counting	CAP100_recovery_captopril+metabolites_feces_fasting	24.0	hr		6.524733201504998e-06		1.8124516979646156e-05	5.2320973785653274e-06				mole	percent
+Singhvi1982		fasting	12.0	CAP100	recovery	captopril+metabolites	feces	scintillation counting	CAP100_recovery_captopril+metabolites_feces_fasting	48.0	hr		3.939461555625659e-05		2.100311673523704e-05	6.063077550455115e-06				mole	percent
+Singhvi1982		fasting	12.0	CAP100	recovery	captopril+metabolites	feces	scintillation counting	CAP100_recovery_captopril+metabolites_feces_fasting	72.0	hr		4.801218770918771e-05		1.961712426032291e-05	5.662975986211885e-06				mole	percent

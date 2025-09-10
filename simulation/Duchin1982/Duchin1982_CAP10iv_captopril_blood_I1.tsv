@@ -1,0 +1,12 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Duchin1982	I1	all	1	CAP10iv	concentration	captopril	blood	scintillation counting	CAP10iv_captopril_blood_I1	0.0879120879120879	hr	0.0036625442214972656						ng/ml	mole/meter^3
+Duchin1982	I1	all	1	CAP10iv	concentration	captopril	blood	scintillation counting	CAP10iv_captopril_blood_I1	0.153846153846154	hr	0.0031587652246830664						ng/ml	mole/meter^3
+Duchin1982	I1	all	1	CAP10iv	concentration	captopril	blood	scintillation counting	CAP10iv_captopril_blood_I1	0.241758241758242	hr	0.0023094039034030883						ng/ml	mole/meter^3
+Duchin1982	I1	all	1	CAP10iv	concentration	captopril	blood	scintillation counting	CAP10iv_captopril_blood_I1	0.32967032967033	hr	0.0017049197605531906						ng/ml	mole/meter^3
+Duchin1982	I1	all	1	CAP10iv	concentration	captopril	blood	scintillation counting	CAP10iv_captopril_blood_I1	0.477912765416248	hr	0.0007307982167660208						ng/ml	mole/meter^3
+Duchin1982	I1	all	1	CAP10iv	concentration	captopril	blood	scintillation counting	CAP10iv_captopril_blood_I1	0.709292748216427	hr	0.0006235820223359581						ng/ml	mole/meter^3
+Duchin1982	I1	all	1	CAP10iv	concentration	captopril	blood	scintillation counting	CAP10iv_captopril_blood_I1	1.00455431872964	hr	0.000539165528177245						ng/ml	mole/meter^3
+Duchin1982	I1	all	1	CAP10iv	concentration	captopril	blood	scintillation counting	CAP10iv_captopril_blood_I1	1.97144466381618	hr	0.0003567493443436355						ng/ml	mole/meter^3
+Duchin1982	I1	all	1	CAP10iv	concentration	captopril	blood	scintillation counting	CAP10iv_captopril_blood_I1	2.98495621313243	hr	0.0002590376704423376						ng/ml	mole/meter^3
+Duchin1982	I1	all	1	CAP10iv	concentration	captopril	blood	scintillation counting	CAP10iv_captopril_blood_I1	3.98413255974515	hr	0.00019416908556272791						ng/ml	mole/meter^3
+Duchin1982	I1	all	1	CAP10iv	concentration	captopril	blood	scintillation counting	CAP10iv_captopril_blood_I1	6.00098111653484	hr	9.982998346196087e-05						ng/ml	mole/meter^3

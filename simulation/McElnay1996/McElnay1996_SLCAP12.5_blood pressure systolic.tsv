@@ -1,0 +1,13 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+McElnay1996		all	6.0	SLCAP12.5, PF25	blood pressure systolic			NR	SLCAP12.5_blood pressure systolic	0.0	min		16509.311233599452		519.9573109185001	212.27168329666551		kilogram/meter/second^2	mmHg
+McElnay1996		all	6.0	SLCAP12.5, PF25	blood pressure systolic			NR	SLCAP12.5_blood pressure systolic	5.0	min		16509.311233599452		599.9507433675001	244.92886534230522		kilogram/meter/second^2	mmHg
+McElnay1996		all	6.0	SLCAP12.5, PF25	blood pressure systolic			NR	SLCAP12.5_blood pressure systolic	10.0	min		16092.012160990502		639.947459592	261.25745636512573		kilogram/meter/second^2	mmHg
+McElnay1996		all	6.0	SLCAP12.5, PF25	blood pressure systolic			NR	SLCAP12.5_blood pressure systolic	15.0	min		16225.3345484055		746.605369524	304.80036575931337		kilogram/meter/second^2	mmHg
+McElnay1996		all	6.0	SLCAP12.5, PF25	blood pressure systolic			NR	SLCAP12.5_blood pressure systolic	20.0	min		15709.376909109451		826.598801973	337.4575478049544		kilogram/meter/second^2	mmHg
+McElnay1996		all	6.0	SLCAP12.5, PF25	blood pressure systolic			NR	SLCAP12.5_blood pressure systolic	25.0	min		15776.03810281695		999.9179056125	408.2147755705091		kilogram/meter/second^2	mmHg
+McElnay1996		all	6.0	SLCAP12.5, PF25	blood pressure systolic			NR	SLCAP12.5_blood pressure systolic	30.0	min		15176.087359449451		1359.888351633	555.1720947758924		kilogram/meter/second^2	mmHg
+McElnay1996		all	6.0	SLCAP12.5, PF25	blood pressure systolic			NR	SLCAP12.5_blood pressure systolic	40.0	min		14109.50826012945		1599.8686489800002	653.1436409128157		kilogram/meter/second^2	mmHg
+McElnay1996		all	6.0	SLCAP12.5, PF25	blood pressure systolic			NR	SLCAP12.5_blood pressure systolic	60.0	min		13825.531574935501		773.2698470070001	315.68609310786127		kilogram/meter/second^2	mmHg
+McElnay1996		all	6.0	SLCAP12.5, PF25	blood pressure systolic			NR	SLCAP12.5_blood pressure systolic	90.0	min		14398.81784082		653.2796983335	266.7003200393997		kilogram/meter/second^2	mmHg
+McElnay1996		all	6.0	SLCAP12.5, PF25	blood pressure systolic			NR	SLCAP12.5_blood pressure systolic	120.0	min		15176.087359449451		666.611937075	272.14318371367364		kilogram/meter/second^2	mmHg
+McElnay1996		all	6.0	SLCAP12.5, PF25	blood pressure systolic			NR	SLCAP12.5_blood pressure systolic	180.0	min		15425.400223915502		879.927756939	359.2290025020489		kilogram/meter/second^2	mmHg

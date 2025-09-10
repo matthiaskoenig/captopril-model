@@ -1,0 +1,4229 @@
+{
+  "experiment_id": "Giudicelli1987",
+  "base_path": "/home/mkoenig/git/pkdb_models/pkdb_models/models/captopril",
+  "data_path": "[PosixPath('/home/mkoenig/git/pkdb_data/studies/captopril'), PosixPath('/home/mkoenig/git/pkdb_data/studies/hydrochlorothiazide')]",
+  "models": {
+    "model": {
+      "sid": null,
+      "name": null,
+      "language": "SBML",
+      "language_type": "SBML",
+      "source": {
+        "source": "/home/mkoenig/git/pkdb_models/pkdb_models/models/captopril/models/results/models/captopril_body_flat.xml",
+        "path": "/home/mkoenig/git/pkdb_models/pkdb_models/models/captopril/models/results/models/captopril_body_flat.xml",
+        "content": "None"
+      },
+      "changes": {}
+    }
+  },
+  "tasks": {
+    "task_cap_PO_50_acute": {
+      "model": "model",
+      "simulation": "cap_PO_50_acute"
+    },
+    "task_cap_PO_50_chronic": {
+      "model": "model",
+      "simulation": "cap_PO_50_chronic"
+    }
+  },
+  "simulations": {
+    "cap_PO_50_acute": {
+      "type": "TimecourseSim",
+      "selections": null,
+      "reset": true,
+      "time_offset": 0.0,
+      "timecourses": [
+        {
+          "start": 0,
+          "end": 4320,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            },
+            "ren_ref": {
+              "_magnitude": 6.125574272588055e-11,
+              "_units": "millimolar"
+            },
+            "[ren]": {
+              "_magnitude": 6.125574272588055e-11,
+              "_units": "millimole / liter"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        }
+      ]
+    },
+    "cap_PO_50_chronic": {
+      "type": "TimecourseSim",
+      "selections": null,
+      "reset": true,
+      "time_offset": -64800,
+      "timecourses": [
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            },
+            "ren_ref": {
+              "_magnitude": 6.125574272588055e-11,
+              "_units": "millimolar"
+            },
+            "[ren]": {
+              "_magnitude": 6.125574272588055e-11,
+              "_units": "millimole / liter"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 1440,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        },
+        {
+          "start": 0,
+          "end": 4320,
+          "steps": 500,
+          "changes": {
+            "ftissue_cap": {
+              "_magnitude": 0.09169491806168051,
+              "_units": "l_per_min"
+            },
+            "Kp_cap": {
+              "_magnitude": 6.244270560315292,
+              "_units": "dimensionless"
+            },
+            "KI__CAPEX_k": {
+              "_magnitude": 0.36529985882757193,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPSSEX_k": {
+              "_magnitude": 0.0010194029757985903,
+              "_units": "KI__per_min"
+            },
+            "KI__CAPMEEX_k": {
+              "_magnitude": 0.10688115925040337,
+              "_units": "KI__per_min"
+            },
+            "CAP2CAPSS_Vmax": {
+              "_magnitude": 0.012520847273616768,
+              "_units": "per_min"
+            },
+            "CAP2CAPME_Vmax": {
+              "_magnitude": 0.006166650126289425,
+              "_units": "per_min"
+            },
+            "LI__CAPSSEX_k": {
+              "_magnitude": 0.00014305648675425511,
+              "_units": "LI__per_min"
+            },
+            "GU__CAPABS_k": {
+              "_magnitude": 5.001158610946917,
+              "_units": "GU__per_min"
+            },
+            "ANG1ANG2_EC50_cap": {
+              "_magnitude": 0.0001,
+              "_units": "millimolar"
+            },
+            "PODOSE_cap": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        }
+      ]
+    }
+  },
+  "data": {
+    "task_cap_PO_50_acute__time": {
+      "type": "TASK",
+      "index": "time",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__Cve_cap": {
+      "type": "TASK",
+      "index": "Cve_cap",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__Aurine_cap": {
+      "type": "TASK",
+      "index": "Aurine_cap",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__Afeces_cap": {
+      "type": "TASK",
+      "index": "Afeces_cap",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__Cve_capss": {
+      "type": "TASK",
+      "index": "Cve_capss",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__Aurine_capss": {
+      "type": "TASK",
+      "index": "Aurine_capss",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__Afeces_capss": {
+      "type": "TASK",
+      "index": "Afeces_capss",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__Cve_captot": {
+      "type": "TASK",
+      "index": "Cve_captot",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__Aurine_captot": {
+      "type": "TASK",
+      "index": "Aurine_captot",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__Cve_capme": {
+      "type": "TASK",
+      "index": "Cve_capme",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__Aurine_capme": {
+      "type": "TASK",
+      "index": "Aurine_capme",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__Cve_capall": {
+      "type": "TASK",
+      "index": "Cve_capall",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__Aurine_capall": {
+      "type": "TASK",
+      "index": "Aurine_capall",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__Afeces_captot": {
+      "type": "TASK",
+      "index": "Afeces_captot",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__Afeces_capall": {
+      "type": "TASK",
+      "index": "Afeces_capall",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__KI__f_renal_function": {
+      "type": "TASK",
+      "index": "KI__f_renal_function",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__f_cardiac_function": {
+      "type": "TASK",
+      "index": "f_cardiac_function",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__GU__F_cap_abs": {
+      "type": "TASK",
+      "index": "GU__F_cap_abs",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__PODOSE_cap": {
+      "type": "TASK",
+      "index": "PODOSE_cap",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__anggen": {
+      "type": "TASK",
+      "index": "anggen",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__ang1": {
+      "type": "TASK",
+      "index": "ang1",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__ang1_change": {
+      "type": "TASK",
+      "index": "ang1_change",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__ang1_ratio": {
+      "type": "TASK",
+      "index": "ang1_ratio",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__ang2": {
+      "type": "TASK",
+      "index": "ang2",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__ang2_change": {
+      "type": "TASK",
+      "index": "ang2_change",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__ang2_ratio": {
+      "type": "TASK",
+      "index": "ang2_ratio",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__ren": {
+      "type": "TASK",
+      "index": "ren",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__ren_change": {
+      "type": "TASK",
+      "index": "ren_change",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__ren_ratio": {
+      "type": "TASK",
+      "index": "ren_ratio",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__ace": {
+      "type": "TASK",
+      "index": "ace",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__ace_activity": {
+      "type": "TASK",
+      "index": "ace_activity",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__ace_inhibition": {
+      "type": "TASK",
+      "index": "ace_inhibition",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__ald": {
+      "type": "TASK",
+      "index": "ald",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__ald_change": {
+      "type": "TASK",
+      "index": "ald_change",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__ald_ratio": {
+      "type": "TASK",
+      "index": "ald_ratio",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__ANGGEN2ANG1": {
+      "type": "TASK",
+      "index": "ANGGEN2ANG1",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__ANG1ANG2": {
+      "type": "TASK",
+      "index": "ANG1ANG2",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__ANG2DEG": {
+      "type": "TASK",
+      "index": "ANG2DEG",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__RENSEC": {
+      "type": "TASK",
+      "index": "RENSEC",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__RENDEG": {
+      "type": "TASK",
+      "index": "RENDEG",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__ALDSEC": {
+      "type": "TASK",
+      "index": "ALDSEC",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__ALDDEG": {
+      "type": "TASK",
+      "index": "ALDDEG",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__SBP": {
+      "type": "TASK",
+      "index": "SBP",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__SBP_change": {
+      "type": "TASK",
+      "index": "SBP_change",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__SBP_ratio": {
+      "type": "TASK",
+      "index": "SBP_ratio",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__SBP_change_relative": {
+      "type": "TASK",
+      "index": "SBP_change_relative",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__DBP": {
+      "type": "TASK",
+      "index": "DBP",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__DBP_change": {
+      "type": "TASK",
+      "index": "DBP_change",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__DBP_ratio": {
+      "type": "TASK",
+      "index": "DBP_ratio",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__DBP_change_relative": {
+      "type": "TASK",
+      "index": "DBP_change_relative",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__MAP": {
+      "type": "TASK",
+      "index": "MAP",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_acute__MAP_change": {
+      "type": "TASK",
+      "index": "MAP_change",
+      "unit": null,
+      "task": "task_cap_PO_50_acute",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__time": {
+      "type": "TASK",
+      "index": "time",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__Cve_cap": {
+      "type": "TASK",
+      "index": "Cve_cap",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__Aurine_cap": {
+      "type": "TASK",
+      "index": "Aurine_cap",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__Afeces_cap": {
+      "type": "TASK",
+      "index": "Afeces_cap",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__Cve_capss": {
+      "type": "TASK",
+      "index": "Cve_capss",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__Aurine_capss": {
+      "type": "TASK",
+      "index": "Aurine_capss",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__Afeces_capss": {
+      "type": "TASK",
+      "index": "Afeces_capss",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__Cve_captot": {
+      "type": "TASK",
+      "index": "Cve_captot",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__Aurine_captot": {
+      "type": "TASK",
+      "index": "Aurine_captot",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__Cve_capme": {
+      "type": "TASK",
+      "index": "Cve_capme",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__Aurine_capme": {
+      "type": "TASK",
+      "index": "Aurine_capme",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__Cve_capall": {
+      "type": "TASK",
+      "index": "Cve_capall",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__Aurine_capall": {
+      "type": "TASK",
+      "index": "Aurine_capall",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__Afeces_captot": {
+      "type": "TASK",
+      "index": "Afeces_captot",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__Afeces_capall": {
+      "type": "TASK",
+      "index": "Afeces_capall",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__KI__f_renal_function": {
+      "type": "TASK",
+      "index": "KI__f_renal_function",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__f_cardiac_function": {
+      "type": "TASK",
+      "index": "f_cardiac_function",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__GU__F_cap_abs": {
+      "type": "TASK",
+      "index": "GU__F_cap_abs",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__PODOSE_cap": {
+      "type": "TASK",
+      "index": "PODOSE_cap",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__anggen": {
+      "type": "TASK",
+      "index": "anggen",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__ang1": {
+      "type": "TASK",
+      "index": "ang1",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__ang1_change": {
+      "type": "TASK",
+      "index": "ang1_change",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__ang1_ratio": {
+      "type": "TASK",
+      "index": "ang1_ratio",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__ang2": {
+      "type": "TASK",
+      "index": "ang2",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__ang2_change": {
+      "type": "TASK",
+      "index": "ang2_change",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__ang2_ratio": {
+      "type": "TASK",
+      "index": "ang2_ratio",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__ren": {
+      "type": "TASK",
+      "index": "ren",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__ren_change": {
+      "type": "TASK",
+      "index": "ren_change",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__ren_ratio": {
+      "type": "TASK",
+      "index": "ren_ratio",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__ace": {
+      "type": "TASK",
+      "index": "ace",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__ace_activity": {
+      "type": "TASK",
+      "index": "ace_activity",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__ace_inhibition": {
+      "type": "TASK",
+      "index": "ace_inhibition",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__ald": {
+      "type": "TASK",
+      "index": "ald",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__ald_change": {
+      "type": "TASK",
+      "index": "ald_change",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__ald_ratio": {
+      "type": "TASK",
+      "index": "ald_ratio",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__ANGGEN2ANG1": {
+      "type": "TASK",
+      "index": "ANGGEN2ANG1",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__ANG1ANG2": {
+      "type": "TASK",
+      "index": "ANG1ANG2",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__ANG2DEG": {
+      "type": "TASK",
+      "index": "ANG2DEG",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__RENSEC": {
+      "type": "TASK",
+      "index": "RENSEC",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__RENDEG": {
+      "type": "TASK",
+      "index": "RENDEG",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__ALDSEC": {
+      "type": "TASK",
+      "index": "ALDSEC",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__ALDDEG": {
+      "type": "TASK",
+      "index": "ALDDEG",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__SBP": {
+      "type": "TASK",
+      "index": "SBP",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__SBP_change": {
+      "type": "TASK",
+      "index": "SBP_change",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__SBP_ratio": {
+      "type": "TASK",
+      "index": "SBP_ratio",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__SBP_change_relative": {
+      "type": "TASK",
+      "index": "SBP_change_relative",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__DBP": {
+      "type": "TASK",
+      "index": "DBP",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__DBP_change": {
+      "type": "TASK",
+      "index": "DBP_change",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__DBP_ratio": {
+      "type": "TASK",
+      "index": "DBP_ratio",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__DBP_change_relative": {
+      "type": "TASK",
+      "index": "DBP_change_relative",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__MAP": {
+      "type": "TASK",
+      "index": "MAP",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_cap_PO_50_chronic__MAP_change": {
+      "type": "TASK",
+      "index": "MAP_change",
+      "unit": null,
+      "task": "task_cap_PO_50_chronic",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    }
+  },
+  "figures": {
+    "PK": {
+      "sid": "Figure 1,2",
+      "name": "Giudicelli1987",
+      "num_rows": 1,
+      "num_cols": 2,
+      "width": 14.0,
+      "height": 5.7,
+      "subplots": [
+        {
+          "sid": null,
+          "name": null,
+          "plot": {
+            "sid": "Figure 1,2__plot0",
+            "name": null,
+            "xaxis": {
+              "sid": "Figure 1,2__plot0_xaxis",
+              "name": "time [day]",
+              "label": "time",
+              "unit": "day",
+              "scale": "LINEAR",
+              "min": -1.1,
+              "max": 1.1,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis": {
+              "sid": "Figure 1,2__plot0_yaxis",
+              "name": "captopril [\u00b5M]",
+              "label": "captopril",
+              "unit": "\u00b5M",
+              "scale": "LINEAR",
+              "min": null,
+              "max": 5.1,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis_right": null,
+            "legend": true,
+            "facecolor": "#ffffffff",
+            "title_visible": true,
+            "curves": [
+              {
+                "sid": "Figure 1,2__plot0_curve0",
+                "name": "sim: acute 50mg PO",
+                "x": "task_cap_PO_50_acute__time",
+                "y": "task_cap_PO_50_acute__Cve_cap",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#3C33FFff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#3C33FFff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#3C33FFff",
+                    "second_color": null
+                  }
+                },
+                "order": 0
+              },
+              {
+                "sid": "Figure 1,2__plot0_curve1",
+                "name": "sim: chronic 50mg PO",
+                "x": "task_cap_PO_50_chronic__time",
+                "y": "task_cap_PO_50_chronic__Cve_cap",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#000000ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 1
+              },
+              {
+                "sid": "Figure 1,2__plot0_curve2",
+                "name": "exp: acute 50mg PO\u00b1SD (n=7)",
+                "x": "CAP50_acute_captopril_plasma_captopril_mono__time",
+                "y": "CAP50_acute_captopril_plasma_captopril_mono__mean",
+                "xerr": null,
+                "yerr": "CAP50_acute_captopril_plasma_captopril_mono__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#3C33FFff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#3C33FFff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#3C33FFff",
+                    "second_color": null
+                  }
+                },
+                "order": 2
+              },
+              {
+                "sid": "Figure 1,2__plot0_curve3",
+                "name": "exp: chronic 50mg PO\u00b1SD (n=7)",
+                "x": "CAP50_chronic_captopril_plasma_captopril_mono__time",
+                "y": "CAP50_chronic_captopril_plasma_captopril_mono__mean",
+                "xerr": null,
+                "yerr": "CAP50_chronic_captopril_plasma_captopril_mono__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#000000ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 3
+              }
+            ],
+            "areas": []
+          },
+          "row": 1,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1
+        },
+        {
+          "sid": null,
+          "name": null,
+          "plot": {
+            "sid": "Figure 1,2__plot1",
+            "name": null,
+            "xaxis": {
+              "sid": "Figure 1,2__plot1_xaxis",
+              "name": "time [day]",
+              "label": "time",
+              "unit": "day",
+              "scale": "LINEAR",
+              "min": -1.1,
+              "max": 1.1,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis": {
+              "sid": "Figure 1,2__plot1_yaxis",
+              "name": "captopril + capss [\u00b5M]",
+              "label": "captopril + capss",
+              "unit": "\u00b5M",
+              "scale": "LINEAR",
+              "min": null,
+              "max": 5.1,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis_right": null,
+            "legend": true,
+            "facecolor": "#ffffffff",
+            "title_visible": true,
+            "curves": [
+              {
+                "sid": "Figure 1,2__plot1_curve0",
+                "name": "sim: acute 50mg PO",
+                "x": "task_cap_PO_50_acute__time",
+                "y": "task_cap_PO_50_acute__Cve_captot",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#3C33FFff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#3C33FFff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#3C33FFff",
+                    "second_color": null
+                  }
+                },
+                "order": 0
+              },
+              {
+                "sid": "Figure 1,2__plot1_curve1",
+                "name": "sim: chronic 50mg PO",
+                "x": "task_cap_PO_50_chronic__time",
+                "y": "task_cap_PO_50_chronic__Cve_captot",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#000000ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 1
+              },
+              {
+                "sid": "Figure 1,2__plot1_curve2",
+                "name": "exp: acute 50mg PO\u00b1SD (n=7)",
+                "x": "CAP50_acute _total captopril_plasma_captopril_mono__time",
+                "y": "CAP50_acute _total captopril_plasma_captopril_mono__mean",
+                "xerr": null,
+                "yerr": "CAP50_acute _total captopril_plasma_captopril_mono__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#3C33FFff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#3C33FFff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#3C33FFff",
+                    "second_color": null
+                  }
+                },
+                "order": 2
+              },
+              {
+                "sid": "Figure 1,2__plot1_curve3",
+                "name": "exp: chronic 50mg PO\u00b1SD (n=7)",
+                "x": "CAP50_chronic_total captopril_plasma_captopril_mono__time",
+                "y": "CAP50_chronic_total captopril_plasma_captopril_mono__mean",
+                "xerr": null,
+                "yerr": "CAP50_chronic_total captopril_plasma_captopril_mono__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#000000ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 3
+              }
+            ],
+            "areas": []
+          },
+          "row": 1,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1
+        }
+      ]
+    },
+    "PD": {
+      "sid": "PD",
+      "name": "Giudicelli1987",
+      "num_rows": 1,
+      "num_cols": 2,
+      "width": 14.0,
+      "height": 5.7,
+      "subplots": [
+        {
+          "sid": null,
+          "name": null,
+          "plot": {
+            "sid": "PD__plot0",
+            "name": null,
+            "xaxis": {
+              "sid": "PD__plot0_xaxis",
+              "name": "time [day]",
+              "label": "time",
+              "unit": "day",
+              "scale": "LINEAR",
+              "min": -1.1,
+              "max": 1.1,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis": {
+              "sid": "PD__plot0_yaxis",
+              "name": "renin [pM]",
+              "label": "renin",
+              "unit": "pM",
+              "scale": "LINEAR",
+              "min": null,
+              "max": 2,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis_right": null,
+            "legend": true,
+            "facecolor": "#ffffffff",
+            "title_visible": true,
+            "curves": [
+              {
+                "sid": "PD__plot0_curve0",
+                "name": "sim: acute 50mg PO",
+                "x": "task_cap_PO_50_acute__time",
+                "y": "task_cap_PO_50_acute__ren",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#3C33FFff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#3C33FFff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#3C33FFff",
+                    "second_color": null
+                  }
+                },
+                "order": 0
+              },
+              {
+                "sid": "PD__plot0_curve1",
+                "name": "sim: chronic 50mg PO",
+                "x": "task_cap_PO_50_chronic__time",
+                "y": "task_cap_PO_50_chronic__ren",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#000000ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 1
+              },
+              {
+                "sid": "PD__plot0_curve2",
+                "name": "exp: acute 50mg PO\u00b1SD (n=7)",
+                "x": "renin_cap50_acute__time",
+                "y": "renin_cap50_acute__mean",
+                "xerr": null,
+                "yerr": "renin_cap50_acute__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#3C33FFff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#3C33FFff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#3C33FFff",
+                    "second_color": null
+                  }
+                },
+                "order": 2
+              },
+              {
+                "sid": "PD__plot0_curve3",
+                "name": "exp: chronic 50mg PO\u00b1SD (n=7)",
+                "x": "renin_cap50_chronic__time",
+                "y": "renin_cap50_chronic__mean",
+                "xerr": null,
+                "yerr": "renin_cap50_chronic__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#000000ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 3
+              }
+            ],
+            "areas": []
+          },
+          "row": 1,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1
+        },
+        {
+          "sid": null,
+          "name": null,
+          "plot": {
+            "sid": "PD__plot1",
+            "name": null,
+            "xaxis": {
+              "sid": "PD__plot1_xaxis",
+              "name": "time [day]",
+              "label": "time",
+              "unit": "day",
+              "scale": "LINEAR",
+              "min": -1.1,
+              "max": 1.1,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis": {
+              "sid": "PD__plot1_yaxis",
+              "name": "ACE inhibition [-]",
+              "label": "ACE inhibition",
+              "unit": "dimensionless",
+              "scale": "LINEAR",
+              "min": null,
+              "max": 1.3,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis_right": null,
+            "legend": true,
+            "facecolor": "#ffffffff",
+            "title_visible": true,
+            "curves": [
+              {
+                "sid": "PD__plot1_curve0",
+                "name": "sim: acute 50mg PO",
+                "x": "task_cap_PO_50_acute__time",
+                "y": "task_cap_PO_50_acute__ace_inhibition",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#3C33FFff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#3C33FFff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#3C33FFff",
+                    "second_color": null
+                  }
+                },
+                "order": 0
+              },
+              {
+                "sid": "PD__plot1_curve1",
+                "name": "sim: chronic 50mg PO",
+                "x": "task_cap_PO_50_chronic__time",
+                "y": "task_cap_PO_50_chronic__ace_inhibition",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#000000ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 1
+              },
+              {
+                "sid": "PD__plot1_curve2",
+                "name": "exp: acute 50mg PO\u00b1SD (n=7)",
+                "x": "CAP50_acute_ACE inhibition_plasma_captopril_mono__time",
+                "y": "CAP50_acute_ACE inhibition_plasma_captopril_mono__mean",
+                "xerr": null,
+                "yerr": "CAP50_acute_ACE inhibition_plasma_captopril_mono__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#3C33FFff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#3C33FFff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#3C33FFff",
+                    "second_color": null
+                  }
+                },
+                "order": 2
+              },
+              {
+                "sid": "PD__plot1_curve3",
+                "name": "exp: chronic 50mg PO\u00b1SD (n=7)",
+                "x": "CAP50_chronic_ACE inhibition_plasma_captopril_mono__time",
+                "y": "CAP50_chronic_ACE inhibition_plasma_captopril_mono__mean",
+                "xerr": null,
+                "yerr": "CAP50_chronic_ACE inhibition_plasma_captopril_mono__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#000000ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 3
+              }
+            ],
+            "areas": []
+          },
+          "row": 1,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Jankowski1995		25mg	6.0	CAP25	concentration	captopril	plasma	HPLC/UV	CAP25_captopril_plasma_25mg	0.25	hr		0.0003811238695722208	27.6041666666667	0.00025408257971481417	0.00010372877880522079		mole/meter^3	ng/ml
+Jankowski1995		25mg	6.0	CAP25	concentration	captopril	plasma	HPLC/UV	CAP25_captopril_plasma_25mg	0.5	hr		0.0006328094438180269	51.0416666666667	0.0003979029078552744	0.00016244318190251558	not clear – sd or se	mole/meter^3	ng/ml
+Jankowski1995		25mg	6.0	CAP25	concentration	captopril	plasma	HPLC/UV	CAP25_captopril_plasma_25mg	0.75	hr		0.0005608992797477967	82.2916666666667	0.00018217241564458383	7.437157725657362e-05		mole/meter^3	ng/ml
+Jankowski1995		25mg	6.0	CAP25	concentration	captopril	plasma	HPLC/UV	CAP25_captopril_plasma_25mg	1.0	hr		0.0005201501867746647	67.7083333333334	0.00020853947580366797	8.513588449107762e-05		mole/meter^3	ng/ml
+Jankowski1995		25mg	6.0	CAP25	concentration	captopril	plasma	HPLC/UV	CAP25_captopril_plasma_25mg	1.5	hr		0.0003739328531651982	48.4375	0.00015101134454748372	6.165012325215961e-05		mole/meter^3	ng/ml
+Jankowski1995		25mg	6.0	CAP25	concentration	captopril	plasma	HPLC/UV	CAP25_captopril_plasma_25mg	2.0	hr		0.00028044963987389833	42.1875	8.62921968842764e-05	3.522864185837692e-05		mole/meter^3	ng/ml
+Jankowski1995		25mg	6.0	CAP25	concentration	captopril	plasma	HPLC/UV	CAP25_captopril_plasma_25mg	2.5	hr		0.00023970054690076765	37.5	6.711615313221483e-05	2.740005477873751e-05		mole/meter^3	ng/ml
+Jankowski1995		25mg	6.0	CAP25	concentration	captopril	plasma	HPLC/UV	CAP25_captopril_plasma_25mg	3.0	hr		0.00020374546486565294	38.0208333333333	2.8764065628092365e-05	1.1742880619459051e-05		mole/meter^3	ng/ml
+Jankowski1995		25mg	6.0	CAP25	concentration	captopril	plasma	HPLC/UV	CAP25_captopril_plasma_25mg	4.0	hr		0.00018217241564458383	27.6041666666667	5.513112578717675e-05	2.2507187853963135e-05		mole/meter^3	ng/ml
+Jankowski1995		25mg	6.0	CAP25	concentration	captopril	plasma	HPLC/UV	CAP25_captopril_plasma_25mg	5.0	hr		0.00010546824063633799	3.64583333333339	8.868920235328393e-05	3.620721524333175e-05		mole/meter^3	ng/ml
+Jankowski1995		25mg	6.0	CAP25	concentration	captopril	plasma	HPLC/UV	CAP25_captopril_plasma_25mg	6.0	hr		4.794010938015371e-05	1.56250000000004	4.074909297313035e-05	1.663574754423347e-05		mole/meter^3	ng/ml

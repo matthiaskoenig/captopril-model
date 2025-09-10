@@ -1,0 +1,6 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Drayer1983		cap50	71.0	CAP50	blood pressure diastolic (change relative)			NR	CAP50_blood pressure diastolic (change relative)_supine	0.0	week		0.0					dimensionless	dimensionless
+Drayer1983		cap50	71.0	CAP50	blood pressure diastolic (change relative)			NR	CAP50_blood pressure diastolic (change relative)_supine	2.0	week		-0.0822830633737945					dimensionless	dimensionless
+Drayer1983		cap50	71.0	CAP50	blood pressure diastolic (change relative)			NR	CAP50_blood pressure diastolic (change relative)_supine	4.0	week		-0.0924872621179768					dimensionless	dimensionless
+Drayer1983		cap50	71.0	CAP50	blood pressure diastolic (change relative)			NR	CAP50_blood pressure diastolic (change relative)_supine	6.0	week		-0.110049501810637					dimensionless	dimensionless
+Drayer1983		cap50	71.0	CAP50	blood pressure diastolic (change relative)			NR	CAP50_blood pressure diastolic (change relative)_supine	8.0	week		-0.117					dimensionless	dimensionless

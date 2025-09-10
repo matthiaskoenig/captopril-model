@@ -1,0 +1,13 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+AlFuraih1991	all	8.0	CAP25l	blood pressure systolic			sphygmomanometer	CAP25l_BPS	0.0	min		15598.719327555002		1786.5199913610002	631.6302003083479		kilogram/meter/second^2	mmHg
+AlFuraih1991	all	8.0	CAP25l	blood pressure systolic			sphygmomanometer	CAP25l_BPS	5.0	min		15732.04171497		1719.8587976535002	608.0619092520659		kilogram/meter/second^2	mmHg
+AlFuraih1991	all	8.0	CAP25l	blood pressure systolic			sphygmomanometer	CAP25l_BPS	10.0	min		14932.107390480001		2213.151631089	782.4672630685496		kilogram/meter/second^2	mmHg
+AlFuraih1991	all	8.0	CAP25l	blood pressure systolic			sphygmomanometer	CAP25l_BPS	15.0	min		14532.140228235		2373.138495987	839.0311616036257		kilogram/meter/second^2	mmHg
+AlFuraih1991	all	8.0	CAP25l	blood pressure systolic			sphygmomanometer	CAP25l_BPS	20.0	min		14398.81784082		2279.8128247965005	806.0355541248316		kilogram/meter/second^2	mmHg
+AlFuraih1991	all	8.0	CAP25l	blood pressure systolic			sphygmomanometer	CAP25l_BPS	25.0	min		14265.495453405001		2493.1286446605	881.4540855049331		kilogram/meter/second^2	mmHg
+AlFuraih1991	all	8.0	CAP25l	blood pressure systolic			sphygmomanometer	CAP25l_BPS	30.0	min		13998.850678575001		2039.8325274495003	721.1897063222182		kilogram/meter/second^2	mmHg
+AlFuraih1991	all	8.0	CAP25l	blood pressure systolic			sphygmomanometer	CAP25l_BPS	40.0	min		14132.17306599		2053.164766191	725.9033645334748		kilogram/meter/second^2	mmHg
+AlFuraih1991	all	8.0	CAP25l	blood pressure systolic			sphygmomanometer	CAP25l_BPS	60.0	min		14398.81784082		1586.5364102385001	560.9253271395031		kilogram/meter/second^2	mmHg
+AlFuraih1991	all	8.0	CAP25l	blood pressure systolic			sphygmomanometer	CAP25l_BPS	90.0	min		14132.17306599		1346.5561128915	476.0794793368883		kilogram/meter/second^2	mmHg
+AlFuraih1991	all	8.0	CAP25l	blood pressure systolic			sphygmomanometer	CAP25l_BPS	120.0	min		13078.9262054115		1346.5561128915	476.0794793368883		kilogram/meter/second^2	mmHg
+AlFuraih1991	all	8.0	CAP25l	blood pressure systolic			sphygmomanometer	CAP25l_BPS	180.0	min		13052.261727928502		1839.8489463270002	650.4848331533733		kilogram/meter/second^2	mmHg

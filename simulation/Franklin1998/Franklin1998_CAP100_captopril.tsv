@@ -1,0 +1,18 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Franklin1998		all	20	CAP100	concentration	captopril	plasma	GC/MS	CAP100_captopril	0.0	hr		0.0015806356681546494	391.333165873935	0.000985558545475302	0.00022037759034885978		mole/meter^3	ng/ml
+Franklin1998		all	20	CAP100	concentration	captopril	plasma	GC/MS	CAP100_captopril	0.25	hr		0.004690206129403087	1157.96553037362	0.002857879629532075	0.0006390413123145639		mole/meter^3	ng/ml
+Franklin1998		all	20	CAP100	concentration	captopril	plasma	GC/MS	CAP100_captopril	0.5	hr		0.005110122844301585	1244.49450219993	0.0027608847652354327	0.000617352601310997		mole/meter^3	ng/ml
+Franklin1998		all	20	CAP100	concentration	captopril	plasma	GC/MS	CAP100_captopril	0.75	hr		0.004130163038185558	993.221135536774	0.0019717174718162506	0.0004408894299405159		mole/meter^3	ng/ml
+Franklin1998		all	20	CAP100	concentration	captopril	plasma	GC/MS	CAP100_captopril	1.0	hr		0.0028745298702692224	701.25837634609	0.001577934332927648	0.0003528368432457003		mole/meter^3	ng/ml
+Franklin1998		all	20	CAP100	concentration	captopril	plasma	GC/MS	CAP100_captopril	1.25	hr		0.0020266713190691993	490.703572557185	0.001036057247175907	0.00023166944332666313		mole/meter^3	ng/ml
+Franklin1998		all	20	CAP100	concentration	captopril	plasma	GC/MS	CAP100_captopril	1.5	hr		0.001498669047133465	363.951933750901	0.0007885669125533745	0.00017632892212764804		mole/meter^3	ng/ml
+Franklin1998		all	20	CAP100	concentration	captopril	plasma	GC/MS	CAP100_captopril	1.75	hr		0.001069787466132356	273.186779350635	0.0008384652333883193	0.0001874865258626504		mole/meter^3	ng/ml
+Franklin1998		all	20	CAP100	concentration	captopril	plasma	GC/MS	CAP100_captopril	2.0	hr		0.0006198884203416481	163.464140730716	0.000592175660497089	0.00013241450314923256		mole/meter^3	ng/ml
+Franklin1998		all	20	CAP100	concentration	captopril	plasma	GC/MS	CAP100_captopril	2.5	hr		0.0003683650056629924	111.207085153103	0.0006414736004663828	0.00014343785764143728		mole/meter^3	ng/ml
+Franklin1998		all	20	CAP100	concentration	captopril	plasma	GC/MS	CAP100_captopril	3.0	hr		0.0002272541348967683	80.4777454563131	0.0006400727117798468	0.0001431246094082371		mole/meter^3	ng/ml
+Franklin1998		all	20	CAP100	concentration	captopril	plasma	GC/MS	CAP100_captopril	3.5	hr		0.00016303824709036242	68.9684230996733	0.000690371286525241	0.00015437171263844214		mole/meter^3	ng/ml
+Franklin1998		all	20	CAP100	concentration	captopril	plasma	GC/MS	CAP100_captopril	4.0	hr		0.0001432737752335716	55.0444442643804	0.0004921788918719883	0.00011005454593162804		mole/meter^3	ng/ml
+Franklin1998		all	20	CAP100	concentration	captopril	plasma	GC/MS	CAP100_captopril	4.5	hr		0.00010123884565437283	55.5111698119321	0.000689770905659576	0.0001542374633956403		mole/meter^3	ng/ml
+Franklin1998		all	20	CAP100	concentration	captopril	plasma	GC/MS	CAP100_captopril	5.0	hr		6.126240446478634e-05	46.8540591347753	0.0006903712865252456	0.00015437171263844353		mole/meter^3	ng/ml
+Franklin1998		all	20	CAP100	concentration	captopril	plasma	GC/MS	CAP100_captopril	6.0	hr		6.528988174881146e-05	42.9290269258506	0.0005915752796314471	0.0001322802539064367		mole/meter^3	ng/ml
+Franklin1998		all	20	CAP100	concentration	captopril	plasma	GC/MS	CAP100_captopril	8.0	hr		4.753914853403364e-05	39.0526119614626	0.0005911750257210024	0.00013219075441123454		mole/meter^3	ng/ml

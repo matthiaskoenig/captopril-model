@@ -1,0 +1,17 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit
+Ohman1985		chronic_nonfasting	7.0	CAP25_chronic_nonfasting	concentration	captopril	plasma	NR	CAP25_chronic_nonfasting_concentration_captopril_plasma	0.0	hr		0.319377605404199							umol/l	umol/l
+Ohman1985		chronic_nonfasting	7.0	CAP25_chronic_nonfasting	concentration	captopril	plasma	NR	CAP25_chronic_nonfasting_concentration_captopril_plasma	0.25	hr		0.317601875622779							umol/l	umol/l
+Ohman1985		chronic_nonfasting	7.0	CAP25_chronic_nonfasting	concentration	captopril	plasma	NR	CAP25_chronic_nonfasting_concentration_captopril_plasma	0.5	hr		0.442617937267929							umol/l	umol/l
+Ohman1985		chronic_nonfasting	7.0	CAP25_chronic_nonfasting	concentration	captopril	plasma	NR	CAP25_chronic_nonfasting_concentration_captopril_plasma	0.75	hr		0.715269462597196							umol/l	umol/l
+Ohman1985		chronic_nonfasting	7.0	CAP25_chronic_nonfasting	concentration	captopril	plasma	NR	CAP25_chronic_nonfasting_concentration_captopril_plasma	1.0	hr		1.25577317013503							umol/l	umol/l
+Ohman1985		chronic_nonfasting	7.0	CAP25_chronic_nonfasting	concentration	captopril	plasma	NR	CAP25_chronic_nonfasting_concentration_captopril_plasma	1.25	hr		1.44797814774869							umol/l	umol/l
+Ohman1985		chronic_nonfasting	7.0	CAP25_chronic_nonfasting	concentration	captopril	plasma	NR	CAP25_chronic_nonfasting_concentration_captopril_plasma	1.5	hr		1.47448911042695							umol/l	umol/l
+Ohman1985		chronic_nonfasting	7.0	CAP25_chronic_nonfasting	concentration	captopril	plasma	NR	CAP25_chronic_nonfasting_concentration_captopril_plasma	2.0	hr		1.32624857040718							umol/l	umol/l
+Ohman1985		chronic_nonfasting	7.0	CAP25_chronic_nonfasting	concentration	captopril	plasma	NR	CAP25_chronic_nonfasting_concentration_captopril_plasma	2.5	hr		1.28079953574485							umol/l	umol/l
+Ohman1985		chronic_nonfasting	7.0	CAP25_chronic_nonfasting	concentration	captopril	plasma	NR	CAP25_chronic_nonfasting_concentration_captopril_plasma	3.0	hr		1.14527041157779							umol/l	umol/l
+Ohman1985		chronic_nonfasting	7.0	CAP25_chronic_nonfasting	concentration	captopril	plasma	NR	CAP25_chronic_nonfasting_concentration_captopril_plasma	4.0	hr		0.943217258176183							umol/l	umol/l
+Ohman1985		chronic_nonfasting	7.0	CAP25_chronic_nonfasting	concentration	captopril	plasma	NR	CAP25_chronic_nonfasting_concentration_captopril_plasma	6.0	hr		0.585381911929541							umol/l	umol/l
+Ohman1985		chronic_nonfasting	7.0	CAP25_chronic_nonfasting	concentration	captopril	plasma	NR	CAP25_chronic_nonfasting_concentration_captopril_plasma	8.0	hr		0.354773266567593							umol/l	umol/l
+Ohman1985		chronic_nonfasting	7.0	CAP25_chronic_nonfasting	concentration	captopril	plasma	NR	CAP25_chronic_nonfasting_concentration_captopril_plasma	10.0	hr		0.319684958094115							umol/l	umol/l
+Ohman1985		chronic_nonfasting	7.0	CAP25_chronic_nonfasting	concentration	captopril	plasma	NR	CAP25_chronic_nonfasting_concentration_captopril_plasma	12.0	hr		0.222005136240206							umol/l	umol/l
+Ohman1985		chronic_nonfasting	7.0	CAP25_chronic_nonfasting	concentration	captopril	plasma	NR	CAP25_chronic_nonfasting_concentration_captopril_plasma	24.0	hr		0.0685065977203959							umol/l	umol/l

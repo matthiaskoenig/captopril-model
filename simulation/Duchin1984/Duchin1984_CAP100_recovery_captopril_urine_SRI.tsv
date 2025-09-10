@@ -1,0 +1,2 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit
+Duchin1984		SRI	8.0	CAP100	recovery	captopril	urine	scintillation counting	CAP100_recovery_captopril_urine_SRI	48.0	hr		3.589755390385899e-05		2.7335973315999722e-05	9.664726051038958e-06				mole	percent

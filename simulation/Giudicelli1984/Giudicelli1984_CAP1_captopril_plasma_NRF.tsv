@@ -1,0 +1,9 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Giudicelli1984		NRF	10.0	CAP1	concentration	captopril	plasma	HPLC/UV	CAP1_captopril_plasma_NRF	0.33	hr		0.0013985546401597392	0.478721086459203	0.00254449420975788	0.000804639719594514	a lot of points for which it is not possible to identify an error	mole/meter^3	mg/l
+Giudicelli1984		NRF	10.0	CAP1	concentration	captopril	plasma	HPLC/UV	CAP1_captopril_plasma_NRF	0.66	hr		0.0041182362656983496	1.17972012418752	0.004146161112928816	0.0013111312662873642	SD>mean	mole/meter^3	mg/l
+Giudicelli1984		NRF	10.0	CAP1	concentration	captopril	plasma	HPLC/UV	CAP1_captopril_plasma_NRF	1.0	hr		0.005278397705707203	1.35194860016704	0.002983951814036716	0.0009436084160547206		mole/meter^3	mg/l
+Giudicelli1984		NRF	10.0	CAP1	concentration	captopril	plasma	HPLC/UV	CAP1_captopril_plasma_NRF	1.5	hr		0.003567061661248507	0.893768836922183	0.001727509328747962	0.0005462864158032168		mole/meter^3	mg/l
+Giudicelli1984		NRF	10.0	CAP1	concentration	captopril	plasma	HPLC/UV	CAP1_captopril_plasma_NRF	2.0	hr		0.0018058410249601397	0.480872580703729	0.001287853547420972	0.0004072550502577945		mole/meter^3	mg/l
+Giudicelli1984		NRF	10.0	CAP1	concentration	captopril	plasma	HPLC/UV	CAP1_captopril_plasma_NRF	3.0	hr		0.0005384527801515703	0.142890537056538	0.00037683365706255094	0.00011916526553284578		mole/meter^3	mg/l
+Giudicelli1984		NRF	10.0	CAP1	concentration	captopril	plasma	HPLC/UV	CAP1_captopril_plasma_NRF	4.0	hr		3.581538219932806e-05	0.0358536983913724	0.0004085419847669986	0.00012919231916695305	SD>mean	mole/meter^3	mg/l
+Giudicelli1984		NRF	10.0	CAP1	concentration	captopril	plasma	HPLC/UV	CAP1_captopril_plasma_NRF	5.0	hr		1.8700835670742106e-05	0.0245140913508259	0.00029763089656320265	9.411915351777019e-05	not possible to identify point	mole/meter^3	mg/l

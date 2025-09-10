@@ -1,0 +1,10 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Cody1982		all	12.0	CAP25	concentration	total captopril	blood	GLC/MS	CAP25_total captopril_blood_all	0.0	hr		0.00017978665035417042				zero time and not-zero concentration	mole/meter^3	ng/ml
+Cody1982		all	12.0	CAP25	concentration	total captopril	blood	GLC/MS	CAP25_total captopril_blood_all	0.33	hr		0.0005508994942169884					mole/meter^3	ng/ml
+Cody1982		all	12.0	CAP25	concentration	total captopril	blood	GLC/MS	CAP25_total captopril_blood_all	0.66	hr		0.0015871976345403318					mole/meter^3	ng/ml
+Cody1982		all	12.0	CAP25	concentration	total captopril	blood	GLC/MS	CAP25_total captopril_blood_all	1.0	hr		0.0018409671246051227					mole/meter^3	ng/ml
+Cody1982		all	12.0	CAP25	concentration	total captopril	blood	GLC/MS	CAP25_total captopril_blood_all	1.5	hr		0.0018659493076894082					mole/meter^3	ng/ml
+Cody1982		all	12.0	CAP25	concentration	total captopril	blood	GLC/MS	CAP25_total captopril_blood_all	2.0	hr		0.0021338750092972317		0.002949676292765943	0.0008514982008253377	SD>mean	mole/meter^3	ng/ml
+Cody1982		all	12.0	CAP25	concentration	total captopril	blood	GLC/MS	CAP25_total captopril_blood_all	3.0	hr		0.0019546806407585307					mole/meter^3	ng/ml
+Cody1982		all	12.0	CAP25	concentration	total captopril	blood	GLC/MS	CAP25_total captopril_blood_all	4.0	hr		0.0016092333098007444					mole/meter^3	ng/ml
+Cody1982		all	12.0	CAP25	concentration	total captopril	blood	GLC/MS	CAP25_total captopril_blood_all	8.0	hr		0.0010757764645546331					mole/meter^3	ng/ml

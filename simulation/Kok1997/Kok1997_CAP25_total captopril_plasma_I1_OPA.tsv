@@ -1,0 +1,7 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Kok1997	I1		1.0	CAP25	concentration	total captopril	plasma	HPLC/FS OPA	CAP25_total captopril_plasma_I1_OPA	0.5	hr	8.217454729505798e-05						ng/ml	mole/meter^3
+Kok1997	I1		1.0	CAP25	concentration	total captopril	plasma	HPLC/FS OPA	CAP25_total captopril_plasma_I1_OPA	1.0	hr	0.0007418055642069972						ng/ml	mole/meter^3
+Kok1997	I1		1.0	CAP25	concentration	total captopril	plasma	HPLC/FS OPA	CAP25_total captopril_plasma_I1_OPA	2.0	hr	0.0012280858040888778						ng/ml	mole/meter^3
+Kok1997	I1		1.0	CAP25	concentration	total captopril	plasma	HPLC/FS OPA	CAP25_total captopril_plasma_I1_OPA	4.0	hr	0.0005799375369645556						ng/ml	mole/meter^3
+Kok1997	I1		1.0	CAP25	concentration	total captopril	plasma	HPLC/FS OPA	CAP25_total captopril_plasma_I1_OPA	6.0	hr	0.000334553550846341						ng/ml	mole/meter^3
+Kok1997	I1		1.0	CAP25	concentration	total captopril	plasma	HPLC/FS OPA	CAP25_total captopril_plasma_I1_OPA	24.0	hr	6.803427458230319e-05						ng/ml	mole/meter^3

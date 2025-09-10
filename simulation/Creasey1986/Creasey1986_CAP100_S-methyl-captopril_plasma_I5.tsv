@@ -1,0 +1,11 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	comments	value_unit
+Creasey1986	I5	all	1.0	CAP100	concentration	S-methyl-captopril	plasma	GC/MS	CAP100_S-methyl-captopril_plasma_I5	0.33	hr	6.960657155209685e-05		mole/meter^3
+Creasey1986	I5	all	1.0	CAP100	concentration	S-methyl-captopril	plasma	GC/MS	CAP100_S-methyl-captopril_plasma_I5	0.67	hr	0.0001573713791612624		mole/meter^3
+Creasey1986	I5	all	1.0	CAP100	concentration	S-methyl-captopril	plasma	GC/MS	CAP100_S-methyl-captopril_plasma_I5	1.0	hr	0.00033722438391699087		mole/meter^3
+Creasey1986	I5	all	1.0	CAP100	concentration	S-methyl-captopril	plasma	GC/MS	CAP100_S-methyl-captopril_plasma_I5	2.0	hr	0.00032338953739731945		mole/meter^3
+Creasey1986	I5	all	1.0	CAP100	concentration	S-methyl-captopril	plasma	GC/MS	CAP100_S-methyl-captopril_plasma_I5	3.0	hr	0.00019974059662775616		mole/meter^3
+Creasey1986	I5	all	1.0	CAP100	concentration	S-methyl-captopril	plasma	GC/MS	CAP100_S-methyl-captopril_plasma_I5	4.0	hr	0.00015218331171638563		mole/meter^3
+Creasey1986	I5	all	1.0	CAP100	concentration	S-methyl-captopril	plasma	GC/MS	CAP100_S-methyl-captopril_plasma_I5	6.0	hr	0.0001028966709900562		mole/meter^3
+Creasey1986	I5	all	1.0	CAP100	concentration	S-methyl-captopril	plasma	GC/MS	CAP100_S-methyl-captopril_plasma_I5	8.0	hr	4.236921746649373e-05		mole/meter^3
+Creasey1986	I5	all	1.0	CAP100	concentration	S-methyl-captopril	plasma	GC/MS	CAP100_S-methyl-captopril_plasma_I5	12.0	hr	3.372243839169908e-05		mole/meter^3
+Creasey1986	I5	all	1.0	CAP100	concentration	S-methyl-captopril	plasma	GC/MS	CAP100_S-methyl-captopril_plasma_I5	24.0	hr	0.0		mole/meter^3

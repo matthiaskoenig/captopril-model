@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <title>Creasey1988</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <!--<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+</head>
+
+<body>
+<div id="app">
+    <!-- Vue app-->
+    <v-app>
+        <v-content>
+
+            <a href="../index.html">Experiments</a>
+            <h1>Creasey1988</h1>
+
+            <h2>Models</h2>
+            <p>
+            <ul>
+                <li><strong>model</strong>: <a href="../../../../models/results/models/captopril_body_flat.xml">../../../../models/results/models/captopril_body_flat.xml</a></li>
+            </ul>
+            </p>
+
+            <h2>Datasets</h2>
+            <p>
+            <ul>
+                <li><strong>CAP11.4_captopril+metabolites_blood_all</strong>: <a href="Creasey1988_CAP11.4_captopril+metabolites_blood_all.tsv">Creasey1988_CAP11.4_captopril+metabolites_blood_all.tsv</a></li>
+                <li><strong>CAP11.4_captopril_blood_all</strong>: <a href="Creasey1988_CAP11.4_captopril_blood_all.tsv">Creasey1988_CAP11.4_captopril_blood_all.tsv</a></li>
+                <li><strong>CAP2.78_captopril+metabolites_blood_all</strong>: <a href="Creasey1988_CAP2.78_captopril+metabolites_blood_all.tsv">Creasey1988_CAP2.78_captopril+metabolites_blood_all.tsv</a></li>
+                <li><strong>CAP2.78_captopril_blood_all</strong>: <a href="Creasey1988_CAP2.78_captopril_blood_all.tsv">Creasey1988_CAP2.78_captopril_blood_all.tsv</a></li>
+                <li><strong>CAP5.67_captopril+metabolites_blood_all</strong>: <a href="Creasey1988_CAP5.67_captopril+metabolites_blood_all.tsv">Creasey1988_CAP5.67_captopril+metabolites_blood_all.tsv</a></li>
+                <li><strong>CAP5.67_captopril_blood_all</strong>: <a href="Creasey1988_CAP5.67_captopril_blood_all.tsv">Creasey1988_CAP5.67_captopril_blood_all.tsv</a></li>
+            </ul>
+            </p>
+
+            <h2>Figures</h2>
+            <p>
+            <ul>
+                <li><strong>Figure 1</strong>: <a href="Creasey1988_Figure 1.svg">Creasey1988_Figure 1.svg</a></li>
+            </ul>
+            </p>
+
+            <h3>Figure 1</h3>
+            <p>
+            <table>
+                <tr>
+                    <td>
+                        <!--<v-img src="Creasey1988_Figure 1.svg" max-width="600" width="600"></v-img>-->
+                        <img src="Creasey1988_Figure 1.svg" width="600">
+                    </td>
+                    <!--
+                    <td>
+                    </td>
+                    -->
+                </tr>
+            </table>
+            </p>
+
+            <h2>Code</h2>
+            <p>
+                <a href="../../../../experiments/studies/creasey1988.py">../../../../experiments/studies/creasey1988.py</a>
+            <pre>
+<code class="python">"""Creasey1988."""
+
+from typing import Dict
+
+from sbmlsim.data import DataSet, load_pkdb_dataframe
+from sbmlsim.fit import FitMapping, FitData
+from sbmlutils.console import console
+
+from pkdb_models.models.captopril.experiments.base_experiment import (
+    CaptoprilSimulationExperiment,
+)
+from pkdb_models.models.captopril.experiments.metadata import Tissue, Route, Dosing, Health, Fasting, \
+    CaptoprilMappingMetaData, PKPDData
+from sbmlsim.plot import Axis, Figure
+from sbmlsim.simulation import Timecourse, TimecourseSim
+
+from pkdb_models.models.captopril.helpers import run_experiments
+
+
+class Creasey1988(CaptoprilSimulationExperiment):
+    """Simulation experiment for Creasey1988.
+    The pharmacokinetic characteristics of intravenously-administered captopril were investigated in healthy men.
+    The subjects were fasted for 8 hr to and 2 hr after drug administration
+    """
+
+    route = "IV"
+    doses = []  # mg
+    yids = []
+    clabels = []
+    substances = []
+
+    colors = {
+        "11.4": CaptoprilSimulationExperiment.doses_colors["11.4mg"],
+        "2.78": CaptoprilSimulationExperiment.doses_colors["2.78mg"],
+        "5.67": CaptoprilSimulationExperiment.doses_colors["5.67mg"],
+    }
+
+    def datasets(self) -> Dict[str, DataSet]:
+        dsets = {}
+        self.clabels = []
+        self.doses = []
+        self.yids = []
+        self.substances = []
+        for fig_id in ["Fig1"]:
+            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
+            for label, df_label in df.groupby("label"):
+                dset = DataSet.from_df(df_label, self.ureg)
+                self.clabels.append(label)
+                if "2.78" in label:
+                    self.doses.append(2.78)
+                elif "5.67" in label:
+                    self.doses.append(5.67)
+                elif "11.4" in label:
+                    self.doses.append(11.4)
+                if "_captopril_" in label:
+                    dset.unit_conversion("mean", 1 / self.Mr.cap / self.BPRatios.cap)
+                    self.yids.append("[Cve_cap]")
+                    self.substances.append("cap")
+                if "_captopril+" in label:
+                    dset.unit_conversion("mean", 1 / self.Mr.capall / self.BPRatios.cap)
+                    self.yids.append("[Cve_capall]")
+                    self.substances.append("capall")
+                dsets[f"{label}"] = dset
+        # console.print(dsets.keys())
+        # console.print(dsets)
+        return dsets
+
+    def simulations(self) -> Dict[str, TimecourseSim]:
+        Q_ = self.Q_
+        tcsims = {}
+        for k, dose in enumerate(self.doses):
+            tcsims[f"cap_{self.route}_{dose}"] = TimecourseSim(
+                Timecourse(
+                    start=0,
+                    end=13 * 60,  # minutes
+                    steps=400,
+                    changes={
+                        **self.default_changes(),
+                        f"{self.route}DOSE_cap": Q_(dose, "mg"),
+                    },
+                )
+            )
+        return tcsims
+
+    def fit_mappings(self) -> Dict[str, FitMapping]:
+        mappings = {}
+        for kr, dose in enumerate(self.doses):
+            substance = self.substances[kr]
+            subjects = self.clabels[kr].split("_")[-1]
+            mappings[
+                f"fm_cap{self.route}{dose}_{substance}_plasma_acute_fasting_{subjects}"
+            ] = FitMapping(
+                self,
+                reference=FitData(
+                    self,
+                    dataset=self.clabels[kr],
+                    xid="time",
+                    yid="mean",
+                    yid_sd="mean_sd",
+                    count="count",
+                ),
+                observable=FitData(
+                    self,
+                    task=f"task_cap_{self.route}_{dose}",
+                    xid="time",
+                    yid=self.yids[kr],
+                ),
+                metadata=CaptoprilMappingMetaData(
+                    tissue=Tissue.PLASMA,
+                    route=Route.IV,
+                    dosing=Dosing.SINGLE,
+                    health=Health.HEALTHY,
+                    fasting=Fasting.FASTING,
+                    data=PKPDData.PK
+                ),
+            )
+        # console.print(mappings)
+        return mappings
+
+    def figures(self) -> Dict[str, Figure]:
+        fig = Figure(
+            experiment=self,
+            sid="Figure 1",
+            num_rows=1,
+            num_cols=2,
+            name=f"{self.__class__.__name__}",
+            height=self.panel_height,
+            width=self.panel_width * 2,
+        )
+        plots = fig.create_plots(
+            xaxis=Axis(self.labels["time"], unit=self.units["time"]), legend=True
+        )
+        for kr, dose in sorted(enumerate(self.doses), reverse=True, key=lambda x: x[1]):
+            data = self.clabels[kr]
+            if "_captopril_" in data:
+                a = 0
+            else:
+                a = 1
+            plots[a].set_yaxis(
+                self.labels[self.yids[kr]], unit=self.units[self.yids[kr]]
+            )
+            # simulation
+            plots[a].add_data(
+                task=f"task_cap_{self.route}_{dose}",
+                xid="time",
+                yid=self.yids[kr],
+                label=f"sim: {dose}mg IV",
+                color=self.colors[f"{dose}"],
+            )
+            # dataset
+            plots[a].add_data(
+                dataset=data,
+                xid="time",
+                yid="mean",
+                yid_sd="mean_sd",
+                count="count",
+                label=f"exp: {dose}mg IV",
+                color=self.colors[f"{dose}"],
+            )
+        return {
+            fig.sid: fig,
+        }
+
+
+if __name__ == "__main__":
+    run_experiments(Creasey1988, output_dir=Creasey1988.__name__)
+</code>
+        </pre>
+            </p>
+
+        </v-content>
+    </v-app>
+</div>
+
+
+<!-- loading dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.2.6/dist/vuetify.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+    const app = new Vue({
+        el: '#app',
+        vuetify: new Vuetify(),
+        delimiters: ['${', '}'],
+        data() {
+            return {}
+        }
+    })
+</script>
+
+
+</body>
+</html>

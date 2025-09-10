@@ -1,0 +1,8 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit
+Cody1982	I2	all	1.0	CAP25	concentration	captopril	blood	GLC/MS	CAP25_captopril_blood_I2	0.33	hr	0.00012351620290250364								ng/ml	mole/meter^3
+Cody1982	I2	all	1.0	CAP25	concentration	captopril	blood	GLC/MS	CAP25_captopril_blood_I2	0.66	hr	0.0011142317034550323								ng/ml	mole/meter^3
+Cody1982	I2	all	1.0	CAP25	concentration	captopril	blood	GLC/MS	CAP25_captopril_blood_I2	1.0	hr	0.0009845664079193763								ng/ml	mole/meter^3
+Cody1982	I2	all	1.0	CAP25	concentration	captopril	blood	GLC/MS	CAP25_captopril_blood_I2	1.5	hr	0.0005080340293811669								ng/ml	mole/meter^3
+Cody1982	I2	all	1.0	CAP25	concentration	captopril	blood	GLC/MS	CAP25_captopril_blood_I2	2.0	hr	0.0003061658714401531								ng/ml	mole/meter^3
+Cody1982	I2	all	1.0	CAP25	concentration	captopril	blood	GLC/MS	CAP25_captopril_blood_I2	3.0	hr	0.00012267841253338856								ng/ml	mole/meter^3
+Cody1982	I2	all	1.0	CAP25	concentration	captopril	blood	GLC/MS	CAP25_captopril_blood_I2	4.0	hr	8.507003735292664e-05								ng/ml	mole/meter^3

@@ -1,0 +1,15 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Vancea2009	I1		1.0	CAP100	concentration	captopril	plasma	LC/MS	CAP100_captopril_plasma_LS MS_I1	0.0	hr	0.0						ng/ml	mole/meter^3
+Vancea2009	I1		1.0	CAP100	concentration	captopril	plasma	LC/MS	CAP100_captopril_plasma_LS MS_I1	0.33	hr	0.0019112929205749546						ng/ml	mole/meter^3
+Vancea2009	I1		1.0	CAP100	concentration	captopril	plasma	LC/MS	CAP100_captopril_plasma_LS MS_I1	0.67	hr	0.0028529647935815546						ng/ml	mole/meter^3
+Vancea2009	I1		1.0	CAP100	concentration	captopril	plasma	LC/MS	CAP100_captopril_plasma_LS MS_I1	1.0	hr	0.002009920388526424						ng/ml	mole/meter^3
+Vancea2009	I1		1.0	CAP100	concentration	captopril	plasma	LC/MS	CAP100_captopril_plasma_LS MS_I1	1.5	hr	0.001312168957964641						ng/ml	mole/meter^3
+Vancea2009	I1		1.0	CAP100	concentration	captopril	plasma	LC/MS	CAP100_captopril_plasma_LS MS_I1	2.0	hr	0.0006425228426046253						ng/ml	mole/meter^3
+Vancea2009	I1		1.0	CAP100	concentration	captopril	plasma	LC/MS	CAP100_captopril_plasma_LS MS_I1	2.5	hr	0.0002632942086986663						ng/ml	mole/meter^3
+Vancea2009	I1		1.0	CAP100	concentration	captopril	plasma	LC/MS	CAP100_captopril_plasma_LS MS_I1	3.0	hr	0.00014169352184470165						ng/ml	mole/meter^3
+Vancea2009	I1		1.0	CAP100	concentration	captopril	plasma	LC/MS	CAP100_captopril_plasma_LS MS_I1	4.0	hr	7.651302256902318e-05						ng/ml	mole/meter^3
+Vancea2009	I1		1.0	CAP100	concentration	captopril	plasma	LC/MS	CAP100_captopril_plasma_LS MS_I1	5.0	hr	5.81541704752362e-05						ng/ml	mole/meter^3
+Vancea2009	I1		1.0	CAP100	concentration	captopril	plasma	LC/MS	CAP100_captopril_plasma_LS MS_I1	6.0	hr	2.1083095365536507e-05						ng/ml	mole/meter^3
+Vancea2009	I1		1.0	CAP100	concentration	captopril	plasma	LC/MS	CAP100_captopril_plasma_LS MS_I1	8.0	hr	0.0					non zero zero concentration	ng/ml	mole/meter^3
+Vancea2009	I1		1.0	CAP100	concentration	captopril	plasma	LC/MS	CAP100_captopril_plasma_LS MS_I1	10.0	hr	0.0					zero set manually	ng/ml	mole/meter^3
+Vancea2009	I1		1.0	CAP100	concentration	captopril	plasma	LC/MS	CAP100_captopril_plasma_LS MS_I1	12.0	hr	0.0						ng/ml	mole/meter^3

@@ -1,0 +1,7 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Onoyama1981		control	5.0	CAP50	concentration	captopril	blood	HPLC	CAP50_captopril_blood_control	20.0	min		0.0010758437748710757	195.68934856525	0.000950720714591558	0.0004251752290887797		mole/meter^3	ng/ml
+Onoyama1981		control	5.0	CAP50	concentration	captopril	blood	HPLC	CAP50_captopril_blood_control	40.0	min		0.002470518047142133	399.681324778421	0.001330917904062399	0.0005952045811910133		mole/meter^3	ng/ml
+Onoyama1981		control	5.0	CAP50	concentration	captopril	blood	HPLC	CAP50_captopril_blood_control	60.0	min		0.0027920319703001436		0.001097700796649462	0.0004909067200527724		mole/meter^3	ng/ml
+Onoyama1981		control	5.0	CAP50	concentration	captopril	blood	HPLC	CAP50_captopril_blood_control	120.0	min		0.0006091287716720889	66.4798243492529	0.0002218196506770662	9.92007635318353e-05		mole/meter^3	ng/ml
+Onoyama1981		control	5.0	CAP50	concentration	captopril	blood	HPLC	CAP50_captopril_blood_control	240.0	min		2.117000747122627e-05	8.30642140055863	9.513063340858627e-05	4.254371260884239e-05	SD>mean	mole/meter^3	ng/ml
+Onoyama1981		control	5.0	CAP50	concentration	captopril	blood	HPLC	CAP50_captopril_blood_control	360.0	min		0.0	1.8153106372082	3.113543644733867e-05	1.3924190481074779e-05	zero point set manually	mole/meter^3	ng/ml

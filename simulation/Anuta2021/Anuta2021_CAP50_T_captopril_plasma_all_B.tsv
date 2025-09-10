@@ -1,0 +1,12 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Anuta2021		all	20.0	CAP50_T	concentration	captopril	plasma	RPLC ESI MS 	CAP50_T_captopril_plasma_all_B	0.0	hr		0.0					mole/meter^3	ng/ml
+Anuta2021		all	20.0	CAP50_T	concentration	captopril	plasma	RPLC ESI MS 	CAP50_T_captopril_plasma_all_B	0.5	hr		0.0006211435016448352					mole/meter^3	ng/ml
+Anuta2021		all	20.0	CAP50_T	concentration	captopril	plasma	RPLC ESI MS 	CAP50_T_captopril_plasma_all_B	1.0	hr		0.0014129858020701153					mole/meter^3	ng/ml
+Anuta2021		all	20.0	CAP50_T	concentration	captopril	plasma	RPLC ESI MS 	CAP50_T_captopril_plasma_all_B	1.5	hr		0.0018317976988573162					mole/meter^3	ng/ml
+Anuta2021		all	20.0	CAP50_T	concentration	captopril	plasma	RPLC ESI MS 	CAP50_T_captopril_plasma_all_B	2.0	hr		0.001504333599211372					mole/meter^3	ng/ml
+Anuta2021		all	20.0	CAP50_T	concentration	captopril	plasma	RPLC ESI MS 	CAP50_T_captopril_plasma_all_B	2.5	hr		0.001254498987948717					mole/meter^3	ng/ml
+Anuta2021		all	20.0	CAP50_T	concentration	captopril	plasma	RPLC ESI MS 	CAP50_T_captopril_plasma_all_B	3.0	hr		0.0009426898994736221					mole/meter^3	ng/ml
+Anuta2021		all	20.0	CAP50_T	concentration	captopril	plasma	RPLC ESI MS 	CAP50_T_captopril_plasma_all_B	4.0	hr		0.0006929628827894609					mole/meter^3	ng/ml
+Anuta2021		all	20.0	CAP50_T	concentration	captopril	plasma	RPLC ESI MS 	CAP50_T_captopril_plasma_all_B	5.0	hr		0.0005364127710809489					mole/meter^3	ng/ml
+Anuta2021		all	20.0	CAP50_T	concentration	captopril	plasma	RPLC ESI MS 	CAP50_T_captopril_plasma_all_B	6.0	hr		0.00036345448615213063				can’t be clearly identified	mole/meter^3	ng/ml
+Anuta2021		all	20.0	CAP50_T	concentration	captopril	plasma	RPLC ESI MS 	CAP50_T_captopril_plasma_all_B	8.0	hr		0.00022159103440802587				can’t be clearly identified	mole/meter^3	ng/ml

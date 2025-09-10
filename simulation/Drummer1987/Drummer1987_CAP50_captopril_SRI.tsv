@@ -1,0 +1,10 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Drummer1987		SRI	6.0	CAP50	concentration	captopril	plasma	GC/MS	CAP50_captopril_SRI	0.5	hr		0.001272675677166546	0.37558344799515	0.00111660831164466	0.00045585343434667363		mole/meter^3	microg/ml
+Drummer1987		SRI	6.0	CAP50	concentration	captopril	plasma	GC/MS	CAP50_captopril_SRI	0.75	hr		0.001028093246696104	0.328190879850637	0.0011814462071752213	0.00048232339435429954	SD>mean	mole/meter^3	microg/ml
+Drummer1987		SRI	6.0	CAP50	concentration	captopril	plasma	GC/MS	CAP50_captopril_SRI	1.0	hr		0.00097140680926439	0.321660686555146	0.0012466831051398206	0.0005089562464235128	SD>mean	mole/meter^3	microg/ml
+Drummer1987		SRI	6.0	CAP50	concentration	captopril	plasma	GC/MS	CAP50_captopril_SRI	1.5	hr		0.0013400315446321005	0.500772031659934	0.002362892414350447	0.0009646467887085991	SD>mean	mole/meter^3	microg/ml
+Drummer1987		SRI	6.0	CAP50	concentration	captopril	plasma	GC/MS	CAP50_captopril_SRI	2.0	hr		0.0019223706647998249	0.685634902024979	0.003020448425638778	0.0012330929062012975	SD>mean	mole/meter^3	microg/ml
+Drummer1987		SRI	6.0	CAP50	concentration	captopril	plasma	GC/MS	CAP50_captopril_SRI	3.0	hr		0.0009713253632336008	0.350825343874847	0.001575660612001003	0.0006432607512006534	SD>mean	mole/meter^3	microg/ml
+Drummer1987		SRI	6.0	CAP50	concentration	captopril	plasma	GC/MS	CAP50_captopril_SRI	4.0	hr		0.0007164807328832775	0.237263689736182	0.000919700610448802	0.000375466201954295	SD>mean	mole/meter^3	microg/ml
+Drummer1987		SRI	6.0	CAP50	concentration	captopril	plasma	GC/MS	CAP50_captopril_SRI	6.0	hr		0.00042197188553692237	0.167378233573866	0.0008532667051821063	0.00034834467370032805	SD>mean	mole/meter^3	microg/ml
+Drummer1987		SRI	6.0	CAP50	concentration	captopril	plasma	GC/MS	CAP50_captopril_SRI	8.00201745809129	hr		0.0004217275474445405	0.173253637839727	0.000920099612882831	0.00037562909401587765	SD>mean	mole/meter^3	microg/ml

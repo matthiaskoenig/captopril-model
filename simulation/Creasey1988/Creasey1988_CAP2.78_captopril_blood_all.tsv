@@ -1,0 +1,8 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Creasey1988		all	7.0	CAP2.78	concentration	captopril	blood	scintillation counting	CAP2.78_captopril_blood_all	0.08	hr		0.0008614444311109296	134.743856726364	0.0004553264074831972	0.0001720972056515713	unchanged captopril	mole/meter^3	ng/ml
+Creasey1988		all	7.0	CAP2.78	concentration	captopril	blood	scintillation counting	CAP2.78_captopril_blood_all	0.25	hr		0.00044359040968624	53.6144578313253	8.557718079188854e-05	3.234513403962155e-05		mole/meter^3	ng/ml
+Creasey1988		all	7.0	CAP2.78	concentration	captopril	blood	scintillation counting	CAP2.78_captopril_blood_all	0.5	hr		0.00027863965615240277	38.1632653061224	3.7274725394483436e-05	1.4088521940289635e-05		mole/meter^3	ng/ml
+Creasey1988		all	7.0	CAP2.78	concentration	captopril	blood	scintillation counting	CAP2.78_captopril_blood_all	1.0	hr		0.00011114278419562174	17.1428571428572	5.3841270014255544e-05	2.0350087247085628e-05		mole/meter^3	ng/ml
+Creasey1988		all	7.0	CAP2.78	concentration	captopril	blood	scintillation counting	CAP2.78_captopril_blood_all	2.0	hr		3.309571002893849e-05	4.54314720812183	4.6356891988065375e-06	1.7521258250614784e-06		mole/meter^3	ng/ml
+Creasey1988		all	7.0	CAP2.78	concentration	captopril	blood	scintillation counting	CAP2.78_captopril_blood_all	3.0	hr		9.734032361452468e-06	1.6751269035533	8.241225242322679e-06	3.1148903556648335e-06		mole/meter^3	ng/ml
+Creasey1988		all	7.0	CAP2.78	concentration	captopril	blood	scintillation counting	CAP2.78_captopril_blood_all	4.0	hr		2.530848413977633e-06	0.609137055837563	5.665842354096816e-06	2.1414871195195634e-06		mole/meter^3	ng/ml

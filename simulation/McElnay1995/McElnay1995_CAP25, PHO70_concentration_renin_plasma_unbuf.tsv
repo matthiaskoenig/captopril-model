@@ -1,0 +1,2 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	median	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit	median_unit
+McElnay1995		unbuf	8.0	CAP25, PHO70	concentration	renin	plasma	enzymatic assay	CAP25, PHO70_concentration_renin_plasma_unbuf	77.1	min			1.9060301396009496e-09		2.1927780367090572e-10	7.752641096969481e-11				mole/meter^3	pg/ml	pg/ml

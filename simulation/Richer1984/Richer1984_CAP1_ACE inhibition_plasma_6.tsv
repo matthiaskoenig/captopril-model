@@ -1,0 +1,10 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Richer1984		all	6.0	CAP1	ACE inhibition	angiotensin converting enzyme	plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_6	0.440298507	hr		0.607612983755484					dimensionless	percent
+Richer1984		all	6.0	CAP1	ACE inhibition	angiotensin converting enzyme	plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_6	0.552238806	hr		0.7483820443842821					dimensionless	percent
+Richer1984		all	6.0	CAP1	ACE inhibition	angiotensin converting enzyme	plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_6	0.73880597	hr		0.8251194290017481					dimensionless	percent
+Richer1984		all	6.0	CAP1	ACE inhibition	angiotensin converting enzyme	plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_6	1.0	hr		0.872826434109882					dimensionless	percent
+Richer1984		all	6.0	CAP1	ACE inhibition	angiotensin converting enzyme	plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_6	1.597014925	hr		0.9370605782738011					dimensionless	percent
+Richer1984		all	6.0	CAP1	ACE inhibition	angiotensin converting enzyme	plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_6	2.044776119	hr		0.8999841269634901					dimensionless	percent
+Richer1984		all	6.0	CAP1	ACE inhibition	angiotensin converting enzyme	plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_6	3.014925373	hr		0.818907841358961					dimensionless	percent
+Richer1984		all	6.0	CAP1	ACE inhibition	angiotensin converting enzyme	plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_6	6.037313433	hr		0.6523292050672519					dimensionless	percent
+Richer1984		all	6.0	CAP1	ACE inhibition	angiotensin converting enzyme	plasma	Spectrophotometry	CAP1_ACE inhibition_plasma_6	24.0	hr		0.112362240908747					dimensionless	percent

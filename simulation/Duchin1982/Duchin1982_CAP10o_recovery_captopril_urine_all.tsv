@@ -1,0 +1,2 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit
+Duchin1982		all	5.0	CAP10o	recovery	captopril	urine	scintillation counting	CAP10o_recovery_captopril_urine_all	24.0	hr		1.1137446211197276e-05		3.7047401886919213e-06	1.6568101801781071e-06				mole	percent

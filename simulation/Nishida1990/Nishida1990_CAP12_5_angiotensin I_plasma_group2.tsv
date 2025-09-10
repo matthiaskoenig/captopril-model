@@ -1,0 +1,8 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit
+Nishida1990		group2	5.0	CAP12_5	concentration	angiotensin I	plasma	RIA	CAP12_5_angiotensin I_plasma_group2	0.0	hr		1.0258395879981396e-07		1.6814513547638678e-07	7.519679060222245e-08				mole/meter^3	pg/ml
+Nishida1990		group2	5.0	CAP12_5	concentration	angiotensin I	plasma	RIA	CAP12_5_angiotensin I_plasma_group2	0.5	hr		1.321529952940172e-06	701.361663923387	3.490788857672216e-06	1.56112823617078e-06				mole/meter^3	pg/ml
+Nishida1990		group2	5.0	CAP12_5	concentration	angiotensin I	plasma	RIA	CAP12_5_angiotensin I_plasma_group2	1.0	hr		1.7120890042178126e-06	2011.79111177615	7.172344743052575e-07	3.207570080705762e-07				mole/meter^3	pg/ml
+Nishida1990		group2	5.0	CAP12_5	concentration	angiotensin I	plasma	RIA	CAP12_5_angiotensin I_plasma_group2	1.5	hr		1.701840291524714e-06	2584.94688014365	1.3056392675608619e-06	5.838996312718259e-07				mole/meter^3	pg/ml
+Nishida1990		group2	5.0	CAP12_5	concentration	angiotensin I	plasma	RIA	CAP12_5_angiotensin I_plasma_group2	2.0	hr		1.092180382402663e-06	2647.07466706569	4.246424486905736e-06	1.8990587628081777e-06				mole/meter^3	pg/ml
+Nishida1990		group2	5.0	CAP12_5	concentration	angiotensin I	plasma	RIA	CAP12_5_angiotensin I_plasma_group2	4.0	hr		8.669856953893833e-07	1700.43393685471	1.9881888277373757e-06	8.89145074185279e-07				mole/meter^3	pg/ml
+Nishida1990		group2	5.0	CAP12_5	concentration	angiotensin I	plasma	RIA	CAP12_5_angiotensin I_plasma_group2	6.0	hr		6.248944820442315e-07	1427.86173874009	2.1306447250518824e-06	9.528532882234694e-07				mole/meter^3	pg/ml

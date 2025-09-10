@@ -1,0 +1,8 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit
+Azizi1999b		healthy_multiple	10.0	CAP50m	concentration	angiotensin I	plasma	RIA	CAP50m_angiotensin I_plasma	0.0	d		4.650987004232167e-09		2.7072909427620075e-09	8.561205667872478e-10				mole/meter^3	pg/ml
+Azizi1999b		healthy_multiple	10.0	CAP50m	concentration	angiotensin I	plasma	RIA	CAP50m_angiotensin I_plasma	1.0	d		9.59507103360666e-09		6.371003757041077e-09	2.0146882853739807e-09				mole/meter^3	pg/ml
+Azizi1999b		healthy_multiple	10.0	CAP50m	concentration	angiotensin I	plasma	RIA	CAP50m_angiotensin I_plasma	3.0	d		1.8781348847935867e-08		1.0428083631379586e-08	3.297649590587922e-09				mole/meter^3	pg/ml
+Azizi1999b		healthy_multiple	10.0	CAP50m	concentration	angiotensin I	plasma	RIA	CAP50m_angiotensin I_plasma	7.0	d		2.2915559518364457e-08		7.242581752859046e-09	2.290305447900932e-09				mole/meter^3	pg/ml
+Azizi1999b		healthy_multiple	10.0	CAP50m	concentration	angiotensin I	plasma	RIA	CAP50m_angiotensin I_plasma	8.0	d		1.6236032576963038e-08		1.0304674357635446e-08	3.2586241516460482e-09				mole/meter^3	pg/ml
+Azizi1999b		healthy_multiple	10.0	CAP50m	concentration	angiotensin I	plasma	RIA	CAP50m_angiotensin I_plasma	9.0	d		8.283847500075202e-09		6.895493170453659e-09	2.180546400876923e-09				mole/meter^3	pg/ml
+Azizi1999b		healthy_multiple	10.0	CAP50m	concentration	angiotensin I	plasma	RIA	CAP50m_angiotensin I_plasma	10.0	d		5.746244308711384e-09		3.956809839421396e-09	1.2512531360736724e-09				mole/meter^3	pg/ml

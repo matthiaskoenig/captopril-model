@@ -1,0 +1,9 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Giudicelli1984		SRI	10.0	CAP1	concentration	captopril	plasma	HPLC/UV	CAP1_captopril_plasma_SRI	0.33	hr		0.0015773182057303122	0.480865772177639	0.002010407064986087	0.0006357465349450167	SD>mean	mole/meter^3	mg/l
+Giudicelli1984		SRI	10.0	CAP1	concentration	captopril	plasma	HPLC/UV	CAP1_captopril_plasma_SRI	0.66	hr		0.003571887180809917	0.894824158466175	0.0017276084172720386	0.0005463177503458221		mole/meter^3	mg/l
+Giudicelli1984		SRI	10.0	CAP1	concentration	captopril	plasma	HPLC/UV	CAP1_captopril_plasma_SRI	1.0	hr		0.004255356224144767	1.09296588474527	0.0024499637577889955	0.0007747465659478334		mole/meter^3	mg/l
+Giudicelli1984		SRI	10.0	CAP1	concentration	captopril	plasma	HPLC/UV	CAP1_captopril_plasma_SRI	1.5	hr		0.002424729575982815	0.62182268782454	0.0013820867338176308	0.00043705420027665776		mole/meter^3	mg/l
+Giudicelli1984		SRI	10.0	CAP1	concentration	captopril	plasma	HPLC/UV	CAP1_captopril_plasma_SRI	2.0	hr		0.0016767113748784035	0.478721086459203	0.0016648853815316746	0.0005264829848758541		mole/meter^3	mg/l
+Giudicelli1984		SRI	10.0	CAP1	concentration	captopril	plasma	HPLC/UV	CAP1_captopril_plasma_SRI	3.0	hr		0.001025140895917058	0.274547006064127	0.0007538654911732516	0.00023839320015090363		mole/meter^3	mg/l
+Giudicelli1984		SRI	10.0	CAP1	concentration	captopril	plasma	HPLC/UV	CAP1_captopril_plasma_SRI	4.0	hr		0.0005424322670626043	0.161035259087113	0.0006283203311684514	0.00019869233466835996	SD>mean	mole/meter^3	mg/l
+Giudicelli1984		SRI	10.0	CAP1	concentration	captopril	plasma	HPLC/UV	CAP1_captopril_plasma_SRI	5.0	hr		0.00012928632279477227	0.0469448493683187	0.00027437702513954015	8.676563370622268e-05	not possible to identify point	mole/meter^3	mg/l

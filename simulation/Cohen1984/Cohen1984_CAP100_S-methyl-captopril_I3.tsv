@@ -1,0 +1,11 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Cohen1984	I3	all	1.0	CAP100	concentration	S-methyl-captopril	plasma	GC/MS SIM	CAP100_S-methyl-captopril_I3	0.0	hr	8.646779074794639e-07						ng/ml	mole/meter^3
+Cohen1984	I3	all	1.0	CAP100	concentration	S-methyl-captopril	plasma	GC/MS SIM	CAP100_S-methyl-captopril_I3	0.5	hr	5.620406398616515e-05						ng/ml	mole/meter^3
+Cohen1984	I3	all	1.0	CAP100	concentration	S-methyl-captopril	plasma	GC/MS SIM	CAP100_S-methyl-captopril_I3	1.0	hr	0.0001833117163856463						ng/ml	mole/meter^3
+Cohen1984	I3	all	1.0	CAP100	concentration	S-methyl-captopril	plasma	GC/MS SIM	CAP100_S-methyl-captopril_I3	2.0	hr	0.0002702118460873325						ng/ml	mole/meter^3
+Cohen1984	I3	all	1.0	CAP100	concentration	S-methyl-captopril	plasma	GC/MS SIM	CAP100_S-methyl-captopril_I3	3.0	hr	0.0001954172070903588						ng/ml	mole/meter^3
+Cohen1984	I3	all	1.0	CAP100	concentration	S-methyl-captopril	plasma	GC/MS SIM	CAP100_S-methyl-captopril_I3	4.0	hr	0.00013878080415045393						ng/ml	mole/meter^3
+Cohen1984	I3	all	1.0	CAP100	concentration	S-methyl-captopril	plasma	GC/MS SIM	CAP100_S-methyl-captopril_I3	6.0	hr	6.874189364461737e-05						ng/ml	mole/meter^3
+Cohen1984	I3	all	1.0	CAP100	concentration	S-methyl-captopril	plasma	GC/MS SIM	CAP100_S-methyl-captopril_I3	8.0	hr	4.323389537397319e-05						ng/ml	mole/meter^3
+Cohen1984	I3	all	1.0	CAP100	concentration	S-methyl-captopril	plasma	GC/MS SIM	CAP100_S-methyl-captopril_I3	12.0	hr	2.680501513186338e-05						ng/ml	mole/meter^3
+Cohen1984	I3	all	1.0	CAP100	concentration	S-methyl-captopril	plasma	GC/MS SIM	CAP100_S-methyl-captopril_I3	24.0	hr	4.323389537397319e-06						ng/ml	mole/meter^3

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <title>AlFuraih1991</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <!--<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+</head>
+
+<body>
+<div id="app">
+    <!-- Vue app-->
+    <v-app>
+        <v-content>
+
+            <a href="../index.html">Experiments</a>
+            <h1>AlFuraih1991</h1>
+
+            <h2>Models</h2>
+            <p>
+            <ul>
+                <li><strong>model</strong>: <a href="../../../../models/results/models/captopril_body_flat.xml">../../../../models/results/models/captopril_body_flat.xml</a></li>
+            </ul>
+            </p>
+
+            <h2>Datasets</h2>
+            <p>
+            <ul>
+                <li><strong>CAP25l_captopril_plasma</strong>: <a href="AlFuraih1991_CAP25l_captopril_plasma.tsv">AlFuraih1991_CAP25l_captopril_plasma.tsv</a></li>
+                <li><strong>CAP25s_captopril_plasma</strong>: <a href="AlFuraih1991_CAP25s_captopril_plasma.tsv">AlFuraih1991_CAP25s_captopril_plasma.tsv</a></li>
+                <li><strong>CAP25l_concentration_renin_plasma</strong>: <a href="AlFuraih1991_CAP25l_concentration_renin_plasma.tsv">AlFuraih1991_CAP25l_concentration_renin_plasma.tsv</a></li>
+                <li><strong>CAP25s_concentration_renin_plasma</strong>: <a href="AlFuraih1991_CAP25s_concentration_renin_plasma.tsv">AlFuraih1991_CAP25s_concentration_renin_plasma.tsv</a></li>
+                <li><strong>CAP25l_BPD</strong>: <a href="AlFuraih1991_CAP25l_BPD.tsv">AlFuraih1991_CAP25l_BPD.tsv</a></li>
+                <li><strong>CAP25l_BPS</strong>: <a href="AlFuraih1991_CAP25l_BPS.tsv">AlFuraih1991_CAP25l_BPS.tsv</a></li>
+                <li><strong>CAP25s_BPD</strong>: <a href="AlFuraih1991_CAP25s_BPD.tsv">AlFuraih1991_CAP25s_BPD.tsv</a></li>
+                <li><strong>CAP25s_BPS</strong>: <a href="AlFuraih1991_CAP25s_BPS.tsv">AlFuraih1991_CAP25s_BPS.tsv</a></li>
+            </ul>
+            </p>
+
+            <h2>Figures</h2>
+            <p>
+            <ul>
+                <li><strong>PK</strong>: <a href="AlFuraih1991_PK.svg">AlFuraih1991_PK.svg</a></li>
+                <li><strong>PD</strong>: <a href="AlFuraih1991_PD.svg">AlFuraih1991_PD.svg</a></li>
+            </ul>
+            </p>
+
+            <h3>PK</h3>
+            <p>
+            <table>
+                <tr>
+                    <td>
+                        <!--<v-img src="AlFuraih1991_PK.svg" max-width="600" width="600"></v-img>-->
+                        <img src="AlFuraih1991_PK.svg" width="600">
+                    </td>
+                    <!--
+                    <td>
+                    </td>
+                    -->
+                </tr>
+            </table>
+            </p>
+            <h3>PD</h3>
+            <p>
+            <table>
+                <tr>
+                    <td>
+                        <!--<v-img src="AlFuraih1991_PD.svg" max-width="600" width="600"></v-img>-->
+                        <img src="AlFuraih1991_PD.svg" width="600">
+                    </td>
+                    <!--
+                    <td>
+                    </td>
+                    -->
+                </tr>
+            </table>
+            </p>
+
+            <h2>Code</h2>
+            <p>
+                <a href="../../../../experiments/studies/alfuraih1991.py">../../../../experiments/studies/alfuraih1991.py</a>
+            <pre>
+<code class="python">"""AlFuraih1991"""
+
+from typing import Dict, Tuple, List, Hashable
+
+import numpy as np
+from sbmlsim.data import DataSet, load_pkdb_dataframe
+from sbmlsim.fit import FitMapping, FitData
+from sbmlutils.console import console
+
+from pkdb_models.models.captopril.experiments.base_experiment import (
+    CaptoprilSimulationExperiment,
+)
+from pkdb_models.models.captopril.experiments.metadata import Tissue, Route, Dosing, Health, Fasting, \
+    CaptoprilMappingMetaData, PKPDData
+from sbmlsim.plot import Axis, Figure
+from sbmlsim.simulation import Timecourse, TimecourseSim
+
+from pkdb_models.models.captopril.helpers import run_experiments
+
+
+class AlFuraih1991(CaptoprilSimulationExperiment):
+    """Simulation experiment for AlFuraih1991.
+    Comparison of the pharmacokinetics and pharmacodynamics of captopril after sublingual and peroral administration.
+    Captopril tablet (Capoten, 25 mg) was administered 30 min after receiving the light breakfast (400 k. cal.) to 8 healthy male volunteers.
+    - overnight fast, light breakfast (400 k.cal)
+    - sd > mean, checked
+    """
+
+    dose = 25
+    ren = {
+        "PO": 16.56, #pg/ml
+        "SL": 21.78
+    }
+    sbp = {
+        "PO": 117,  # mmHg
+        "SL": 113
+    }
+    dbp = {
+        "PO": 74.4,  # mmHg
+        "SL": 76.0
+    }
+    heart_rate = {
+        "PO": 66.2,  # 1/min
+        "SL": 66.9
+    }
+
+    routes = []
+    elements_unique = ["concentration_renin", "BPS", "BPD", "captopril"]
+
+    def datasets(self) -> dict[str, DataSet]:
+        dsets = {}
+        self.reset_state()
+        self.routes =[]
+        for fig_id in ["Fig1", "Fig2", "Tab2"]:
+            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
+            for label, df_label in df.groupby("label"):
+                dset = DataSet.from_df(df_label, self.ureg)
+                for element in self.elements_unique:
+                    if element in label:
+                        self.data_collection(element=element, label=label)
+                        dset.unit_conversion(
+                            self.data_type, self.conversion_factor
+                        )
+                        dsets[f"{label}"] = dset
+                        if label.startswith("CAP25s"):
+                            self.routes.append("SL")
+                        else:
+                            self.routes.append("PO")
+                        break
+        return dsets
+
+    def simulations(self) -> Dict[str, TimecourseSim]:
+        # for what?
+        Q_ = self.Q_
+        tcsims = {}
+        for kr, route in enumerate(self.routes):
+            # single dose
+            tcsims[f"cap_{route}_{self.dose}"] = TimecourseSim(
+                Timecourse(
+                    start=0,
+                    end=210,  # minutes
+                    steps=400,
+                    changes={
+                        **self.default_changes(),
+                        f"{route}DOSE_cap": Q_(self.dose, "mg"),
+                        "HR": Q_(self.heart_rate[route], "1/min"),
+                        f"SBP_ref": Q_(self.sbp[route], "mmHg"),
+                        f"DBP_ref": Q_(self.dbp[route], "mmHg"),
+                        f"ren_ref": Q_(self.ren[route], "pg/ml") / self.Mr.ren,
+                        f"[ren]": Q_(self.ren[route], "pg/ml")  / self.Mr.ren
+                    },
+                )
+            )
+        return tcsims
+
+    def fit_mappings(self) -> Dict[str, FitMapping]:
+        mappings = {}
+        for kr, label in enumerate(self.clabels):
+            route = self.routes[kr]
+            element = self.element_ids[kr]
+            mappings[f"fm_cap{route}_{self.dose}{element}_plasma_acute_nonfasting_all"] = (
+                FitMapping(
+                    self,
+                    reference=FitData(
+                        self,
+                        dataset=label,
+                        xid="time",
+                        yid="mean",
+                        yid_sd="mean_sd",
+                        count="count",
+                    ),
+                    observable=FitData(
+                        self,
+                        task=f"task_cap_{route}_{self.dose}",
+                        xid="time",
+                        yid=self.yids[kr],
+                    ),
+                    metadata=CaptoprilMappingMetaData(
+                        tissue=Tissue.PLASMA,
+                        route=Route.SL if route == "SL" else Route.PO,
+                        dosing=Dosing.SINGLE,
+                        health=Health.HEALTHY,
+                        fasting=Fasting.LIGHT_BR,
+                        data=PKPDData.PK if "cap" in element else PKPDData.PD,
+                    ),
+                )
+            )
+        # console.print(mappings)
+        return mappings
+
+    def figures(self) -> Dict[str, Figure]:
+        return {
+            **self.pk_figures(),
+            **self.pd_figures()
+        }
+
+    def pk_figures(self) -> Dict[str, Figure]:
+        fig = Figure(
+            experiment=self,
+            sid="PK",
+            num_rows=1,
+            num_cols=1,
+            name=f"{self.__class__.__name__}",
+            height=self.panel_height,
+            width=self.panel_width,
+        )
+        plots = fig.create_plots(
+            xaxis=Axis(self.labels["time"], unit=self.units["time"]), legend=True
+        )
+        plots[0].set_yaxis(self.labels["[Cve_cap]"], unit=self.units["[Cve_cap]"])
+        # simulation
+        for route in ["PO", "SL"]:
+            plots[0].add_data(
+                task=f"task_cap_{route}_{self.dose}",
+                xid="time",
+                yid="[Cve_cap]",
+                label=f"sim: {self.dose}mg {route}",
+                color=self.routes_colors[f"{route}"],
+            )
+        for kl, label in enumerate(self.clabels):
+            # dataset
+            if "cap" in self.element_ids[kl]:
+                plots[0].add_data(
+                    dataset=self.clabels[kl],
+                    xid="time",
+                    yid="mean",
+                    yid_sd="mean_sd",
+                    count="count",
+                    label=f"exp: {self.dose}mg {self.routes[kl]}",
+                    color=self.routes_colors[f"{self.routes[kl]}"],
+                )
+
+        return {
+            fig.sid: fig,
+        }
+
+    def pd_figures(self) -> Dict[str, Figure]:
+        fig = Figure(
+            experiment=self,
+            sid=f"PD",
+            num_rows=1,
+            num_cols=3,
+            name=f"{self.__class__.__name__}",
+            height=self.panel_height,
+            width=self.panel_width * 3,
+        )
+        plots = fig.create_plots(
+            xaxis=Axis(self.labels["time"], unit=self.units["time"]), legend=True
+        )
+        for ky, yid in enumerate(["[ren]", "SBP", "DBP"]):
+            plots[ky].set_yaxis(self.labels[yid], unit=self.units[yid])
+            # simulation
+            for route in ["PO", "SL"]:
+                plots[ky].add_data(
+                    task=f"task_cap_{route}_{self.dose}",
+                    xid="time",
+                    yid=yid,
+                    label=f"sim: {self.dose}mg {route}",
+                    color=self.routes_colors[f"{route}"],
+                )
+            for kl, label in enumerate(self.clabels):
+                if yid == self.yids[kl]:
+                    # dataset
+                    plots[ky].add_data(
+                        dataset=label,
+                        xid="time",
+                        yid="mean",
+                        yid_sd="mean_sd",
+                        count="count",
+                        label=f"exp: {self.dose}mg {self.routes[kl]}",
+                        color=self.routes_colors[f"{self.routes[kl]}"],
+                    )
+
+        return {
+            fig.sid: fig,
+        }
+
+
+if __name__ == "__main__":
+    run_experiments(AlFuraih1991, output_dir=AlFuraih1991.__name__)
+</code>
+        </pre>
+            </p>
+
+        </v-content>
+    </v-app>
+</div>
+
+
+<!-- loading dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.2.6/dist/vuetify.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+    const app = new Vue({
+        el: '#app',
+        vuetify: new Vuetify(),
+        delimiters: ['${', '}'],
+        data() {
+            return {}
+        }
+    })
+</script>
+
+
+</body>
+</html>

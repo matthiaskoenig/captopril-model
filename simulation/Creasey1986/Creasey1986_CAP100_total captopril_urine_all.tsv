@@ -1,0 +1,5 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time_start	time_end	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Creasey1986		all	12.0	CAP100	recovery	total captopril	urine	GC/MS	CAP100_total captopril_urine_all			4.0	hr		0.00010217978409904052		7.694260850831364e-06	2.2211417867213434e-06		mole	percent
+Creasey1986		all	12.0	CAP100	recovery	total captopril	urine	GC/MS	CAP100_total captopril_urine_all			8.0	hr		0.00013757338401286482		8.534735509082797e-06	2.4637659218156054e-06		mole	percent
+Creasey1986		all	12.0	CAP100	recovery	total captopril	urine	GC/MS	CAP100_total captopril_urine_all			12.0	hr		0.00015296190571452753		8.97297297751783e-06	2.5902741820005783e-06		mole	percent
+Creasey1986		all	12.0	CAP100	recovery	total captopril	urine	GC/MS	CAP100_total captopril_urine_all			24.0	hr		0.0001634261004716582		4.6165565104988185e-06	1.3326850720328052e-06		mole	percent

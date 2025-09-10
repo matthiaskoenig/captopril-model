@@ -1,0 +1,8 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+AlFuraih1991	all	8.0	CAP25l	concentration	renin	plasma	RIA	CAP25l_concentration_renin_plasma	0.0	min		3.676431621986284e-10	13.214693877551	2.1030712426315866e-10	7.435479684916061e-11		mole/meter^3	pg/ml
+AlFuraih1991	all	8.0	CAP25l	concentration	renin	plasma	RIA	CAP25l_concentration_renin_plasma	10.0	min		3.7177398424580636e-10	12.8424489795919	2.453583116403511e-10	8.674726299068734e-11	not clear SD	mole/meter^3	pg/ml
+AlFuraih1991	all	8.0	CAP25l	concentration	renin	plasma	RIA	CAP25l_concentration_renin_plasma	20.0	min		6.113616629819916e-10	37.0383673469388	9.230146009327516e-10	2.1067192440595577e-10	not clear SD	mole/meter^3	pg/ml
+AlFuraih1991	all	8.0	CAP25l	concentration	renin	plasma	RIA	CAP25l_concentration_renin_plasma	30.0	min		6.774548157368e-10	15.8204081632653	1.4838335989678493e-09	3.263349417268726e-10		mole/meter^3	pg/ml
+AlFuraih1991	all	8.0	CAP25l	concentration	renin	plasma	RIA	CAP25l_concentration_renin_plasma	60.0	min		1.5449274456436822e-09	45.9722448979592	1.2034240999503206e-09	5.246143999913021e-10		mole/meter^3	pg/ml
+AlFuraih1991	all	8.0	CAP25l	concentration	renin	plasma	RIA	CAP25l_concentration_renin_plasma	120.0	min		1.8258233448516277e-09	63.0955102040816	1.0281681630643384e-09	4.25474670859094e-10		mole/meter^3	pg/ml
+AlFuraih1991	all	8.0	CAP25l	concentration	renin	plasma	RIA	CAP25l_concentration_renin_plasma	180.0	min		1.5242733354078034e-09	52.3004081632653	1.0281681630643384e-09	3.635123401514548e-10		mole/meter^3	pg/ml

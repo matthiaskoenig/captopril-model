@@ -1,0 +1,10 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Richer1984		all	6.0	CAP1	concentration	renin	plasma	RIA	CAP1_concentration_renin_plasma_6	0.329011527946109	hr		9.777170517631932e-11				1 ng/mL/h of PRA ≈ 7.6 pg/mL of DRC (range: 5.5–9.7 pg/mL)	mole/meter^3	pg/ml
+Richer1984		all	6.0	CAP1	concentration	renin	plasma	RIA	CAP1_concentration_renin_plasma_6	0.546407734152598	hr		1.6409129545200098e-10					mole/meter^3	pg/ml
+Richer1984		all	6.0	CAP1	concentration	renin	plasma	RIA	CAP1_concentration_renin_plasma_6	0.667831675075397	hr		2.0408350065744676e-10					mole/meter^3	pg/ml
+Richer1984		all	6.0	CAP1	concentration	renin	plasma	RIA	CAP1_concentration_renin_plasma_6	1.01307815891091	hr		2.13777469472873e-10					mole/meter^3	pg/ml
+Richer1984		all	6.0	CAP1	concentration	renin	plasma	RIA	CAP1_concentration_renin_plasma_6	1.45564982102089	hr		2.613520016024946e-10					mole/meter^3	pg/ml
+Richer1984		all	6.0	CAP1	concentration	renin	plasma	RIA	CAP1_concentration_renin_plasma_6	1.9947010907861	hr		4.0831908454604385e-10					mole/meter^3	pg/ml
+Richer1984		all	6.0	CAP1	concentration	renin	plasma	RIA	CAP1_concentration_renin_plasma_6	3.03314636827419	hr		3.510601287382581e-10					mole/meter^3	pg/ml
+Richer1984		all	6.0	CAP1	concentration	renin	plasma	RIA	CAP1_concentration_renin_plasma_6	5.99687138870881	hr		3.2349888376127787e-10					mole/meter^3	pg/ml
+Richer1984		all	6.0	CAP1	concentration	renin	plasma	RIA	CAP1_concentration_renin_plasma_6	24.0	hr		8.449845498415539e-11					mole/meter^3	pg/ml

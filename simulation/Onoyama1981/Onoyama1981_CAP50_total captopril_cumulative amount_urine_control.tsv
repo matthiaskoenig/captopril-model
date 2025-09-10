@@ -1,0 +1,4 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Onoyama1981		control	5.0	CAP50	cumulative amount	total captopril	urine	HPLC	CAP50_total captopril_cumulative amount_urine_control	2.0	hr		0.00010649091063508071	23.1558935361217	2.747549021144942e-05	1.2287412765586186e-05		mole	mg
+Onoyama1981		control	5.0	CAP50	cumulative amount	total captopril	urine	HPLC	CAP50_total captopril_cumulative amount_urine_control	4.0	hr		0.00013925734467664353	29.8859315589354	3.140056024165647e-05	1.4042757446384237e-05		mole	mg
+Onoyama1981		control	5.0	CAP50	cumulative amount	total captopril	urine	HPLC	CAP50_total captopril_cumulative amount_urine_control	6.0	hr		0.0001492042978678326	31.5969581749049	2.8783846888185206e-05	1.2872527659185588e-05		mole	mg

@@ -1,0 +1,17 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit
+Ohman1985		chronic_fasting	9.0	CAP25_chronic_fasting	MAP			sphygmomanometer	CAP25_chronic_fasting_MAP	0.0	hr		113.808226270113							mmHg	mmHg
+Ohman1985		chronic_fasting	9.0	CAP25_chronic_fasting	MAP			sphygmomanometer	CAP25_chronic_fasting_MAP	0.25	hr		113.004673088189							mmHg	mmHg
+Ohman1985		chronic_fasting	9.0	CAP25_chronic_fasting	MAP			sphygmomanometer	CAP25_chronic_fasting_MAP	0.5	hr		107.693156582515							mmHg	mmHg
+Ohman1985		chronic_fasting	9.0	CAP25_chronic_fasting	MAP			sphygmomanometer	CAP25_chronic_fasting_MAP	0.75	hr		105.734819275467							mmHg	mmHg
+Ohman1985		chronic_fasting	9.0	CAP25_chronic_fasting	MAP			sphygmomanometer	CAP25_chronic_fasting_MAP	1.0	hr		102.627419992098							mmHg	mmHg
+Ohman1985		chronic_fasting	9.0	CAP25_chronic_fasting	MAP			sphygmomanometer	CAP25_chronic_fasting_MAP	1.25	hr		102.589272333411							mmHg	mmHg
+Ohman1985		chronic_fasting	9.0	CAP25_chronic_fasting	MAP			sphygmomanometer	CAP25_chronic_fasting_MAP	1.5	hr		103.704001416913							mmHg	mmHg
+Ohman1985		chronic_fasting	9.0	CAP25_chronic_fasting	MAP			sphygmomanometer	CAP25_chronic_fasting_MAP	2.0	hr		103.821441709015							mmHg	mmHg
+Ohman1985		chronic_fasting	9.0	CAP25_chronic_fasting	MAP			sphygmomanometer	CAP25_chronic_fasting_MAP	2.5	hr		103.748961157509							mmHg	mmHg
+Ohman1985		chronic_fasting	9.0	CAP25_chronic_fasting	MAP			sphygmomanometer	CAP25_chronic_fasting_MAP	3.0	hr		105.589040722626							mmHg	mmHg
+Ohman1985		chronic_fasting	9.0	CAP25_chronic_fasting	MAP			sphygmomanometer	CAP25_chronic_fasting_MAP	4.0	hr		104.674859330509							mmHg	mmHg
+Ohman1985		chronic_fasting	9.0	CAP25_chronic_fasting	MAP			sphygmomanometer	CAP25_chronic_fasting_MAP	6.0	hr		104.527990844562							mmHg	mmHg
+Ohman1985		chronic_fasting	9.0	CAP25_chronic_fasting	MAP			sphygmomanometer	CAP25_chronic_fasting_MAP	8.0	hr		106.585239580921							mmHg	mmHg
+Ohman1985		chronic_fasting	9.0	CAP25_chronic_fasting	MAP			sphygmomanometer	CAP25_chronic_fasting_MAP	10.0	hr		109.505715336721							mmHg	mmHg
+Ohman1985		chronic_fasting	9.0	CAP25_chronic_fasting	MAP			sphygmomanometer	CAP25_chronic_fasting_MAP	12.0	hr		112.422376326653							mmHg	mmHg
+Ohman1985		chronic_fasting	9.0	CAP25_chronic_fasting	MAP			sphygmomanometer	CAP25_chronic_fasting_MAP	24.0	hr		114.097875992861							mmHg	mmHg

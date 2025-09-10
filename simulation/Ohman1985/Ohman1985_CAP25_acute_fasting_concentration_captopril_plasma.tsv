@@ -1,0 +1,17 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit
+Ohman1985		acute_fasting	6.0	CAP25_acute_fasting	concentration	captopril	plasma	NR	CAP25_acute_fasting_concentration_captopril_plasma	0.0	hr		0.0503517982616549						captopril = free captopril = captopril	umol/l	umol/l
+Ohman1985		acute_fasting	6.0	CAP25_acute_fasting	concentration	captopril	plasma	NR	CAP25_acute_fasting_concentration_captopril_plasma	0.25	hr		0.229324881844074							umol/l	umol/l
+Ohman1985		acute_fasting	6.0	CAP25_acute_fasting	concentration	captopril	plasma	NR	CAP25_acute_fasting_concentration_captopril_plasma	0.5	hr		0.990299331237936							umol/l	umol/l
+Ohman1985		acute_fasting	6.0	CAP25_acute_fasting	concentration	captopril	plasma	NR	CAP25_acute_fasting_concentration_captopril_plasma	0.75	hr		2.05215276141969							umol/l	umol/l
+Ohman1985		acute_fasting	6.0	CAP25_acute_fasting	concentration	captopril	plasma	NR	CAP25_acute_fasting_concentration_captopril_plasma	1.0	hr		2.89405059610775							umol/l	umol/l
+Ohman1985		acute_fasting	6.0	CAP25_acute_fasting	concentration	captopril	plasma	NR	CAP25_acute_fasting_concentration_captopril_plasma	1.25	hr		3.23966037213417							umol/l	umol/l
+Ohman1985		acute_fasting	6.0	CAP25_acute_fasting	concentration	captopril	plasma	NR	CAP25_acute_fasting_concentration_captopril_plasma	1.5	hr		3.0907946818054							umol/l	umol/l
+Ohman1985		acute_fasting	6.0	CAP25_acute_fasting	concentration	captopril	plasma	NR	CAP25_acute_fasting_concentration_captopril_plasma	2.0	hr		2.49913220740639							umol/l	umol/l
+Ohman1985		acute_fasting	6.0	CAP25_acute_fasting	concentration	captopril	plasma	NR	CAP25_acute_fasting_concentration_captopril_plasma	2.5	hr		1.98515234218819							umol/l	umol/l
+Ohman1985		acute_fasting	6.0	CAP25_acute_fasting	concentration	captopril	plasma	NR	CAP25_acute_fasting_concentration_captopril_plasma	3.0	hr		1.53082658987946							umol/l	umol/l
+Ohman1985		acute_fasting	6.0	CAP25_acute_fasting	concentration	captopril	plasma	NR	CAP25_acute_fasting_concentration_captopril_plasma	4.0	hr		1.11995331696311							umol/l	umol/l
+Ohman1985		acute_fasting	6.0	CAP25_acute_fasting	concentration	captopril	plasma	NR	CAP25_acute_fasting_concentration_captopril_plasma	6.0	hr		0.599411752374335							umol/l	umol/l
+Ohman1985		acute_fasting	6.0	CAP25_acute_fasting	concentration	captopril	plasma	NR	CAP25_acute_fasting_concentration_captopril_plasma	8.0	hr		0.361131484332522							umol/l	umol/l
+Ohman1985		acute_fasting	6.0	CAP25_acute_fasting	concentration	captopril	plasma	NR	CAP25_acute_fasting_concentration_captopril_plasma	10.0	hr		0.229470223013315							umol/l	umol/l
+Ohman1985		acute_fasting	6.0	CAP25_acute_fasting	concentration	captopril	plasma	NR	CAP25_acute_fasting_concentration_captopril_plasma	12.0	hr		0.135012188692425							umol/l	umol/l
+Ohman1985		acute_fasting	6.0	CAP25_acute_fasting	concentration	captopril	plasma	NR	CAP25_acute_fasting_concentration_captopril_plasma	24.0	hr		0.0506508192538274							umol/l	umol/l

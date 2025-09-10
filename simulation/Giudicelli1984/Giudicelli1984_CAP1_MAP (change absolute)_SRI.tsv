@@ -1,0 +1,14 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Giudicelli1984		SRI	10.0	CAP1	MAP (change absolute)			NR	CAP1_MAP (change absolute)_SRI	0.637890433556067	hr		-1474.152890479883	-8.07658056110068	1256.574945740854	397.3638879243597		kilogram/meter/second^2	mmHg
+Giudicelli1984		SRI	10.0	CAP1	MAP (change absolute)			NR	CAP1_MAP (change absolute)_SRI	0.992194317271715	hr		-1593.1528865146174	-11.0886417155767	362.99374103113473	114.78869980437034		kilogram/meter/second^2	mmHg
+Giudicelli1984		SRI	10.0	CAP1	MAP (change absolute)			NR	CAP1_MAP (change absolute)_SRI	1.48018695387116	hr		-1769.4695406100054	-11.8481418171821	600.3488861938916	189.84698711179107		kilogram/meter/second^2	mmHg
+Giudicelli1984		SRI	10.0	CAP1	MAP (change absolute)			NR	CAP1_MAP (change absolute)_SRI	2.06299532615322	hr		-1738.2453887108425	-12.3094600571381	307.11656767811223	97.11878610360861		kilogram/meter/second^2	mmHg
+Giudicelli1984		SRI	10.0	CAP1	MAP (change absolute)			NR	CAP1_MAP (change absolute)_SRI	2.94732060676333	hr		-1680.366958873006	-11.4446190994179	488.70793172246437	154.54301748330425		kilogram/meter/second^2	mmHg
+Giudicelli1984		SRI	10.0	CAP1	MAP (change absolute)			NR	CAP1_MAP (change absolute)_SRI	4.04078558877321	hr		-2174.2041929867564	-13.4269995338107	1214.5820215501587	384.0845593190219		kilogram/meter/second^2	mmHg
+Giudicelli1984		SRI	10.0	CAP1	MAP (change absolute)			NR	CAP1_MAP (change absolute)_SRI	5.0704184945671	hr		-2019.1233089082796	-11.9659741563766	1340.1450225955089	423.7910666339606		kilogram/meter/second^2	mmHg
+Giudicelli1984		SRI	10.0	CAP1	MAP (change absolute)			NR	CAP1_MAP (change absolute)_SRI	6.04037916731415	hr		-1612.440384197897	-10.7368181981185	572.3158059886597	180.9821487839199		kilogram/meter/second^2	mmHg
+Giudicelli1984		SRI	10.0	CAP1	MAP (change absolute)			NR	CAP1_MAP (change absolute)_SRI	7.06456124412781	hr		-2040.09612192311	-13.4807607253428	767.8292166068437	242.80891785004064		kilogram/meter/second^2	mmHg
+Giudicelli1984		SRI	10.0	CAP1	MAP (change absolute)			NR	CAP1_MAP (change absolute)_SRI	8.09103840682788	hr		-1836.455844792822	-10.4965215104534	1382.024554551621	437.0345374662727		kilogram/meter/second^2	mmHg
+Giudicelli1984		SRI	10.0	CAP1	MAP (change absolute)			NR	CAP1_MAP (change absolute)_SRI	9.0165317905256	hr		-2078.7508012296876	-10.3271991584685	2219.6151936737706	701.903954112488		kilogram/meter/second^2	mmHg
+Giudicelli1984		SRI	10.0	CAP1	MAP (change absolute)			NR	CAP1_MAP (change absolute)_SRI	10.0595048830343	hr		-1795.637746514528	-9.32946436042411	1744.9804981712018	551.8112846796296		kilogram/meter/second^2	mmHg
+Giudicelli1984		SRI	10.0	CAP1	MAP (change absolute)			NR	CAP1_MAP (change absolute)_SRI	23.946352367405	hr		-1832.1210384554033	-9.73537779265334	1689.2167170527478	534.177228751887		kilogram/meter/second^2	mmHg

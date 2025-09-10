@@ -1,0 +1,2 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Drummer1987		SRI	9.0	CAP50	blood pressure systolic (change)			NR	CAP50_blood pressure systolic (change)_SRI	6.0	hr		-4986.257289321		2879.7635681640004	959.9211893880001	maximal reduction in blood pressure	kilogram/meter/second^2	mmHg

@@ -1,0 +1,8 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit
+Nishida1990		group1	7.0	CAP12_5	concentration	renin	plasma	RIA	CAP12_5_concentration_renin_plasma_group1	0.0	hr		1.5180771023370396e-10		1.8554275695230484e-10	7.012857035215703e-11				mole/meter^3	pg/ml
+Nishida1990		group1	7.0	CAP12_5	concentration	renin	plasma	RIA	CAP12_5_concentration_renin_plasma_group1	0.5	hr		6.547016466731273e-10		1.3746968535788753e-09	5.195865718103823e-10				mole/meter^3	pg/ml
+Nishida1990		group1	7.0	CAP12_5	concentration	renin	plasma	RIA	CAP12_5_concentration_renin_plasma_group1	1.0	hr		8.544124462614843e-10		1.7165053003427901e-09	6.487780212616086e-10				mole/meter^3	pg/ml
+Nishida1990		group1	7.0	CAP12_5	concentration	renin	plasma	RIA	CAP12_5_concentration_renin_plasma_group1	1.5	hr		1.1195652027770978e-09		2.0583137471067113e-09	7.779694707128348e-10				mole/meter^3	pg/ml
+Nishida1990		group1	7.0	CAP12_5	concentration	renin	plasma	RIA	CAP12_5_concentration_renin_plasma_group1	2.0	hr		1.6433829355957097e-09		3.089709540617018e-09	1.1678004382708967e-09				mole/meter^3	pg/ml
+Nishida1990		group1	7.0	CAP12_5	concentration	renin	plasma	RIA	CAP12_5_concentration_renin_plasma_group1	4.0	hr		6.270580614193731e-10		1.7179979136474331e-09	6.49342176062705e-10				mole/meter^3	pg/ml
+Nishida1990		group1	7.0	CAP12_5	concentration	renin	plasma	RIA	CAP12_5_concentration_renin_plasma_group1	6.0	hr		3.2326070102861263e-10		6.895873467464033e-10	2.6063951810683574e-10				mole/meter^3	pg/ml

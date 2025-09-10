@@ -1,0 +1,11 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Drummer1987		EH	8.0	CAP50	concentration	total captopril	plasma	GC/MS	CAP50_total captopril_EH	0.25	hr		0.0009192170608007323	0.357095473119991	0.0005085999215904252	0.00017981722673376775		mole/meter^3	microg/ml
+Drummer1987		EH	8.0	CAP50	concentration	total captopril	plasma	GC/MS	CAP50_total captopril_EH	0.5	hr		0.001843701646145098	0.800796936085902	0.001756211583007514	0.0006209145597714864		mole/meter^3	microg/ml
+Drummer1987		EH	8.0	CAP50	concentration	total captopril	plasma	GC/MS	CAP50_total captopril_EH	0.75	hr		0.0027766932155715613	1.06293672274408	0.0013992561312638034	0.0004947117495167449		mole/meter^3	microg/ml
+Drummer1987		EH	8.0	CAP50	concentration	total captopril	plasma	GC/MS	CAP50_total captopril_EH	1.0	hr		0.0024772201535326224	0.965752091846662	0.0014002955830753742	0.0004950792512290841		mole/meter^3	microg/ml
+Drummer1987		EH	8.0	CAP50	concentration	total captopril	plasma	GC/MS	CAP50_total captopril_EH	1.5	hr		0.0027063642767680344	1.10744042880645	0.0019855839494321258	0.0007020099376293118		mole/meter^3	microg/ml
+Drummer1987		EH	8.0	CAP50	concentration	total captopril	plasma	GC/MS	CAP50_total captopril_EH	2.0	hr		0.0022869903782823634	1.14945868492278	0.0035375240023541965	0.0012507036053374162	SD>mean	mole/meter^3	microg/ml
+Drummer1987		EH	8.0	CAP50	concentration	total captopril	plasma	GC/MS	CAP50_total captopril_EH	3.0	hr		0.0018180990268516126	0.739819384740575	0.0012978133340954515	0.0004588463046266082		mole/meter^3	microg/ml
+Drummer1987		EH	8.0	CAP50	concentration	total captopril	plasma	GC/MS	CAP50_total captopril_EH	4.0	hr		0.0014568040100912474	0.584465495586336	0.0009673446544396899	0.0003420079824494309		mole/meter^3	microg/ml
+Drummer1987		EH	8.0	CAP50	concentration	total captopril	plasma	GC/MS	CAP50_total captopril_EH	6.0	hr		0.0010404790147005992	0.548665286843921	0.0018332465117110617	0.0006481505200087375	SD>mean	mole/meter^3	microg/ml
+Drummer1987		EH	8.0	CAP50	concentration	total captopril	plasma	GC/MS	CAP50_total captopril_EH	8.0	hr		0.00046220826473585436	0.196952006934494	0.0004071571244221071	0.00014395178184364337		mole/meter^3	microg/ml

@@ -1,0 +1,13 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+McElnay1996		all	6.0	POCAP12.5	blood pressure systolic			NR	POCAP12.5_blood pressure systolic	0.0	min		16242.66645876945		399.96716224500005	163.28591022820393		kilogram/meter/second^2	mmHg
+McElnay1996		all	6.0	POCAP12.5	blood pressure systolic			NR	POCAP12.5_blood pressure systolic	5.0	min		15958.689773575501		853.2632794560001	348.343275153501		kilogram/meter/second^2	mmHg
+McElnay1996		all	6.0	POCAP12.5	blood pressure systolic			NR	POCAP12.5_blood pressure systolic	10.0	min		15776.03810281695		1106.5758155445	451.75768496469675		kilogram/meter/second^2	mmHg
+McElnay1996		all	6.0	POCAP12.5	blood pressure systolic			NR	POCAP12.5_blood pressure systolic	15.0	min		15558.7226113305		1119.9080542860002	457.20054863897076		kilogram/meter/second^2	mmHg
+McElnay1996		all	6.0	POCAP12.5	blood pressure systolic			NR	POCAP12.5_blood pressure systolic	20.0	min		15292.0778365005		1293.2271579255	527.9577764045255		kilogram/meter/second^2	mmHg
+McElnay1996		all	6.0	POCAP12.5	blood pressure systolic			NR	POCAP12.5_blood pressure systolic	25.0	min		15376.07094057195		999.9179056125	408.2147755705091		kilogram/meter/second^2	mmHg
+McElnay1996		all	6.0	POCAP12.5	blood pressure systolic			NR	POCAP12.5_blood pressure systolic	30.0	min		15198.752165310001		986.5856668710001	402.77191189623653		kilogram/meter/second^2	mmHg
+McElnay1996		all	6.0	POCAP12.5	blood pressure systolic			NR	POCAP12.5_blood pressure systolic	40.0	min		15109.42616574195		1119.9080542860002	457.20054863897076		kilogram/meter/second^2	mmHg
+McElnay1996		all	6.0	POCAP12.5	blood pressure systolic			NR	POCAP12.5_blood pressure systolic	60.0	min		15109.42616574195		1493.210739048	609.6007315186281		kilogram/meter/second^2	mmHg
+McElnay1996		all	6.0	POCAP12.5	blood pressure systolic			NR	POCAP12.5_blood pressure systolic	90.0	min		14821.44980892555		1293.2271579255	527.9577764045255		kilogram/meter/second^2	mmHg
+McElnay1996		all	6.0	POCAP12.5	blood pressure systolic			NR	POCAP12.5_blood pressure systolic	120.0	min		14865.4461967725		1253.230441701	511.62918538170493		kilogram/meter/second^2	mmHg
+McElnay1996		all	6.0	POCAP12.5	blood pressure systolic			NR	POCAP12.5_blood pressure systolic	180.0	min		16265.331264630002		919.9244731635001	375.55759352486814		kilogram/meter/second^2	mmHg

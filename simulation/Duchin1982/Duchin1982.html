@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <title>Duchin1982</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <!--<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+</head>
+
+<body>
+<div id="app">
+    <!-- Vue app-->
+    <v-app>
+        <v-content>
+
+            <a href="../index.html">Experiments</a>
+            <h1>Duchin1982</h1>
+
+            <h2>Models</h2>
+            <p>
+            <ul>
+                <li><strong>model</strong>: <a href="../../../../models/results/models/captopril_body_flat.xml">../../../../models/results/models/captopril_body_flat.xml</a></li>
+            </ul>
+            </p>
+
+            <h2>Datasets</h2>
+            <p>
+            <ul>
+                <li><strong>CAP10iv_recovery_captopril_urine_all</strong>: <a href="Duchin1982_CAP10iv_recovery_captopril_urine_all.tsv">Duchin1982_CAP10iv_recovery_captopril_urine_all.tsv</a></li>
+                <li><strong>CAP10o_recovery_captopril_urine_all</strong>: <a href="Duchin1982_CAP10o_recovery_captopril_urine_all.tsv">Duchin1982_CAP10o_recovery_captopril_urine_all.tsv</a></li>
+                <li><strong>CAP10iv_captopril_blood_I1</strong>: <a href="Duchin1982_CAP10iv_captopril_blood_I1.tsv">Duchin1982_CAP10iv_captopril_blood_I1.tsv</a></li>
+                <li><strong>CAP10iv_captopril_blood_all</strong>: <a href="Duchin1982_CAP10iv_captopril_blood_all.tsv">Duchin1982_CAP10iv_captopril_blood_all.tsv</a></li>
+                <li><strong>CAP10o_captopril_blood_all</strong>: <a href="Duchin1982_CAP10o_captopril_blood_all.tsv">Duchin1982_CAP10o_captopril_blood_all.tsv</a></li>
+                <li><strong>CAP10iv_recovery_captopril+metabolites_feces_all</strong>: <a href="Duchin1982_CAP10iv_recovery_captopril+metabolites_feces_all.tsv">Duchin1982_CAP10iv_recovery_captopril+metabolites_feces_all.tsv</a></li>
+                <li><strong>CAP10iv_recovery_captopril+metabolites_urine_all</strong>: <a href="Duchin1982_CAP10iv_recovery_captopril+metabolites_urine_all.tsv">Duchin1982_CAP10iv_recovery_captopril+metabolites_urine_all.tsv</a></li>
+                <li><strong>CAP10o_recovery_captopril+metabolites_feces_all</strong>: <a href="Duchin1982_CAP10o_recovery_captopril+metabolites_feces_all.tsv">Duchin1982_CAP10o_recovery_captopril+metabolites_feces_all.tsv</a></li>
+                <li><strong>CAP10o_recovery_captopril+metabolites_urine_all</strong>: <a href="Duchin1982_CAP10o_recovery_captopril+metabolites_urine_all.tsv">Duchin1982_CAP10o_recovery_captopril+metabolites_urine_all.tsv</a></li>
+            </ul>
+            </p>
+
+            <h2>Figures</h2>
+            <p>
+            <ul>
+                <li><strong>Figure 2,3</strong>: <a href="Duchin1982_Figure 2,3.svg">Duchin1982_Figure 2,3.svg</a></li>
+                <li><strong>Tabs 1,2</strong>: <a href="Duchin1982_Tabs 1,2.svg">Duchin1982_Tabs 1,2.svg</a></li>
+            </ul>
+            </p>
+
+            <h3>Figure 2,3</h3>
+            <p>
+            <table>
+                <tr>
+                    <td>
+                        <!--<v-img src="Duchin1982_Figure 2,3.svg" max-width="600" width="600"></v-img>-->
+                        <img src="Duchin1982_Figure 2,3.svg" width="600">
+                    </td>
+                    <!--
+                    <td>
+                    </td>
+                    -->
+                </tr>
+            </table>
+            </p>
+            <h3>Tabs 1,2</h3>
+            <p>
+            <table>
+                <tr>
+                    <td>
+                        <!--<v-img src="Duchin1982_Tabs 1,2.svg" max-width="600" width="600"></v-img>-->
+                        <img src="Duchin1982_Tabs 1,2.svg" width="600">
+                    </td>
+                    <!--
+                    <td>
+                    </td>
+                    -->
+                </tr>
+            </table>
+            </p>
+
+            <h2>Code</h2>
+            <p>
+                <a href="../../../../experiments/studies/duchin1982.py">../../../../experiments/studies/duchin1982.py</a>
+            <pre>
+<code class="python">"""Duchin1982 experiment"""
+
+from typing import Dict
+
+from sbmlsim.data import DataSet, load_pkdb_dataframe
+from sbmlsim.fit import FitMapping, FitData
+from sbmlutils.console import console
+
+from pkdb_models.models.captopril.experiments.base_experiment import (
+    CaptoprilSimulationExperiment,
+)
+from pkdb_models.models.captopril.experiments.metadata import Tissue, Route, Dosing, Health, Fasting, \
+    CaptoprilMappingMetaData, PKPDData
+from sbmlsim.plot import Axis, Figure
+from sbmlsim.simulation import Timecourse, TimecourseSim
+
+from pkdb_models.models.captopril.helpers import run_experiments
+
+
+class Duchin1982(CaptoprilSimulationExperiment):
+    """Simulation experiment for Duchin1982.
+    Pharmacokinetics of captopril in healthy subjects given by mouth and intravenously.
+    - fasting 8 hr before and 4 hr after
+    """
+
+    routes = []
+    dose = 10  # mg
+    yids = []
+    clabels = []
+    substances = []
+    tissues = []
+
+    colors = {
+        "PO": CaptoprilSimulationExperiment.routes_colors["PO"],
+        "IV": CaptoprilSimulationExperiment.routes_colors["IV"],
+    }
+    
+
+    def datasets(self) -> Dict[str, DataSet]:
+        dsets = {}
+        Q_ = self.Q_
+        self.clabels = []
+        self.tissues = []
+        self.yids = []
+        self.substances = []
+        self.routes = []
+        recovery_to_cumamount = Q_(self.dose, "mg") / Q_(100, "percent")
+        for fig_id in ["Tab1Mean", "Fig2", "Fig3", "Tab2"]:
+            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
+            for label, df_label in df.groupby("label"):
+                dset = DataSet.from_df(df_label, self.ureg)
+                if fig_id == "Tab1Mean":
+                    if "_captopril_urine" in label:
+                        dset.unit_conversion(
+                            "mean", 1 / self.Mr.cap * recovery_to_cumamount
+                        )
+                        self.yids.append("Aurine_cap")
+                        self.substances.append("cap")
+                        self.tissues.append("urine")
+                    else:
+                        continue
+                else:
+                    if "urine" in label:
+                        dset.unit_conversion(
+                            "mean", 1 / self.Mr.capall * recovery_to_cumamount
+                        )
+                        self.yids.append("Aurine_capall")
+                        self.substances.append("capall")
+                        self.tissues.append("urine")
+                    elif "blood" in label:
+                        if "_I" in label:
+                            a = "value"
+                        else:
+                            a = "mean"
+                        dset.unit_conversion(a, 1 / self.Mr.cap / self.BPRatios.cap)
+                        self.yids.append("[Cve_cap]")
+                        self.substances.append("cap")
+                        self.tissues.append("plasma")
+                    elif "feces" in label:
+                        dset.unit_conversion(
+                            "mean", 1 / self.Mr.captot * recovery_to_cumamount
+                        )
+                        self.yids.append("Afeces_captot")
+                        self.substances.append("captot")
+                        self.tissues.append("feces")
+                    else:
+                        continue
+                dsets[f"{label}"] = dset
+                self.clabels.append(label)
+                if "iv" in label:
+                    self.routes.append("IV")
+                else:
+                    self.routes.append("PO")
+        # console.print(dsets.keys())
+        # console.print(dsets)
+        return dsets
+
+    def simulations(self) -> Dict[str, TimecourseSim]:
+        Q_ = self.Q_
+        tcsims = {}
+        for k, route in enumerate(self.routes):
+            tcsims[f"cap_{route}_{self.dose}"] = TimecourseSim(
+                Timecourse(
+                    start=0,
+                    end=100 * 60,  # minutes
+                    steps=1500,
+                    changes={
+                        **self.default_changes(),
+                        "BW": Q_(78.6, "kg"),
+                        "HEIGHT": Q_(181, "cm"),
+                        f"{route}DOSE_cap": Q_(self.dose, "mg"),
+                    },
+                )
+            )
+        return tcsims
+
+    def fit_mappings(self) -> Dict[str, FitMapping]:
+        mappings = {}
+        for kr, dset_id in enumerate(self.clabels):
+            subjects = dset_id.split("_")[-1]
+            route = self.routes[kr]
+            substance = self.substances[kr]
+            tissue = self.tissues[kr]
+            mappings[
+                f"fm_cap{route}{self.dose}_{substance}_{tissue}_acute_fasting_{subjects}"
+            ] = FitMapping(
+                self,
+                reference=FitData(
+                    self,
+                    dataset=dset_id,
+                    xid="time",
+                    yid="mean" if "all" in dset_id else "value",
+                    yid_sd="mean_sd" if "all" in dset_id else None,
+                    count="count",
+                ),
+                observable=FitData(
+                    self,
+                    task=f"task_cap_{route}_{self.dose}",
+                    xid="time",
+                    yid=self.yids[kr],
+                ),
+                metadata=CaptoprilMappingMetaData(
+                    tissue=(
+                        Tissue.PLASMA
+                        if "blood" in dset_id
+                        else Tissue.URINE if "urine" in dset_id else Tissue.FECES
+                    ),
+                    route=Route.PO if route == "PO" else Route.IV,
+                    dosing=Dosing.SINGLE,
+                    health=Health.HEALTHY,
+                    fasting=Fasting.FASTING,
+                    data=PKPDData.PK
+                ),
+            )
+        # console.print(mappings)
+        return mappings
+
+    def figures(self) -> Dict[str, Figure]:
+        fig1 = Figure(
+            experiment=self,
+            sid="Figure 2,3",
+            num_rows=1,
+            num_cols=1,
+            name=f"{self.__class__.__name__}",
+            height=self.panel_height,
+            width=self.panel_width,
+        )
+        plots = fig1.create_plots(
+            xaxis=Axis(self.labels["time"], unit=self.units["time"]), legend=True
+        )
+
+        xaxis_max = {
+            "[Cve_cap]": 9,
+            "Aurine_cap": 25,
+            "Aurine_capall": 100,
+            "Afeces_captot": 100,
+        }
+
+        xaxis_min = {
+            "[Cve_cap]": 0,
+            "Aurine_cap": 0,
+            "Aurine_capall": 0,
+            "Afeces_captot": 0
+        }
+
+        plots[0].set_yaxis(self.labels["[Cve_cap]"], unit=self.units["[Cve_cap]"])
+        plots[0].xaxis.max = xaxis_max["[Cve_cap]"]
+        plots[0].xaxis.min = xaxis_min["[Cve_cap]"]
+
+        for kr, dset_id in enumerate(self.clabels):
+            route = self.routes[kr]
+            yid = self.yids[kr]
+            if yid == "[Cve_cap]":
+                if "all" in dset_id:
+                    # simulation
+                    plots[0].add_data(
+                        task=f"task_cap_{route}_{self.dose}",
+                        xid="time",
+                        yid=yid,
+                        label=f"sim all: {self.dose}mg {route}",
+                        color=self.colors[f"{route}"],
+                    )
+                # dataset
+                plots[0].add_data(
+                    dataset=dset_id,
+                    xid="time",
+                    yid="mean" if "all" in dset_id else "value",
+                    yid_sd="mean_sd" if "all" in dset_id else None,
+                    count="count",
+                    label=f"exp all: {self.dose}mg {route}" if "all" in dset_id else f"exp I1: {self.dose}mg {route}",
+                    color=self.colors[f"{route}"],
+                    marker="s" if "all" in dset_id else "^",
+                )
+
+        fig2 = Figure(
+            experiment=self,
+            sid="Tabs 1,2",
+            num_rows=1,
+            num_cols=3,
+            name=f"{self.__class__.__name__}",
+            height=self.panel_height,
+            width=self.panel_width * 3,
+        )
+        plots = fig2.create_plots(
+            xaxis=Axis(self.labels["time"], unit=self.units["time"]), legend=True
+        )
+
+        for kyu, yid_unique in enumerate(["Aurine_cap", "Aurine_capall", "Afeces_captot"]):
+            plots[kyu].set_yaxis(self.labels[yid_unique], unit=self.units[yid_unique])
+            plots[kyu].xaxis.max = xaxis_max[yid_unique]
+            plots[kyu].xaxis.min = xaxis_min[yid_unique]
+            for kr, dset_id in enumerate(self.clabels):
+                route = self.routes[kr]
+                yid = self.yids[kr]
+                if yid == yid_unique:
+                    # simulation
+                    plots[kyu].add_data(
+                        task=f"task_cap_{route}_{self.dose}",
+                        xid="time",
+                        yid=yid,
+                        label=f"sim: {self.dose}mg {route}",
+                        color=self.colors[f"{route}"],
+                    )
+                    # dataset
+                    plots[kyu].add_data(
+                        dataset=dset_id,
+                        xid="time",
+                        yid="mean" if "all" in dset_id else "value",
+                        yid_sd="mean_sd" if "all" in dset_id else None,
+                        count="count",
+                        label=f"exp: {self.dose}mg {route}",
+                        color=self.colors[f"{route}"],
+                    )
+
+        return {
+            fig1.sid: fig1,
+            fig2.sid: fig2,
+        }
+
+
+if __name__ == "__main__":
+    run_experiments(Duchin1982, output_dir=Duchin1982.__name__)
+</code>
+        </pre>
+            </p>
+
+        </v-content>
+    </v-app>
+</div>
+
+
+<!-- loading dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.2.6/dist/vuetify.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+    const app = new Vue({
+        el: '#app',
+        vuetify: new Vuetify(),
+        delimiters: ['${', '}'],
+        data() {
+            return {}
+        }
+    })
+</script>
+
+
+</body>
+</html>

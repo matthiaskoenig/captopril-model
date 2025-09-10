@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <title>Onoyama1981</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <!--<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+</head>
+
+<body>
+<div id="app">
+    <!-- Vue app-->
+    <v-app>
+        <v-content>
+
+            <a href="../index.html">Experiments</a>
+            <h1>Onoyama1981</h1>
+
+            <h2>Models</h2>
+            <p>
+            <ul>
+                <li><strong>model</strong>: <a href="../../../../models/results/models/captopril_body_flat.xml">../../../../models/results/models/captopril_body_flat.xml</a></li>
+            </ul>
+            </p>
+
+            <h2>Datasets</h2>
+            <p>
+            <ul>
+                <li><strong>CAP50_captopril_blood_control</strong>: <a href="Onoyama1981_CAP50_captopril_blood_control.tsv">Onoyama1981_CAP50_captopril_blood_control.tsv</a></li>
+                <li><strong>CAP50_captopril_blood_SRI</strong>: <a href="Onoyama1981_CAP50_captopril_blood_SRI.tsv">Onoyama1981_CAP50_captopril_blood_SRI.tsv</a></li>
+                <li><strong>CAP50_captopril_cumulative amount_urine_control</strong>: <a href="Onoyama1981_CAP50_captopril_cumulative amount_urine_control.tsv">Onoyama1981_CAP50_captopril_cumulative amount_urine_control.tsv</a></li>
+                <li><strong>CAP50_captopril_cumulative amount_urine_SRI</strong>: <a href="Onoyama1981_CAP50_captopril_cumulative amount_urine_SRI.tsv">Onoyama1981_CAP50_captopril_cumulative amount_urine_SRI.tsv</a></li>
+                <li><strong>CAP50_total captopril_cumulative amount_urine_control</strong>: <a href="Onoyama1981_CAP50_total captopril_cumulative amount_urine_control.tsv">Onoyama1981_CAP50_total captopril_cumulative amount_urine_control.tsv</a></li>
+                <li><strong>CAP50_total captopril_cumulative amount_urine_SRI</strong>: <a href="Onoyama1981_CAP50_total captopril_cumulative amount_urine_SRI.tsv">Onoyama1981_CAP50_total captopril_cumulative amount_urine_SRI.tsv</a></li>
+            </ul>
+            </p>
+
+            <h2>Figures</h2>
+            <p>
+            <ul>
+                <li><strong>Figure 1</strong>: <a href="Onoyama1981_Figure 1.svg">Onoyama1981_Figure 1.svg</a></li>
+                <li><strong>Figure 2</strong>: <a href="Onoyama1981_Figure 2.svg">Onoyama1981_Figure 2.svg</a></li>
+            </ul>
+            </p>
+
+            <h3>Figure 1</h3>
+            <p>
+            <table>
+                <tr>
+                    <td>
+                        <!--<v-img src="Onoyama1981_Figure 1.svg" max-width="600" width="600"></v-img>-->
+                        <img src="Onoyama1981_Figure 1.svg" width="600">
+                    </td>
+                    <!--
+                    <td>
+                    </td>
+                    -->
+                </tr>
+            </table>
+            </p>
+            <h3>Figure 2</h3>
+            <p>
+            <table>
+                <tr>
+                    <td>
+                        <!--<v-img src="Onoyama1981_Figure 2.svg" max-width="600" width="600"></v-img>-->
+                        <img src="Onoyama1981_Figure 2.svg" width="600">
+                    </td>
+                    <!--
+                    <td>
+                    </td>
+                    -->
+                </tr>
+            </table>
+            </p>
+
+            <h2>Code</h2>
+            <p>
+                <a href="../../../../experiments/studies/onoyama1981.py">../../../../experiments/studies/onoyama1981.py</a>
+            <pre>
+<code class="python">"""Onoyama1981"""
+
+from typing import Dict
+
+from sbmlsim.data import DataSet, load_pkdb_dataframe
+from sbmlsim.fit import FitMapping, FitData
+from sbmlutils.console import console
+
+from pkdb_models.models.captopril.experiments.base_experiment import (
+    CaptoprilSimulationExperiment,
+)
+from pkdb_models.models.captopril.experiments.metadata import Tissue, Route, Dosing, Health, Fasting, \
+    CaptoprilMappingMetaData, PKPDData
+from sbmlsim.plot import Axis, Figure
+from sbmlsim.simulation import Timecourse, TimecourseSim
+
+from pkdb_models.models.captopril.helpers import run_experiments
+
+
+class Onoyama1981(CaptoprilSimulationExperiment):
+    """Simulation experiment for Onoyama1981.
+    Blood concentration and urinary excretion of captopril in patients
+    with chronic renal failure and with normal renal function.
+    - fasting
+    """
+
+    route = "PO"
+    dose = 50  # mg
+    tissues = []
+    substances = []
+    groups = []
+    subjects = []
+    yids = []
+    clabels = []
+
+    colors = {
+        "NRF": CaptoprilSimulationExperiment.renal_colors["Control"],
+        "SRI": CaptoprilSimulationExperiment.renal_colors["Severe renal impairment"],
+    }
+
+    renal_function = {
+        "NRF": 86.15 / 86.15,  # eGFR from creatinine
+        "SRI": 14.02 / 86.15,  # eGFR from creatinine
+    }
+
+    bodyweight = {
+        "NRF": 66.7,
+        "SRI": 55.6  # eGFR from creatinine
+    }
+
+    def datasets(self) -> Dict[str, DataSet]:
+        dsets = {}
+        self.clabels = []
+        self.tissues = []
+        self.yids = []
+        self.substances = []
+        self.groups = []
+        for fig_id in ["Fig1", "Fig2"]:
+            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
+            for label, df_label in df.groupby("label", sort=False):
+                dset = DataSet.from_df(df_label, self.ureg)
+                if "_captopril_" in label:
+                    dset.unit_conversion("mean", 1 / self.Mr.cap / self.BPRatios.cap)
+                    if "blood" in label:
+                        self.yids.append("[Cve_cap]")
+                        self.tissues.append("plasma")
+                    else:
+                        self.yids.append("Aurine_cap")
+                        self.tissues.append("urine")
+                    self.substances.append("cap")
+                else:
+                    dset.unit_conversion("mean", 1 / self.Mr.captot / self.BPRatios.cap)
+                    self.yids.append("Aurine_captot")
+                    self.tissues.append("urine")
+                    self.substances.append("captot")
+                if "control" in label:
+                    self.groups.append("NRF")
+                else:
+                    self.groups.append("SRI")
+                self.clabels.append(label)
+                dsets[f"{label}"] = dset
+        # console.print(dsets.keys())
+        # console.print(dsets)
+        return dsets
+
+    def simulations(self) -> Dict[str, TimecourseSim]:
+        Q_ = self.Q_
+        tcsims = {}
+        for group in self.groups:
+            tcsims[f"cap_{self.route}_{self.dose}_{group}"] = TimecourseSim(
+                Timecourse(
+                    start=0,
+                    end=7 * 60,  # minutes
+                    steps=400,
+                    changes={
+                        **self.default_changes(),
+                        "BW": Q_(self.bodyweight[group], "kg"),
+                        f"{self.route}DOSE_cap": Q_(self.dose, "mg"),
+                        "KI__f_renal_function": Q_(
+                            self.renal_function[group], "dimensionless"
+                        ),
+                    },
+                )
+            )
+        return tcsims
+
+    def fit_mappings(self) -> Dict[str, FitMapping]:
+        mappings = {}
+        for kr, dset_id in enumerate(self.clabels):
+            substance = self.substances[kr]
+            tissue = self.tissues[kr]
+            group = self.groups[kr]
+            mappings[
+                f"fm_cap{self.route}{self.dose}_{substance}_{tissue}_acute_fasting_{group}"
+            ] = FitMapping(
+                self,
+                reference=FitData(
+                    self,
+                    dataset=self.clabels[kr],
+                    xid="time",
+                    yid="mean",
+                    yid_sd="mean_sd",
+                    count="count",
+                ),
+                observable=FitData(
+                    self,
+                    task=f"task_cap_{self.route}_{self.dose}_{group}",
+                    xid="time",
+                    yid=self.yids[kr],
+                ),
+                metadata=CaptoprilMappingMetaData(
+                    tissue=Tissue.PLASMA,
+                    route=Route.PO,
+                    dosing=Dosing.SINGLE,
+                    health=(
+                        Health.HEALTHY if "NRF" in group else Health.RENAL_IMPAIRMENT
+                    ),
+                    fasting=Fasting.FASTING,
+                    data=PKPDData.PK
+                ),
+            )
+        # console.print(mappings)
+        return mappings
+
+    def figures(self) -> Dict[str, Figure]:
+        fig1 = Figure(
+            experiment=self,
+            sid="Figure 1",
+            num_rows=1,
+            num_cols=1,
+            name=f"{self.__class__.__name__}",
+            height=self.panel_height,
+            width=self.panel_width,
+        )
+        fig2 = Figure(
+            experiment=self,
+            sid="Figure 2",
+            num_rows=1,
+            num_cols=2,
+            name=f"{self.__class__.__name__}",
+            height=self.panel_height,
+            width=self.panel_width * 2
+        )
+        plots1 = fig1.create_plots(
+            xaxis=Axis(self.labels["time"], unit=self.units["time"]), legend=True
+        )
+        plots2 = fig2.create_plots(
+            xaxis=Axis(self.labels["time"], unit=self.units["time"]), legend=True
+        )
+        for yid_unique, plots, plot_index in zip(["[Cve_cap]", "Aurine_cap", "Aurine_captot"], [plots1, plots2, plots2], [0, 0, 1]):
+            plots[plot_index].set_yaxis(self.labels[yid_unique], unit=self.units[yid_unique])
+            for kr, dset_id in enumerate(self.clabels):
+                yid = self.yids[kr]
+                if yid == yid_unique:
+                    group = self.groups[kr]
+                    # simulation
+                    plots[plot_index].add_data(
+                        task=f"task_cap_{self.route}_{self.dose}_{group}",
+                        xid="time",
+                        yid=self.yids[kr],
+                        label=f"sim: {self.dose}mg {self.route}" if "NRF" in group else f"{group} sim: {self.dose}mg {self.route}",
+                        color=self.colors[f"{group}"],
+                    )
+                    # dataset
+                    plots[plot_index].add_data(
+                        dataset=dset_id,
+                        xid="time",
+                        yid="mean",
+                        yid_sd="mean_sd",
+                        count="count",
+                        label=f"exp: {self.dose}mg {self.route}" if "NRF" in group else f"{group} exp: {self.dose}mg {self.route}",
+                        color=self.colors[f"{group}"],
+                )
+
+        return {
+            fig1.sid: fig1,
+            fig2.sid: fig2,
+        }
+
+
+if __name__ == "__main__":
+    run_experiments(Onoyama1981, output_dir=Onoyama1981.__name__)
+</code>
+        </pre>
+            </p>
+
+        </v-content>
+    </v-app>
+</div>
+
+
+<!-- loading dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.2.6/dist/vuetify.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+    const app = new Vue({
+        el: '#app',
+        vuetify: new Vuetify(),
+        delimiters: ['${', '}'],
+        data() {
+            return {}
+        }
+    })
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Shaw1985		all	6	CAP25	concentration	captopril	plasma	RIA	CAP25_captopril_plasma_6	0.7	hr		0.00036792371812139447	123.062252534257	0.00048607575299562325	0.0001984395951963983		mole/meter^3	ng/ml
+Shaw1985		all	6	CAP25	concentration	captopril	plasma	RIA	CAP25_captopril_plasma_6	0.9	hr		0.00076792583808811	218.931431690817	0.0005870237759298111	0.00023965145298498653		mole/meter^3	ng/ml
+Shaw1985		all	6	CAP25	concentration	captopril	plasma	RIA	CAP25_captopril_plasma_6	1.1	hr		0.000737459783792664	203.025214729437	0.0004823366488202683	0.00019691311230894353		mole/meter^3	ng/ml
+Shaw1985		all	6	CAP25	concentration	captopril	plasma	RIA	CAP25_captopril_plasma_6	1.3	hr		0.0006352426734414938	187.447915586973	0.0005571109425269807	0.00022743958988535103		mole/meter^3	ng/ml
+Shaw1985		all	6	CAP25	concentration	captopril	plasma	RIA	CAP25_captopril_plasma_6	1.5	hr		0.0005070721738309133	135.386996690092	0.00028417191732688584	0.00011601269944653932		mole/meter^3	ng/ml
+Shaw1985		all	6	CAP25	concentration	captopril	plasma	RIA	CAP25_captopril_plasma_6	2.0	hr		0.0002934218126955699	76.028386436977	0.0001383468544880889	5.647986683581516e-05		mole/meter^3	ng/ml
+Shaw1985		all	6	CAP25	concentration	captopril	plasma	RIA	CAP25_captopril_plasma_6	2.5	hr		0.0003897142613398067	98.607627300179	0.0001570190059637623	6.410274075504106e-05		mole/meter^3	ng/ml
+Shaw1985		all	6	CAP25	concentration	captopril	plasma	RIA	CAP25_captopril_plasma_6	3.5	hr		0.0002601890081666134	60.1836688156886	4.113014592889127e-05	1.679131176199908e-05		mole/meter^3	ng/ml
+Shaw1985		all	6	CAP25	concentration	captopril	plasma	RIA	CAP25_captopril_plasma_6	4.5	hr		0.00021768600026905353	53.2687935764285	6.728829555563706e-05	2.747033162881593e-05		mole/meter^3	ng/ml
+Shaw1985		all	6	CAP25	concentration	captopril	plasma	RIA	CAP25_captopril_plasma_6	5.5	hr		0.00016754103741617414	42.373736326762	6.729608535600249e-05	2.747351180149831e-05		mole/meter^3	ng/ml
+Shaw1985		all	6	CAP25	concentration	captopril	plasma	RIA	CAP25_captopril_plasma_6	6.5	hr		0.00015861747286992982	41.4312071145754	7.852897748279447e-05	3.205932080922609e-05		mole/meter^3	ng/ml
+Shaw1985		all	6	CAP25	concentration	captopril	plasma	RIA	CAP25_captopril_plasma_6	7.5	hr		0.00012679030466650434	35.5099953702744	8.973850020848977e-05	3.663558929890705e-05		mole/meter^3	ng/ml
+Shaw1985		all	6	CAP25	concentration	captopril	plasma	RIA	CAP25_captopril_plasma_6	8.5	hr		0.00011939322300771428	34.8977659846459	0.00010095581273455184	4.121503796127063e-05		mole/meter^3	ng/ml
+Shaw1985		all	6	CAP25	concentration	captopril	plasma	RIA	CAP25_captopril_plasma_6	22.5	hr		2.7212737641558278e-05	8.23400153402852	2.6165939427110753e-05	1.0682200039498951e-05		mole/meter^3	ng/ml
+Shaw1985		all	6	CAP25	concentration	captopril	plasma	RIA	CAP25_captopril_plasma_6	24.5	hr		2.4445987408046942e-05	7.30045537151827	2.2419045451392314e-05	9.152536979362542e-06		mole/meter^3	ng/ml

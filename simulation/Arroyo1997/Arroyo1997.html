@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <title>Arroyo1997</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <!--<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+</head>
+
+<body>
+<div id="app">
+    <!-- Vue app-->
+    <v-app>
+        <v-content>
+
+            <a href="../index.html">Experiments</a>
+            <h1>Arroyo1997</h1>
+
+            <h2>Models</h2>
+            <p>
+            <ul>
+                <li><strong>model</strong>: <a href="../../../../models/results/models/captopril_body_flat.xml">../../../../models/results/models/captopril_body_flat.xml</a></li>
+            </ul>
+            </p>
+
+            <h2>Datasets</h2>
+            <p>
+            <ul>
+                <li><strong>CAP100_captopril</strong>: <a href="Arroyo1997_CAP100_captopril.tsv">Arroyo1997_CAP100_captopril.tsv</a></li>
+            </ul>
+            </p>
+
+            <h2>Figures</h2>
+            <p>
+            <ul>
+                <li><strong>Figure 1</strong>: <a href="Arroyo1997_Figure 1.svg">Arroyo1997_Figure 1.svg</a></li>
+            </ul>
+            </p>
+
+            <h3>Figure 1</h3>
+            <p>
+            <table>
+                <tr>
+                    <td>
+                        <!--<v-img src="Arroyo1997_Figure 1.svg" max-width="600" width="600"></v-img>-->
+                        <img src="Arroyo1997_Figure 1.svg" width="600">
+                    </td>
+                    <!--
+                    <td>
+                    </td>
+                    -->
+                </tr>
+            </table>
+            </p>
+
+            <h2>Code</h2>
+            <p>
+                <a href="../../../../experiments/studies/arroyo1997.py">../../../../experiments/studies/arroyo1997.py</a>
+            <pre>
+<code class="python">from typing import Dict
+
+from sbmlsim.data import DataSet, load_pkdb_dataframe
+from sbmlsim.fit import FitMapping, FitData
+from sbmlutils.console import console
+
+from pkdb_models.models.captopril.experiments.base_experiment import (
+    CaptoprilSimulationExperiment,
+)
+from pkdb_models.models.captopril.experiments.metadata import Tissue, Route, Dosing, Health, Fasting, \
+    CaptoprilMappingMetaData, PKPDData
+from sbmlsim.plot import Axis, Figure
+from sbmlsim.simulation import Timecourse, TimecourseSim
+
+from pkdb_models.models.captopril.helpers import run_experiments
+
+
+class Arroyo1997(CaptoprilSimulationExperiment):
+    """Simulation experiment of Arroyo1997.
+    - no information about fasting
+    """
+
+    colors = {"control": CaptoprilSimulationExperiment.renal_colors["Control"]}
+
+    def datasets(self) -> Dict[str, DataSet]:
+        dsets = {}
+        for fig_id in ["Fig1"]:
+            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
+
+            for label, df_label in df.groupby("label"):
+                dset = DataSet.from_df(df_label, self.ureg)
+
+                if label.endswith("_captopril"):
+                    dset.unit_conversion("mean", 1 / self.Mr.cap)
+                dsets[f"{label}"] = dset
+
+        # console.print(dsets.keys())
+        return dsets
+
+    def simulations(self) -> Dict[str, TimecourseSim]:
+        Q_ = self.Q_
+        tcsims = {}
+        tcsims[f"po_cap100"] = TimecourseSim(
+            [
+                Timecourse(
+                    start=0,
+                    end=10 * 60,  # [min]
+                    steps=500,
+                    changes={
+                        **self.default_changes(),
+                        "PODOSE_cap": Q_(100, "mg"),
+                    },
+                )
+            ]
+        )
+
+        return tcsims
+
+    def fit_mappings(self) -> Dict[str, FitMapping]:
+
+        mappings = {}
+        mappings[f"fm_cap100_cap_plasma_acute_nrfasting_all"] = FitMapping(
+            self,
+            reference=FitData(
+                self,
+                dataset="CAP100_captopril",
+                xid="time",
+                yid="mean",
+                yid_sd="mean_sd",
+                count="count",
+            ),
+            observable=FitData(
+                self,
+                task="task_po_cap100",
+                xid="time",
+                yid=f"[Cve_cap]",
+            ),
+            metadata=CaptoprilMappingMetaData(
+                tissue=Tissue.PLASMA,
+                route=Route.PO,
+                dosing=Dosing.SINGLE,
+                health=Health.HEALTHY,
+                fasting=Fasting.NR,
+                data=PKPDData.PK,
+            ),
+        )
+
+        # console.print(mappings)
+        return mappings
+
+    def figures(self) -> Dict[str, Figure]:
+
+        fig = Figure(
+            experiment=self,
+            sid="Figure 1",
+            num_rows=1,
+            num_cols=1,
+            name=f"{self.__class__.__name__}",
+            height=self.panel_height,
+            width=self.panel_width,
+        )
+        plots = fig.create_plots(
+            xaxis=Axis(self.labels["time"], unit=self.units["time"]), legend=True
+        )
+        plots[0].set_yaxis(self.labels["[Cve_cap]"], unit=self.units["[Cve_cap]"])
+
+        # simulation
+        plots[0].add_data(
+            task=f"task_po_cap100",
+            xid="time",
+            yid=f"[Cve_cap]",
+            label=f"sim: 100mg PO",
+            color=self.colors["control"],
+        )
+        # data
+
+        plots[0].add_data(
+            dataset="CAP100_captopril",
+            xid="time",
+            yid="mean",
+            yid_sd="mean_sd",
+            count="count",
+            label="exp: 100mg PO",
+            color=self.colors["control"],
+        )
+
+        return {
+            fig.sid: fig,
+        }
+
+
+if __name__ == "__main__":
+    run_experiments(Arroyo1997, output_dir=Arroyo1997.__name__)
+</code>
+        </pre>
+            </p>
+
+        </v-content>
+    </v-app>
+</div>
+
+
+<!-- loading dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.2.6/dist/vuetify.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+    const app = new Vue({
+        el: '#app',
+        vuetify: new Vuetify(),
+        delimiters: ['${', '}'],
+        data() {
+            return {}
+        }
+    })
+</script>
+
+
+</body>
+</html>

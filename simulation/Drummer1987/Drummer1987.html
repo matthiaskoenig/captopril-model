@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <title>Drummer1987</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <!--<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+</head>
+
+<body>
+<div id="app">
+    <!-- Vue app-->
+    <v-app>
+        <v-content>
+
+            <a href="../index.html">Experiments</a>
+            <h1>Drummer1987</h1>
+
+            <h2>Models</h2>
+            <p>
+            <ul>
+                <li><strong>model</strong>: <a href="../../../../models/results/models/captopril_body_flat.xml">../../../../models/results/models/captopril_body_flat.xml</a></li>
+            </ul>
+            </p>
+
+            <h2>Datasets</h2>
+            <p>
+            <ul>
+                <li><strong>CAP50_captopril_EH</strong>: <a href="Drummer1987_CAP50_captopril_EH.tsv">Drummer1987_CAP50_captopril_EH.tsv</a></li>
+                <li><strong>CAP50_total captopril_EH</strong>: <a href="Drummer1987_CAP50_total captopril_EH.tsv">Drummer1987_CAP50_total captopril_EH.tsv</a></li>
+                <li><strong>CAP50_captopril_SRI</strong>: <a href="Drummer1987_CAP50_captopril_SRI.tsv">Drummer1987_CAP50_captopril_SRI.tsv</a></li>
+                <li><strong>CAP50_total captopril_SRI</strong>: <a href="Drummer1987_CAP50_total captopril_SRI.tsv">Drummer1987_CAP50_total captopril_SRI.tsv</a></li>
+                <li><strong>CAP50_blood pressure systolic (change)_SRI</strong>: <a href="Drummer1987_CAP50_blood pressure systolic (change)_SRI.tsv">Drummer1987_CAP50_blood pressure systolic (change)_SRI.tsv</a></li>
+                <li><strong>CAP50_blood pressure diastolic (change)_SRI</strong>: <a href="Drummer1987_CAP50_blood pressure diastolic (change)_SRI.tsv">Drummer1987_CAP50_blood pressure diastolic (change)_SRI.tsv</a></li>
+                <li><strong>CAP50_blood pressure systolic (change)_EH</strong>: <a href="Drummer1987_CAP50_blood pressure systolic (change)_EH.tsv">Drummer1987_CAP50_blood pressure systolic (change)_EH.tsv</a></li>
+                <li><strong>CAP50_blood pressure diastolic (change)_EH</strong>: <a href="Drummer1987_CAP50_blood pressure diastolic (change)_EH.tsv">Drummer1987_CAP50_blood pressure diastolic (change)_EH.tsv</a></li>
+            </ul>
+            </p>
+
+            <h2>Figures</h2>
+            <p>
+            <ul>
+                <li><strong>PK</strong>: <a href="Drummer1987_PK.svg">Drummer1987_PK.svg</a></li>
+                <li><strong>PD</strong>: <a href="Drummer1987_PD.svg">Drummer1987_PD.svg</a></li>
+            </ul>
+            </p>
+
+            <h3>PK</h3>
+            <p>
+            <table>
+                <tr>
+                    <td>
+                        <!--<v-img src="Drummer1987_PK.svg" max-width="600" width="600"></v-img>-->
+                        <img src="Drummer1987_PK.svg" width="600">
+                    </td>
+                    <!--
+                    <td>
+                    </td>
+                    -->
+                </tr>
+            </table>
+            </p>
+            <h3>PD</h3>
+            <p>
+            <table>
+                <tr>
+                    <td>
+                        <!--<v-img src="Drummer1987_PD.svg" max-width="600" width="600"></v-img>-->
+                        <img src="Drummer1987_PD.svg" width="600">
+                    </td>
+                    <!--
+                    <td>
+                    </td>
+                    -->
+                </tr>
+            </table>
+            </p>
+
+            <h2>Code</h2>
+            <p>
+                <a href="../../../../experiments/studies/drummer1987.py">../../../../experiments/studies/drummer1987.py</a>
+            <pre>
+<code class="python">"""Drummer1987"""
+
+from typing import Dict
+
+from sbmlsim.data import DataSet, load_pkdb_dataframe
+from sbmlsim.fit import FitMapping, FitData
+from sbmlutils.console import console
+
+from pkdb_models.models.captopril.experiments.base_experiment import (
+    CaptoprilSimulationExperiment,
+)
+from pkdb_models.models.captopril.experiments.metadata import Tissue, Route, Dosing, Health, Fasting, \
+    CaptoprilMappingMetaData, PKPDData
+from sbmlsim.plot import Axis, Figure
+from sbmlsim.simulation import Timecourse, TimecourseSim
+
+from pkdb_models.models.captopril.helpers import run_experiments
+
+import numpy as np
+class Drummer1987(CaptoprilSimulationExperiment):
+    """Drummer1987.
+
+    The pharmacokinetics and pharmacodynamics of captopril in uraemic patients and patients
+    with normal renal function.
+
+    - no information about food
+    - data on graphs is with sem, checked
+    """
+
+    route = "PO"
+    dose = 50  # mg
+    groups = []
+
+    colors = {
+        "NRF": CaptoprilSimulationExperiment.renal_colors["Normal renal function"],
+        "SRI": CaptoprilSimulationExperiment.renal_colors["Severe renal impairment"],
+    }
+    renal_function = {
+        "NRF": CaptoprilSimulationExperiment.renal_map["Normal renal function"],
+        "SRI": CaptoprilSimulationExperiment.renal_map[
+            "Severe renal impairment"
+        ],  # ~ 0.2
+    }
+    
+    MAP = {
+        "NRF": (188+2*107)/3,
+        "SRI": (150+2*87.4)/3,
+    }
+
+    sbp = {
+        "NRF": 188,  # mmHg
+        "SRI": 150
+    }
+    dbp = {
+        "NRF": 107,  # mmHg
+        "SRI": 87.4
+    }
+
+    elements_unique = ["blood pressure diastolic (change)", "blood pressure systolic (change)","total captopril", "captopril"]
+
+    def datasets(self) -> Dict[str, DataSet]:
+        dsets = {}
+        self.reset_state()
+        self.groups = []
+        for fig_id in ["Fig2", "Fig1", "TabText4Mean"]:
+            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
+            for label, df_label in df.groupby("label", sort=False):
+                dset = DataSet.from_df(df_label, self.ureg)
+                for element in self.elements_unique:
+                    if element in label:
+                        self.data_collection(element=element, label=label)
+                        dset.unit_conversion(
+                            self.data_type, self.conversion_factor
+                        )
+                        if "SRI" in label:
+                            self.groups.append("SRI")
+                        elif "EH" in label:
+                            self.groups.append("NRF")
+
+                        dsets[f"{label}"] = dset
+                        break
+        # console.print(dsets.keys())
+        # console.print(dsets)
+        return dsets
+
+    def simulations(self) -> Dict[str, TimecourseSim]:
+        Q_ = self.Q_
+        tcsims = {}
+        for group in self.groups:
+            tcsims[f"cap_{self.route}_{self.dose}_{group}"] = TimecourseSim(
+                Timecourse(
+                    start=0,
+                    end=9 * 60,  # minutes
+                    steps=400,
+                    changes={
+                        **self.default_changes(),
+                        f"{self.route}DOSE_cap": Q_(self.dose, "mg"),
+                        "KI__f_renal_function": Q_(
+                            self.renal_function[group], "dimensionless"
+                        ),
+                        f"SBP_ref": Q_(self.sbp[group], "mmHg"),
+                        f"DBP_ref": Q_(self.dbp[group], "mmHg"),
+                    },
+                )
+            )
+        return tcsims
+
+    def fit_mappings(self) -> Dict[str, FitMapping]:
+        mappings = {}
+        for kr, dset_id in enumerate(self.clabels):
+            group = self.groups[kr]
+            element = self.element_ids[kr]
+            mappings[
+                f"fm_cap{self.route}_{self.dose}_{element}_plasma_acute_fasting_{group}"
+            ] = FitMapping(
+                self,
+                reference=FitData(
+                    self,
+                    dataset=dset_id,
+                    xid="time",
+                    yid="mean",
+                    yid_sd="mean_sd",
+                    count="count",
+                ),
+                observable=FitData(
+                    self,
+                    task=f"task_cap_{self.route}_{self.dose}_{group}",
+                    xid="time",
+                    yid=self.yids[kr],
+                ),
+                metadata=CaptoprilMappingMetaData(
+                    tissue=Tissue.PLASMA,
+                    route=Route.PO,
+                    dosing=Dosing.SINGLE,
+                    health=(
+                        Health.HEALTHY if group == "NRF" else Health.RENAL_IMPAIRMENT
+                    ),
+                    fasting=Fasting.NR,
+                    data=PKPDData.PK if "cap" in element else PKPDData.PD
+                ),
+            )
+        return mappings
+
+    def figures(self) -> Dict[str, Figure]:
+        return {
+            **self.pk_figures(),
+            **self.pd_figures(),
+        }
+
+    def pk_figures(self) -> Dict[str, Figure]:
+        fig = Figure(
+            experiment=self,
+            sid="PK",
+            num_rows=1,
+            num_cols=2,
+            name=f"{self.__class__.__name__}",
+            height=self.panel_height,
+            width=self.panel_width * 2,
+        )
+        plots = fig.create_plots(
+            xaxis=Axis(self.labels["time"], unit=self.units["time"]), legend=True
+        )
+
+        for kyu, yid_unique in enumerate(["[Cve_cap]", "[Cve_captot]"]):
+            plots[kyu].set_yaxis(self.labels[yid_unique], unit=self.units[yid_unique])
+            for ky, yid in enumerate(self.yids):
+                if yid == yid_unique:
+                    group = self.groups[ky]
+                    #simulation
+                    plots[kyu].add_data(
+                        task=f"task_cap_{self.route}_{self.dose}_{group}",
+                        xid="time",
+                        yid=yid,
+                        label=f"{group} sim: {self.dose}mg PO" if group == "SRI" else f"sim: {self.dose}mg PO",
+                        color=self.colors[group],
+                    )
+                    #dataset
+                    plots[kyu].add_data(
+                        dataset=self.clabels[ky],
+                        xid="time",
+                        yid="mean",
+                        yid_sd="mean_sd",
+                        count="count",
+                        label=f"{group} exp: {self.dose}mg PO" if group == "SRI" else f"exp: {self.dose}mg PO",
+                        color=self.colors[group],
+                    )
+
+        return {
+            fig.sid: fig,
+        }
+
+    def pd_figures(self) -> Dict[str, Figure]:
+        fig = Figure(
+            experiment=self,
+            sid="PD",
+            num_rows=1,
+            num_cols=2,
+            name=f"{self.__class__.__name__}",
+            height=self.panel_height,
+            width=self.panel_width * 2,
+        )
+        plots = fig.create_plots(
+            xaxis=Axis(self.labels["time"], unit=self.units["time"]), legend=True
+        )
+
+        for kyu, yid_unique in enumerate(["SBP_change", "DBP_change"]):
+            plots[kyu].set_yaxis(self.labels[yid_unique], unit=self.units[yid_unique])
+            for ky, yid in enumerate(self.yids):
+                if yid == yid_unique:
+                    group = self.groups[ky]
+                    # simulation
+                    plots[kyu].add_data(
+                        task=f"task_cap_{self.route}_{self.dose}_{group}",
+                        xid="time",
+                        yid=yid,
+                        label=f"{group} sim: {self.dose} mg" if group == "SRI" else f"sim: {self.dose} mg",
+                        color=self.colors[group],
+                    )
+                    # dataset
+                    plots[kyu].add_data(
+                        dataset=self.clabels[ky],
+                        xid="time",
+                        yid="mean",
+                        yid_sd="mean_sd",
+                        count="count",
+                        label=f"{group} exp: {self.dose} mg" if group == "SRI" else f"exp: {self.dose} mg",
+                        color=self.colors[group],
+                    )
+
+        return {
+            fig.sid: fig,
+        }
+
+
+if __name__ == "__main__":
+    run_experiments(Drummer1987, output_dir=Drummer1987.__name__)
+</code>
+        </pre>
+            </p>
+
+        </v-content>
+    </v-app>
+</div>
+
+
+<!-- loading dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.2.6/dist/vuetify.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+    const app = new Vue({
+        el: '#app',
+        vuetify: new Vuetify(),
+        delimiters: ['${', '}'],
+        data() {
+            return {}
+        }
+    })
+</script>
+
+
+</body>
+</html>

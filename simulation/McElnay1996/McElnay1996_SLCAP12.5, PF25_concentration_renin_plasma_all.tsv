@@ -1,0 +1,8 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+McElnay1996		all	6.0	SLCAP12.5, PF25	concentration	renin	plasma	RIA	SLCAP12.5, PF25_concentration_renin_plasma_all	0.0	min		1.1849612453201322e-09					mole/meter^3	pg/ml
+McElnay1996		all	6.0	SLCAP12.5, PF25	concentration	renin	plasma	RIA	SLCAP12.5, PF25_concentration_renin_plasma_all	10.0	min		1.328940909477628e-09					mole/meter^3	pg/ml
+McElnay1996		all	6.0	SLCAP12.5, PF25	concentration	renin	plasma	RIA	SLCAP12.5, PF25_concentration_renin_plasma_all	20.0	min		1.1861432006050956e-09					mole/meter^3	pg/ml
+McElnay1996		all	6.0	SLCAP12.5, PF25	concentration	renin	plasma	RIA	SLCAP12.5, PF25_concentration_renin_plasma_all	30.0	min		1.657918463793104e-09					mole/meter^3	pg/ml
+McElnay1996		all	6.0	SLCAP12.5, PF25	concentration	renin	plasma	RIA	SLCAP12.5, PF25_concentration_renin_plasma_all	60.0	min		1.7879574760858465e-09		1.983207621828579e-09	8.09641121246421e-10		mole/meter^3	pg/ml
+McElnay1996		all	6.0	SLCAP12.5, PF25	concentration	renin	plasma	RIA	SLCAP12.5, PF25_concentration_renin_plasma_all	120.0	min		2.2161953433919407e-09					mole/meter^3	pg/ml
+McElnay1996		all	6.0	SLCAP12.5, PF25	concentration	renin	plasma	RIA	SLCAP12.5, PF25_concentration_renin_plasma_all	180.0	min		1.9430323441998443e-09					mole/meter^3	pg/ml

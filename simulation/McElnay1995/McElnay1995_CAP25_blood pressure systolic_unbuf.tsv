@@ -1,0 +1,2 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	median	mean	mean_pm	mean_sd	mean_se	min	max	comments	mean_unit	value_unit	median_unit
+McElnay1995		unbuf	8	CAP25	blood pressure systolic			NR	CAP25_blood pressure systolic_unbuf	90	min			14252.163214663502		786.6020857485001	278.1058344641226				kilogram/meter/second^2	mmHg	mmHg

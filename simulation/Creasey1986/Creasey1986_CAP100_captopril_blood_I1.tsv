@@ -1,0 +1,8 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	comments	value_unit
+Creasey1986	I1	all	1.0	CAP100	concentration	captopril	blood	GC/MS	CAP100_captopril_blood_I1	0.33	hr	0.0015187426651632648		mole/meter^3
+Creasey1986	I1	all	1.0	CAP100	concentration	captopril	blood	GC/MS	CAP100_captopril_blood_I1	0.67	hr	0.004364467557969181		mole/meter^3
+Creasey1986	I1	all	1.0	CAP100	concentration	captopril	blood	GC/MS	CAP100_captopril_blood_I1	1.0	hr	0.005967584815641516		mole/meter^3
+Creasey1986	I1	all	1.0	CAP100	concentration	captopril	blood	GC/MS	CAP100_captopril_blood_I1	2.0	hr	0.00115823304262451		mole/meter^3
+Creasey1986	I1	all	1.0	CAP100	concentration	captopril	blood	GC/MS	CAP100_captopril_blood_I1	3.0	hr	0.0010124951101088432		mole/meter^3
+Creasey1986	I1	all	1.0	CAP100	concentration	captopril	blood	GC/MS	CAP100_captopril_blood_I1	4.0	hr	0.00029531107378174594		mole/meter^3
+Creasey1986	I1	all	1.0	CAP100	concentration	captopril	blood	GC/MS	CAP100_captopril_blood_I1	8.0	hr	5.0624755505442165e-05		mole/meter^3
