@@ -68,7 +68,7 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
           </bqbiol:hasTaxon>
           <bqbiol:isDescribedBy>
             <rdf:Bag>
-              <rdf:li rdf:resource="https://doi.org/10.5281/zenodo.17091694"/>
+              <rdf:li rdf:resource="https://doi.org/10.5281/zenodo.17092514"/>
             </rdf:Bag>
           </bqbiol:isDescribedBy>
         </rdf:Description>
